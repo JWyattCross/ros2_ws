@@ -1,0 +1,349 @@
+[1.663s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.663s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa3f1ebac20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa3f1e6f6d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa3f1e6f6d0>>)
+[1.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.736s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wyatt/ros2_ws'
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.737s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.754s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extensions ['ignore', 'ignore_ament_install']
+[1.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extension 'ignore'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extension 'ignore_ament_install'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extensions ['colcon_pkg']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extension 'colcon_pkg'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extensions ['colcon_meta']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extension 'colcon_meta'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extensions ['ros']
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/estop_button) by extension 'ros'
+[1.761s] DEBUG:colcon.colcon_core.package_identification:Package 'src/estop_button' with type 'ros.ament_python' and name 'estop_button'
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extensions ['ignore', 'ignore_ament_install']
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extension 'ignore'
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extension 'ignore_ament_install'
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extensions ['colcon_pkg']
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extension 'colcon_pkg'
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extensions ['colcon_meta']
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extension 'colcon_meta'
+[1.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extensions ['ros']
+[1.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/herding_v1_package) by extension 'ros'
+[1.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/herding_v1_package' with type 'ros.ament_python' and name 'herding_v1_package'
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extension 'ignore'
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extension 'ignore_ament_install'
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extensions ['colcon_pkg']
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extension 'colcon_pkg'
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extensions ['colcon_meta']
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extension 'colcon_meta'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extensions ['ros']
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/uf_interfaces) by extension 'ros'
+[1.766s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uf_interfaces' with type 'ros.ament_cmake' and name 'uf_interfaces'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extensions ['ignore', 'ignore_ament_install']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extension 'ignore'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extension 'ignore_ament_install'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extensions ['colcon_pkg']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extension 'colcon_pkg'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extensions ['colcon_meta']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extension 'colcon_meta'
+[1.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extensions ['ros']
+[1.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_position_checker) by extension 'ros'
+[1.767s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vehicle_position_checker' with type 'ros.ament_python' and name 'vehicle_position_checker'
+[1.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extensions ['ignore', 'ignore_ament_install']
+[1.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extension 'ignore'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extension 'ignore_ament_install'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extensions ['colcon_pkg']
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extension 'colcon_pkg'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extensions ['colcon_meta']
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extension 'colcon_meta'
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extensions ['ros']
+[1.768s] Level 1:colcon.colcon_core.package_identification:_identify(src/wind_speed_package) by extension 'ros'
+[1.769s] DEBUG:colcon.colcon_core.package_identification:Package 'src/wind_speed_package' with type 'ros.ament_python' and name 'wind_speed_package'
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.769s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.917s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.967s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/wyatt/ros2_ws/install
+[1.993s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/humble
+[1.995s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'cmake_args' from command line to 'None'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'cmake_target' from command line to 'None'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'cmake_clean_cache' from command line to 'False'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'cmake_clean_first' from command line to 'False'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'cmake_force_configure' from command line to 'False'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'ament_cmake_args' from command line to 'None'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'catkin_cmake_args' from command line to 'None'
+[2.149s] Level 5:colcon.colcon_core.verb:set package 'estop_button' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.149s] DEBUG:colcon.colcon_core.verb:Building package 'estop_button' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wyatt/ros2_ws/build/estop_button', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wyatt/ros2_ws/install/estop_button', 'merge_install': False, 'path': '/home/wyatt/ros2_ws/src/estop_button', 'symlink_install': False, 'test_result_base': None}
+[2.173s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'cmake_args' from command line to 'None'
+[2.173s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'cmake_target' from command line to 'None'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.174s] Level 5:colcon.colcon_core.verb:set package 'herding_v1_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.174s] DEBUG:colcon.colcon_core.verb:Building package 'herding_v1_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wyatt/ros2_ws/build/herding_v1_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wyatt/ros2_ws/install/herding_v1_package', 'merge_install': False, 'path': '/home/wyatt/ros2_ws/src/herding_v1_package', 'symlink_install': False, 'test_result_base': None}
+[2.198s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'cmake_args' from command line to 'None'
+[2.198s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'cmake_target' from command line to 'None'
+[2.198s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.199s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[2.199s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[2.199s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[2.199s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[2.199s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[2.199s] Level 5:colcon.colcon_core.verb:set package 'uf_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.199s] DEBUG:colcon.colcon_core.verb:Building package 'uf_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wyatt/ros2_ws/build/uf_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wyatt/ros2_ws/install/uf_interfaces', 'merge_install': False, 'path': '/home/wyatt/ros2_ws/src/uf_interfaces', 'symlink_install': False, 'test_result_base': None}
+[2.223s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'cmake_args' from command line to 'None'
+[2.223s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'cmake_target' from command line to 'None'
+[2.223s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.223s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'cmake_clean_cache' from command line to 'False'
+[2.223s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'cmake_clean_first' from command line to 'False'
+[2.224s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'cmake_force_configure' from command line to 'False'
+[2.224s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'ament_cmake_args' from command line to 'None'
+[2.224s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'catkin_cmake_args' from command line to 'None'
+[2.224s] Level 5:colcon.colcon_core.verb:set package 'vehicle_position_checker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.224s] DEBUG:colcon.colcon_core.verb:Building package 'vehicle_position_checker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wyatt/ros2_ws/build/vehicle_position_checker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wyatt/ros2_ws/install/vehicle_position_checker', 'merge_install': False, 'path': '/home/wyatt/ros2_ws/src/vehicle_position_checker', 'symlink_install': False, 'test_result_base': None}
+[2.249s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'cmake_args' from command line to 'None'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'cmake_target' from command line to 'None'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.250s] Level 5:colcon.colcon_core.verb:set package 'wind_speed_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.250s] DEBUG:colcon.colcon_core.verb:Building package 'wind_speed_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wyatt/ros2_ws/build/wind_speed_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wyatt/ros2_ws/install/wind_speed_package', 'merge_install': False, 'path': '/home/wyatt/ros2_ws/src/wind_speed_package', 'symlink_install': False, 'test_result_base': None}
+[2.276s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.309s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.310s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wyatt/ros2_ws/src/estop_button' with build type 'ament_python'
+[2.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('estop_button', 'ament_prefix_path')
+[2.344s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/hook/ament_prefix_path.ps1'
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/hook/ament_prefix_path.dsv'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/hook/ament_prefix_path.sh'
+[2.373s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.373s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.453s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wyatt/ros2_ws/src/herding_v1_package' with build type 'ament_python'
+[2.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('herding_v1_package', 'ament_prefix_path')
+[2.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/hook/ament_prefix_path.ps1'
+[2.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/hook/ament_prefix_path.dsv'
+[2.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/hook/ament_prefix_path.sh'
+[2.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.508s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.587s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wyatt/ros2_ws/src/uf_interfaces' with build type 'ament_cmake'
+[2.587s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wyatt/ros2_ws/src/uf_interfaces'
+[2.613s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.613s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.693s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wyatt/ros2_ws/src/vehicle_position_checker' with build type 'ament_python'
+[2.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehicle_position_checker', 'ament_prefix_path')
+[2.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/hook/ament_prefix_path.ps1'
+[2.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/hook/ament_prefix_path.dsv'
+[2.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/hook/ament_prefix_path.sh'
+[2.764s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.764s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.263s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wyatt/ros2_ws/src/estop_button'
+[3.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.799s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wyatt/ros2_ws/src/herding_v1_package'
+[3.830s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.830s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wyatt/ros2_ws/build/uf_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wyatt/ros2_ws/install/wind_speed_package:/home/wyatt/ros2_ws/install/vehicle_position_checker:/home/wyatt/ros2_ws/install/herding_v1_package:/home/wyatt/ros2_ws/install/estop_button:/opt/ros/humble /usr/bin/cmake --build /home/wyatt/ros2_ws/build/uf_interfaces -- -j4 -l4
+[4.521s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wyatt/ros2_ws/src/vehicle_position_checker'
+[4.549s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.549s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wyatt/ros2_ws/build/uf_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wyatt/ros2_ws/install/wind_speed_package:/home/wyatt/ros2_ws/install/vehicle_position_checker:/home/wyatt/ros2_ws/install/herding_v1_package:/home/wyatt/ros2_ws/install/estop_button:/opt/ros/humble /usr/bin/cmake --build /home/wyatt/ros2_ws/build/uf_interfaces -- -j4 -l4
+[5.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wyatt/ros2_ws/build/uf_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wyatt/ros2_ws/install/wind_speed_package:/home/wyatt/ros2_ws/install/vehicle_position_checker:/home/wyatt/ros2_ws/install/herding_v1_package:/home/wyatt/ros2_ws/install/estop_button:/opt/ros/humble /usr/bin/cmake --install /home/wyatt/ros2_ws/build/uf_interfaces
+[5.257s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uf_interfaces)
+[5.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wyatt/ros2_ws/build/uf_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wyatt/ros2_ws/install/wind_speed_package:/home/wyatt/ros2_ws/install/vehicle_position_checker:/home/wyatt/ros2_ws/install/herding_v1_package:/home/wyatt/ros2_ws/install/estop_button:/opt/ros/humble /usr/bin/cmake --install /home/wyatt/ros2_ws/build/uf_interfaces
+[5.310s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces' for CMake module files
+[5.312s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces' for CMake config files
+[5.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('uf_interfaces', 'cmake_prefix_path')
+[5.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/cmake_prefix_path.ps1'
+[5.362s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/cmake_prefix_path.dsv'
+[5.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/cmake_prefix_path.sh'
+[5.364s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/lib'
+[5.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('uf_interfaces', 'ld_library_path_lib')
+[5.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/ld_library_path_lib.ps1'
+[5.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/ld_library_path_lib.dsv'
+[5.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/ld_library_path_lib.sh'
+[5.412s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/bin'
+[5.412s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/lib/pkgconfig/uf_interfaces.pc'
+[5.412s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/lib/python3.10/site-packages'
+[5.413s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/bin'
+[5.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.ps1'
+[5.460s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.dsv'
+[5.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.sh'
+[5.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.bash'
+[5.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.zsh'
+[5.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wyatt/ros2_ws/install/uf_interfaces/share/colcon-core/packages/uf_interfaces)
+[5.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wyatt/ros2_ws/src/vehicle_position_checker': PYTHONPATH=/home/wyatt/ros2_ws/build/vehicle_position_checker/prefix_override:/home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vehicle_position_checker build --build-base /home/wyatt/ros2_ws/build/vehicle_position_checker/build install --record /home/wyatt/ros2_ws/build/vehicle_position_checker/install.log --single-version-externally-managed
+[5.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wyatt/ros2_ws/src/herding_v1_package': PYTHONPATH=/home/wyatt/ros2_ws/build/herding_v1_package/prefix_override:/home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/herding_v1_package build --build-base /home/wyatt/ros2_ws/build/herding_v1_package/build install --record /home/wyatt/ros2_ws/build/herding_v1_package/install.log --single-version-externally-managed
+[5.968s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uf_interfaces)
+[6.014s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces' for CMake module files
+[6.016s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces' for CMake config files
+[6.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('uf_interfaces', 'cmake_prefix_path')
+[6.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/cmake_prefix_path.ps1'
+[6.069s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/cmake_prefix_path.dsv'
+[6.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/cmake_prefix_path.sh'
+[6.073s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/lib'
+[6.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('uf_interfaces', 'ld_library_path_lib')
+[6.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/ld_library_path_lib.ps1'
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/ld_library_path_lib.dsv'
+[6.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/hook/ld_library_path_lib.sh'
+[6.140s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/bin'
+[6.141s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/lib/pkgconfig/uf_interfaces.pc'
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/lib/python3.10/site-packages'
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/uf_interfaces/bin'
+[6.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.ps1'
+[6.197s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.dsv'
+[6.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.sh'
+[6.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.bash'
+[6.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.zsh'
+[6.210s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wyatt/ros2_ws/install/uf_interfaces/share/colcon-core/packages/uf_interfaces)
+[6.213s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wyatt/ros2_ws/src/wind_speed_package' with build type 'ament_python'
+[6.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('wind_speed_package', 'ament_prefix_path')
+[6.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/hook/ament_prefix_path.ps1'
+[6.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/hook/ament_prefix_path.dsv'
+[6.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/hook/ament_prefix_path.sh'
+[6.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wyatt/ros2_ws/src/estop_button': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed
+[7.566s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wyatt/ros2_ws/src/wind_speed_package'
+[7.607s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.607s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wyatt/ros2_ws/src/vehicle_position_checker' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/vehicle_position_checker/prefix_override:/home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vehicle_position_checker build --build-base /home/wyatt/ros2_ws/build/vehicle_position_checker/build install --record /home/wyatt/ros2_ws/build/vehicle_position_checker/install.log --single-version-externally-managed
+[7.809s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker' for CMake module files
+[7.810s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker' for CMake config files
+[7.812s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker/lib'
+[7.813s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker/bin'
+[7.814s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker/lib/pkgconfig/vehicle_position_checker.pc'
+[7.815s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages'
+[7.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehicle_position_checker', 'pythonpath')
+[7.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/hook/pythonpath.ps1'
+[7.864s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/hook/pythonpath.dsv'
+[7.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/hook/pythonpath.sh'
+[7.868s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/vehicle_position_checker/bin'
+[7.868s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vehicle_position_checker)
+[7.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/package.ps1'
+[7.920s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/package.dsv'
+[7.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/package.sh'
+[7.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/package.bash'
+[7.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker/package.zsh'
+[7.924s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wyatt/ros2_ws/install/vehicle_position_checker/share/colcon-core/packages/vehicle_position_checker)
+[7.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wyatt/ros2_ws/src/herding_v1_package' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/herding_v1_package/prefix_override:/home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/herding_v1_package build --build-base /home/wyatt/ros2_ws/build/herding_v1_package/build install --record /home/wyatt/ros2_ws/build/herding_v1_package/install.log --single-version-externally-managed
+[7.976s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package' for CMake module files
+[7.977s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package' for CMake config files
+[7.979s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package/lib'
+[7.979s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package/bin'
+[7.979s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package/lib/pkgconfig/herding_v1_package.pc'
+[7.980s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages'
+[7.980s] Level 1:colcon.colcon_core.shell:create_environment_hook('herding_v1_package', 'pythonpath')
+[8.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/hook/pythonpath.ps1'
+[8.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/hook/pythonpath.dsv'
+[8.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/hook/pythonpath.sh'
+[8.032s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/herding_v1_package/bin'
+[8.033s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(herding_v1_package)
+[8.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/package.ps1'
+[8.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/package.dsv'
+[8.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/package.sh'
+[8.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/package.bash'
+[8.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package/package.zsh'
+[8.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wyatt/ros2_ws/install/herding_v1_package/share/colcon-core/packages/herding_v1_package)
+[8.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wyatt/ros2_ws/src/estop_button' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed
+[8.141s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button' for CMake module files
+[8.143s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button' for CMake config files
+[8.144s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button/lib'
+[8.144s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button/bin'
+[8.144s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button/lib/pkgconfig/estop_button.pc'
+[8.145s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages'
+[8.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('estop_button', 'pythonpath')
+[8.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/hook/pythonpath.ps1'
+[8.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/hook/pythonpath.dsv'
+[8.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/hook/pythonpath.sh'
+[8.188s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/estop_button/bin'
+[8.189s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(estop_button)
+[8.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/package.ps1'
+[8.222s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/package.dsv'
+[8.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/package.sh'
+[8.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/package.bash'
+[8.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/estop_button/share/estop_button/package.zsh'
+[8.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wyatt/ros2_ws/install/estop_button/share/colcon-core/packages/estop_button)
+[9.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wyatt/ros2_ws/src/wind_speed_package': PYTHONPATH=/home/wyatt/ros2_ws/build/wind_speed_package/prefix_override:/home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/wind_speed_package build --build-base /home/wyatt/ros2_ws/build/wind_speed_package/build install --record /home/wyatt/ros2_ws/build/wind_speed_package/install.log --single-version-externally-managed
+[9.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wyatt/ros2_ws/src/wind_speed_package' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/wind_speed_package/prefix_override:/home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/wind_speed_package build --build-base /home/wyatt/ros2_ws/build/wind_speed_package/build install --record /home/wyatt/ros2_ws/build/wind_speed_package/install.log --single-version-externally-managed
+[9.812s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package' for CMake module files
+[9.813s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package' for CMake config files
+[9.814s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package/lib'
+[9.814s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package/bin'
+[9.814s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package/lib/pkgconfig/wind_speed_package.pc'
+[9.815s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages'
+[9.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('wind_speed_package', 'pythonpath')
+[9.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/hook/pythonpath.ps1'
+[9.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/hook/pythonpath.dsv'
+[9.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/hook/pythonpath.sh'
+[9.841s] Level 1:colcon.colcon_core.environment:checking '/home/wyatt/ros2_ws/install/wind_speed_package/bin'
+[9.841s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wind_speed_package)
+[9.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/package.ps1'
+[9.868s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/package.dsv'
+[9.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/package.sh'
+[9.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/package.bash'
+[9.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package/package.zsh'
+[9.870s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wyatt/ros2_ws/install/wind_speed_package/share/colcon-core/packages/wind_speed_package)
+[9.870s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.871s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.871s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.871s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.908s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.908s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.908s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.927s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.960s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wyatt/ros2_ws/install/local_setup.ps1'
+[9.961s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wyatt/ros2_ws/install/_local_setup_util_ps1.py'
+[9.964s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wyatt/ros2_ws/install/setup.ps1'
+[9.993s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wyatt/ros2_ws/install/local_setup.sh'
+[9.994s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wyatt/ros2_ws/install/_local_setup_util_sh.py'
+[9.994s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wyatt/ros2_ws/install/setup.sh'
+[10.024s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wyatt/ros2_ws/install/local_setup.bash'
+[10.025s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wyatt/ros2_ws/install/setup.bash'
+[10.054s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wyatt/ros2_ws/install/local_setup.zsh'
+[10.055s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wyatt/ros2_ws/install/setup.zsh'

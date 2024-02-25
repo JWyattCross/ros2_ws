@@ -9,7 +9,7 @@
 _colcon_prefix_chain_bash_source_script() {
   if [ -f "$1" ]; then
     if [ -n "$COLCON_TRACE" ]; then
-      echo ". \"$1\""
+      echo "# . \"$1\""
     fi
     . "$1"
   else
@@ -29,5 +29,3 @@ _colcon_prefix_chain_bash_source_script "$COLCON_CURRENT_PREFIX/local_setup.bash
 
 unset COLCON_CURRENT_PREFIX
 unset _colcon_prefix_chain_bash_source_script
-
-ROS_DOMAIN_ID = 0

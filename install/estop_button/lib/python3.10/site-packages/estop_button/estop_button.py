@@ -33,7 +33,7 @@ class PubSubPython(Node):
         
         # Publishes the bool
         msg = SetBool()
-        if self.arduino ==:
+        if self.arduino:
             msg.data = 0
         else:
             msg.data = 1

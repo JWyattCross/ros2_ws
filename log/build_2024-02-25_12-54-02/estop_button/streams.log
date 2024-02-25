@@ -1,0 +1,29 @@
+[2.947s] Invoking command in '/home/wyatt/ros2_ws/build/estop_button': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/wyatt/ros2_ws/build/estop_button/build
+[3.680s] running develop
+[4.251s] Invoked command in '/home/wyatt/ros2_ws/build/estop_button' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/wyatt/ros2_ws/build/estop_button/build
+[4.254s] Invoking command in '/home/wyatt/ros2_ws/src/estop_button': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed
+[4.842s] running egg_info
+[4.843s] writing ../../build/estop_button/estop_button.egg-info/PKG-INFO
+[4.843s] writing dependency_links to ../../build/estop_button/estop_button.egg-info/dependency_links.txt
+[4.844s] writing entry points to ../../build/estop_button/estop_button.egg-info/entry_points.txt
+[4.844s] writing requirements to ../../build/estop_button/estop_button.egg-info/requires.txt
+[4.845s] writing top-level names to ../../build/estop_button/estop_button.egg-info/top_level.txt
+[4.849s] reading manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.851s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.851s] running build
+[4.852s] running build_py
+[4.852s] running install
+[4.853s] running install_lib
+[4.854s] byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/estop_button.py to estop_button.cpython-310.pyc
+[4.856s]   File "/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/estop_button.py", line 36
+[4.857s]     if self.arduino ==:
+[4.857s]                       ^
+[4.857s] SyntaxError: invalid syntax
+[4.857s] 
+[4.857s] running install_data
+[4.858s] running install_egg_info
+[4.860s] removing '/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info' (and everything under it)
+[4.861s] Copying ../../build/estop_button/estop_button.egg-info to /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info
+[4.865s] running install_scripts
+[4.908s] writing list of installed files to '/home/wyatt/ros2_ws/build/estop_button/install.log'
+[4.983s] Invoked command in '/home/wyatt/ros2_ws/src/estop_button' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed
