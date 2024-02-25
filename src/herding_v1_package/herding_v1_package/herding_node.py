@@ -89,7 +89,7 @@ class HerdingNode(Node): #create package
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
         self.target1_vel_hol_csv.writerow([self.i, self.target1_vel_hol[0], self.target1_vel_hol[1]])
         #save tracking error to csv
-        self.track_error_csv.writerow(self.tracking_error)
+        self.track_error_csv.writerow([self.i, self.tracking_error[0], self.tracking_error[1]])
 
         self.i += 1 #next time step
 
