@@ -57,6 +57,7 @@ class HerdingNode(Node): #create package
         self.track_error_csv = csv.writer(open(os.path.join(self.directory, "tracking_error.csv"), mode='w', newline=''))
         self.track_error_csv.writerow(['Timestep', 'x error', 'y error'])
         #self.dnn_weights_csv = csv.writer(open(os.path.join(self.directory, "dnn_weights.csv"), mode='w', newline=''))
+        #self.dnn_weights_csv.writerow(['Timestep', 'x error', 'y error'])
 
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_agent1 = np.array([[msg.pose.position.x],[msg.pose.position.y]])
