@@ -1,1 +1,5 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_cmake/srv/GeoConv_Response.msg
+
+float64 output_x
+float64 output_y
+bool success
+string message

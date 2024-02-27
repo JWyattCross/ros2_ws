@@ -1,1 +1,6 @@
-/home/wyatt/ros2_ws/src/uf_interfaces/msg/Position.msg
+std_msgs/Header header
+string name
+float64 x
+float64 y
+float64 z
+float64 yaw

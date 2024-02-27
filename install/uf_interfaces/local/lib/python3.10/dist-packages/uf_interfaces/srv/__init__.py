@@ -1,1 +1,2 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_generator_py/uf_interfaces/srv/__init__.py
+from uf_interfaces.srv._geo_conv import GeoConv  # noqa: F401
+from uf_interfaces.srv._task_assign import TaskAssign  # noqa: F401

@@ -1,1 +1,1 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_generator_py/uf_interfaces/msg/__init__.py
+from uf_interfaces.msg._position import Position  # noqa: F401

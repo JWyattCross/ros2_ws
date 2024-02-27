@@ -1,1 +1,3 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_cmake/srv/TaskAssign_Response.msg
+
+bool success
+string message

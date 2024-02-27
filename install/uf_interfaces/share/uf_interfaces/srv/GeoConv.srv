@@ -1,1 +1,7 @@
-/home/wyatt/ros2_ws/src/uf_interfaces/srv/GeoConv.srv
+float64 input_x
+float64 input_y
+---
+float64 output_x
+float64 output_y
+bool success
+string message

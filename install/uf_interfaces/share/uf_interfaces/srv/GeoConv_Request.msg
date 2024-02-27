@@ -1,1 +1,2 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_cmake/srv/GeoConv_Request.msg
+float64 input_x
+float64 input_y

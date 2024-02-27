@@ -1,1 +1,6 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/ament_cmake_python/uf_interfaces/uf_interfaces.egg-info/SOURCES.txt
+setup.py
+uf_interfaces/__init__.py
+uf_interfaces.egg-info/PKG-INFO
+uf_interfaces.egg-info/SOURCES.txt
+uf_interfaces.egg-info/dependency_links.txt
+uf_interfaces.egg-info/top_level.txt

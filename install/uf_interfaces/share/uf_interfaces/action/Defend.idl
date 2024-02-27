@@ -1,1 +1,18 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces/action/Defend.idl
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from uf_interfaces/action/Defend.action
+// generated code does not contain a copyright notice
+
+
+module uf_interfaces {
+  module action {
+    struct Defend_Goal {
+      string target;
+    };
+    struct Defend_Result {
+      string success;
+    };
+    struct Defend_Feedback {
+      double distance;
+    };
+  };
+};

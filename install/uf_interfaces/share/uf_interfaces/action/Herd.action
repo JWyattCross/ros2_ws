@@ -1,1 +1,5 @@
-/home/wyatt/ros2_ws/src/uf_interfaces/action/Herd.action
+string target
+---
+string success
+---
+float64 distance

@@ -1,1 +1,17 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces/srv/TaskAssign.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from uf_interfaces/srv/TaskAssign.srv
+// generated code does not contain a copyright notice
+
+
+module uf_interfaces {
+  module srv {
+    struct TaskAssign_Request {
+      string target;
+    };
+    struct TaskAssign_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};
