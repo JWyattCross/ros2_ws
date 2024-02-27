@@ -29,6 +29,7 @@ class HerdingNode(Node): #create package
         self.simulation = Simulation(self.config) #create sim with config
 
         #publish velocity (anglular and linear)
+        #COMMENTED FOR TESTING
         #self.agent1_vel_pub = self.create_publisher(Twist, '/a200_0708/cmd_vel', 10)
         #self.target1_vel_pub = self.create_publisher(Twist, '/a200_0706/cmd_vel', 10)
 
