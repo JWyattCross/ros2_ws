@@ -33,16 +33,21 @@ class Agent(Entity):
 
     def push(self, i):
         k1 = self.k
+        #phi = DNN("stuff") #new dnn script not done yet
         self.tracking_error = self.target.position - self.target.position_previous
-        controller = k1*self.tracking_error #Proportional control
+        controller = k1*self.tracking_error #+ phi #Proportional control
+        #crank k1 up to get proportional control working for demo
         return controller, self.tracking_error #these are both [[],[]] filled with floats
 
 class Target(Entity):
     def push(self, i):
-        angular_velocity = 1
-        radius = self.position[0,0] #don't know what this does
+        angular_velocity = 1 #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
+        radius = self.position[0,0] #target will move in circle around origin. This means don't set the robot near the drone landing pads
         omega_t = angular_velocity * self.dt * (i - 1)
         dx = -radius * angular_velocity * np.sin(omega_t)
         dy = radius * angular_velocity * np.cos(omega_t)
         return np.array([dx, dy]) #this value is hollonomic. is converted to lin/ang components in ros node
         #these values are meaningless and need to be scaled/capped to work on real robots
+    
+    #target goes in circle of radius equal to initial position? on line 44
+    #agent starts in center and follows it
