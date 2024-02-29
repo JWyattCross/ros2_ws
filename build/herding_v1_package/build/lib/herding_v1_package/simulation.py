@@ -17,7 +17,8 @@ class Simulation:
 
 class Entity:
     def __init__(self, initial_pos, config):
-        self.position = np.array([[],[]])#initial_pos #where initial_pos is a np.array([[],[]])
+        self.position = initial_pos#np.array(initial_pos)
+        #self.position = np.array([[],[]])#initial_pos #where initial_pos is a np.array([[],[]])
         self.position_previous = self.position #this is to make the tracking error work
         self.dt = config.dt
         self.k = config.k
@@ -42,7 +43,7 @@ class Agent(Entity):
 class Target(Entity):
     def push(self, i):
         angular_velocity = 1 #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
-        radius = self.position[0,0] #target will move in circle around origin. This means don't set the robot near the drone landing pads
+        radius = self.position[0, 0] #target will move in circle around origin. This means don't set the robot near the drone landing pads
         omega_t = angular_velocity * self.dt * (i - 1)
         dx = -radius * angular_velocity * np.sin(omega_t)
         dy = radius * angular_velocity * np.cos(omega_t)

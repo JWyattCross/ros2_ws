@@ -62,13 +62,13 @@ class HerdingNode(Node): #create package
         #self.dnn_weights_csv.writerow(['Timestep', 'x error', 'y error'])
 
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
-        self.real_pos_agent1 = np.array([[msg.pose.position.x],[msg.pose.position.y]])
-        #self.get_logger().info(f'Agent1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
-        #self.get_logger().info(f'Agent1 numpy position: [{self.real_pos_agent1[0][0]}, {self.real_pos_agent1[1][0]}]')
+        self.real_pos_agent1 = np.array([[msg.pose.position.x], [msg.pose.position.y]])
+        self.get_logger().info(f'Agent1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
+        #self.get_logger().info(f'{self.real_pos_agent1}')
 
     def target1_pos_callback(self, msg):
-        self.real_pos_target1 = np.array([[msg.pose.position.x],[msg.pose.position.y]])
-        #self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
+        self.real_pos_target1 = np.array([[msg.pose.position.x], [msg.pose.position.y]])
+        self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def update_motion(self):
         if self.real_pos_agent1 is None or self.real_pos_target1 is None:
@@ -85,8 +85,8 @@ class HerdingNode(Node): #create package
         self.agent1_vel_hol, self.tracking_error = self.simulation.agent.push(self.i)
 
         #publish velocities
-        #self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol)
-        #self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol)
+        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol)
+        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol)
         
         #save holonomic velocity commands to csv
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
@@ -99,12 +99,15 @@ class HerdingNode(Node): #create package
     def convert_and_publish_velocity(self, publisher, velocity_hol): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
         v_lin = np.linalg.norm(velocity_hol)
-        v_ang = np.arctan2(velocity_hol[1]/v_lin, velocity_hol[0]/v_lin)
+        v_ang = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin))
+        self.get_logger().info(f'Publishing Vel Hol no []: {velocity_hol}')
+        self.get_logger().info(f'Publishing lin ang: [{v_lin}, {v_ang}]')
 
         twist_msg = Twist()
         twist_msg.linear.x = v_lin
         twist_msg.angular.x = v_ang
         publisher.publish(twist_msg)
+
 
 def main(args=None):
     rclpy.init(args=args)
