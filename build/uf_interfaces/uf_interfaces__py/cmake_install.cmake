@@ -1,8 +1,8 @@
-# Install script for directory: /home/wyatt/git_ros2/ros2_ws/build/uf_interfaces/uf_interfaces__py
+# Install script for directory: /home/wyatt/ros2_ws/build/uf_interfaces/uf_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wyatt/git_ros2/ros2_ws/install/uf_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/wyatt/ros2_ws/install/uf_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
