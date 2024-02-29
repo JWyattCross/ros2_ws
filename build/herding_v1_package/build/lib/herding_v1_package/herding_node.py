@@ -28,18 +28,19 @@ class HerdingNode(Node): #create package
         self.config = Config(self.dt, self.k) #set time step and proportional gain for sim
         self.simulation = Simulation(self.config) #create sim with config
 
+        #working agents
+        #/j100_0572/
+        #/a200_0706/
+        #/a200_0708/
+
         #publish velocity (anglular and linear)
         #COMMENTED FOR TESTING
-        #self.agent1_vel_pub = self.create_publisher(Twist, '/a200_0708/cmd_vel', 10)
-        #self.target1_vel_pub = self.create_publisher(Twist, '/a200_0706/cmd_vel', 10)
-
-        #publish simulation values
-        self.tracking_pub = self.create_publisher(Float64MultiArray, '/tracking_error', 10)
-        #self.dnn_weight_pub = self.create_publisher(Float64MultiArray, '/dnn_weights', 10) #unused in current form
+        self.agent1_vel_pub = self.create_publisher(Twist, '/a200_0706/cmd_vel', 10)
+        self.target1_vel_pub = self.create_publisher(Twist, '/j100_0572/cmd_vel', 10)
 
         #subscribe to robot position
-        self.agent1_pos_sub = self.create_subscription(PoseStamped, '/a200_0708/pose', self.agent1_pos_callback, 10)
-        self.target1_pos_sub = self.create_subscription(PoseStamped, '/a200_0708/pose', self.target1_pos_callback, 10)
+        self.agent1_pos_sub = self.create_subscription(PoseStamped, '/a200_0706/pose', self.agent1_pos_callback, 10)
+        self.target1_pos_sub = self.create_subscription(PoseStamped, '/j100_0572/pose', self.target1_pos_callback, 10)
 
         #timer
         self.timer = self.create_timer(self.dt, self.update_motion)
