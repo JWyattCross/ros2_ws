@@ -1,0 +1,39 @@
+[3.263s] Invoking command in '/home/wyatt/git_ros2/ros2_ws/src/vehicle_position_checker': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vehicle_position_checker build --build-base /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build install --record /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/install.log --single-version-externally-managed
+[3.766s] running egg_info
+[3.767s] creating ../../build/vehicle_position_checker/vehicle_position_checker.egg-info
+[3.767s] writing ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/PKG-INFO
+[3.768s] writing dependency_links to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/dependency_links.txt
+[3.768s] writing entry points to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/entry_points.txt
+[3.769s] writing requirements to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/requires.txt
+[3.769s] writing top-level names to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/top_level.txt
+[3.770s] writing manifest file '../../build/vehicle_position_checker/vehicle_position_checker.egg-info/SOURCES.txt'
+[3.774s] reading manifest file '../../build/vehicle_position_checker/vehicle_position_checker.egg-info/SOURCES.txt'
+[3.774s] writing manifest file '../../build/vehicle_position_checker/vehicle_position_checker.egg-info/SOURCES.txt'
+[3.775s] running build
+[3.775s] running build_py
+[3.776s] creating /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build
+[3.776s] creating /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build/lib
+[3.777s] creating /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker
+[3.777s] copying vehicle_position_checker/__init__.py -> /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker
+[3.778s] copying vehicle_position_checker/vehicle_position_checker.py -> /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker
+[3.779s] running install
+[3.779s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.779s]   warnings.warn(
+[3.779s] running install_lib
+[3.780s] creating /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker
+[3.780s] copying /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker/__init__.py -> /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker
+[3.781s] copying /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker/vehicle_position_checker.py -> /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker
+[3.782s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker/__init__.py to __init__.cpython-310.pyc
+[3.783s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker/vehicle_position_checker.py to vehicle_position_checker.cpython-310.pyc
+[3.784s] running install_data
+[3.784s] creating /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/share/ament_index
+[3.785s] creating /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/share/ament_index/resource_index
+[3.785s] creating /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/share/ament_index/resource_index/packages
+[3.785s] copying resource/vehicle_position_checker -> /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/share/ament_index/resource_index/packages
+[3.785s] copying package.xml -> /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker
+[3.786s] running install_egg_info
+[3.788s] Copying ../../build/vehicle_position_checker/vehicle_position_checker.egg-info to /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker-0.0.0-py3.10.egg-info
+[3.791s] running install_scripts
+[3.839s] Installing vehicle_positon_checker_node script to /home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/vehicle_position_checker
+[3.839s] writing list of installed files to '/home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/install.log'
+[4.112s] Invoked command in '/home/wyatt/git_ros2/ros2_ws/src/vehicle_position_checker' returned '0': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/vehicle_position_checker build --build-base /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/build install --record /home/wyatt/git_ros2/ros2_ws/build/vehicle_position_checker/install.log --single-version-externally-managed

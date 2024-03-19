@@ -1,0 +1,38 @@
+[3.799s] Invoking command in '/home/wyatt/git_ros2/ros2_ws/src/estop_button': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/estop_button/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/git_ros2/ros2_ws/build/estop_button/build install --record /home/wyatt/git_ros2/ros2_ws/build/estop_button/install.log --single-version-externally-managed
+[4.269s] running egg_info
+[4.270s] creating ../../build/estop_button/estop_button.egg-info
+[4.270s] writing ../../build/estop_button/estop_button.egg-info/PKG-INFO
+[4.271s] writing dependency_links to ../../build/estop_button/estop_button.egg-info/dependency_links.txt
+[4.271s] writing entry points to ../../build/estop_button/estop_button.egg-info/entry_points.txt
+[4.272s] writing requirements to ../../build/estop_button/estop_button.egg-info/requires.txt
+[4.272s] writing top-level names to ../../build/estop_button/estop_button.egg-info/top_level.txt
+[4.272s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.277s] reading manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.278s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.280s] running build
+[4.280s] running build_py
+[4.281s] creating /home/wyatt/git_ros2/ros2_ws/build/estop_button/build
+[4.281s] creating /home/wyatt/git_ros2/ros2_ws/build/estop_button/build/lib
+[4.281s] creating /home/wyatt/git_ros2/ros2_ws/build/estop_button/build/lib/estop_button
+[4.281s] copying estop_button/__init__.py -> /home/wyatt/git_ros2/ros2_ws/build/estop_button/build/lib/estop_button
+[4.282s] copying estop_button/estop_button.py -> /home/wyatt/git_ros2/ros2_ws/build/estop_button/build/lib/estop_button
+[4.284s] running install
+[4.284s] running install_lib
+[4.285s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.285s]   warnings.warn(
+[4.285s] creating /home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[4.285s] copying /home/wyatt/git_ros2/ros2_ws/build/estop_button/build/lib/estop_button/__init__.py -> /home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[4.286s] copying /home/wyatt/git_ros2/ros2_ws/build/estop_button/build/lib/estop_button/estop_button.py -> /home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[4.286s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/__init__.py to __init__.cpython-310.pyc
+[4.286s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/estop_button.py to estop_button.cpython-310.pyc
+[4.287s] running install_data
+[4.288s] creating /home/wyatt/git_ros2/ros2_ws/install/estop_button/share/ament_index
+[4.288s] creating /home/wyatt/git_ros2/ros2_ws/install/estop_button/share/ament_index/resource_index
+[4.289s] creating /home/wyatt/git_ros2/ros2_ws/install/estop_button/share/ament_index/resource_index/packages
+[4.290s] copying resource/estop_button -> /home/wyatt/git_ros2/ros2_ws/install/estop_button/share/ament_index/resource_index/packages
+[4.290s] copying package.xml -> /home/wyatt/git_ros2/ros2_ws/install/estop_button/share/estop_button
+[4.290s] running install_egg_info
+[4.292s] Copying ../../build/estop_button/estop_button.egg-info to /home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info
+[4.293s] running install_scripts
+[4.328s] writing list of installed files to '/home/wyatt/git_ros2/ros2_ws/build/estop_button/install.log'
+[4.366s] Invoked command in '/home/wyatt/git_ros2/ros2_ws/src/estop_button' returned '0': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/estop_button/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/git_ros2/ros2_ws/build/estop_button/build install --record /home/wyatt/git_ros2/ros2_ws/build/estop_button/install.log --single-version-externally-managed

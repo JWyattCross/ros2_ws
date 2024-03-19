@@ -10,25 +10,27 @@ class Simulation:
         self.config = config
         self.agent, self.target = self.initialize()
 
-    def initialize(self):
-        target = Target(np.array([0, 0]), self.config)
-        agent = Agent(np.array([-10, -10]), self.config, target)
+    def initialize(self): #pass real initial positions to here
+        #i dont think these initial values matter. they are
+        target = Target(self.config)
+        agent = Agent(self.config, target)
         return agent, target
 
 class Entity:
-    def __init__(self, initial_pos, config):
-        self.position = initial_pos#np.array(initial_pos)
-        #self.position = np.array([,])#initial_pos #where initial_pos is a np.array([,])
-        self.position_previous = self.position #this is to make the tracking error work
+    def __init__(self, config):
         self.dt = config.dt
         self.k = config.k
 
-    def pull(self, ros_pos_node, i): #ros_pos_node needs to be a numpy array shaped like [x,y]
+    def pass_initial_pos(self, initial_pos): #initial_pos needs to be a numpy array shaped like [x,y]
+        self.position = initial_pos
+
+    def pull(self, ros_pos_node): #ros_pos_node needs to be a numpy array shaped like [x,y]
+        self.position_previous = self.position
         self.position = ros_pos_node
     
 class Agent(Entity):
-    def __init__(self, initial_pos, config, target):
-        super().__init__(initial_pos, config)
+    def __init__(self, config, target):
+        super().__init__(config)
         self.target = target
         self.tracking_error = np.array([])#np.array([,])
 

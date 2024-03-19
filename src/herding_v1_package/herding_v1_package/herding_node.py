@@ -48,6 +48,7 @@ class HerdingNode(Node): #create package
 
         self.real_pos_agent1 = None
         self.real_pos_target1 = None
+        self.First = True
 
         #csv saving code ---
         self.directory = create_directory_with_timestamp() #create a directory in /ros2_ws folder to hold saved values
@@ -75,9 +76,17 @@ class HerdingNode(Node): #create package
             self.get_logger().info("Agent or target position is missing. Skipping update.")
             return
         
+        #give initial positions to simulation
+        if self.First:
+            self.simulation.target.pass_initial_pos(self.real_pos_target1)
+            self.simulation.agent.pass_initial_pos(self.real_pos_agent1)
+            self.First = False
+            return
+
+
         #give real positions to simulation
-        self.simulation.target.pull(self.real_pos_target1, self.i)
-        self.simulation.agent.pull(self.real_pos_agent1, self.i)
+        self.simulation.target.pull(self.real_pos_target1)
+        self.simulation.agent.pull(self.real_pos_agent1)
 
         #get velicities from simulation
         #_hol refers to holonomic, dx and dy components provided. need to convert to linear and angular
