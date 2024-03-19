@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Read data from CSV file
-df = pd.read_csv("a_NO-DELETE-Simulation_2024-02-25_13-50-01/target1_vel_hol.csv")
+df = pd.read_csv("Simulation_2024-03-19_14-37-25" + "/target1_vel_hol.csv") #folder name then it picks the file
 
 # Extract time and velocity data
 time = df['Timestep']
