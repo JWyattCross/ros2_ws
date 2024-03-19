@@ -84,9 +84,9 @@ class HerdingNode(Node): #create package
         self.target1_vel_hol = self.simulation.target.push(self.i)
         self.agent1_vel_hol, self.tracking_error = self.simulation.agent.push(self.i)
 
-        self.get_logger().info(f'Pub Target vel_hol no []:       {self.target1_vel_hol}')
-        self.get_logger().info(f'Pub Agent vel_hol no []:        {self.agent1_vel_hol}')
-        self.get_logger().info(f'Pub Agent tracking error no []: {self.tracking_error}')
+        self.get_logger().info(f'Target vel_hol:       {self.target1_vel_hol}')
+        self.get_logger().info(f'Agent vel_hol:        {self.agent1_vel_hol}')
+        self.get_logger().info(f'Agent tracking error: {self.tracking_error}')
 
 
         #publish velocities
