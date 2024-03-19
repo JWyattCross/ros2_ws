@@ -10,7 +10,7 @@ class Simulation:
         self.config = config
         self.agent, self.target = self.initialize()
 
-    def initialize(self):
+    def initialize(self): #pass real initial positions to here
         target = Target(np.array([0, 0]), self.config)
         agent = Agent(np.array([-10, -10]), self.config, target)
         return agent, target
