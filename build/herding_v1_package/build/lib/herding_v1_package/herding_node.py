@@ -24,6 +24,7 @@ class HerdingNode(Node): #create package
         super().__init__('herding_pub_node') #specify node name
         self.dt = 0.1 #0.001
         self.k = 1
+        #crank this up for the demo. for proportional control
 
         self.config = Config(self.dt, self.k) #set time step and proportional gain for sim
         self.simulation = Simulation(self.config) #create sim with config
@@ -83,7 +84,6 @@ class HerdingNode(Node): #create package
             self.First = False
             return
 
-
         #give real positions to simulation
         self.simulation.target.pull(self.real_pos_target1)
         self.simulation.agent.pull(self.real_pos_agent1)
@@ -108,8 +108,10 @@ class HerdingNode(Node): #create package
         #save tracking error to csv
         self.track_error_csv.writerow([self.i, self.tracking_error[0], self.tracking_error[1]])
 
-        self.get_logger().info(f'\n') #empyu comment to seperate steps
+        self.get_logger().info(f'\n') #empty comment to seperate steps
         self.i += 1 #next time step
+        self.real_pos_agent1 = None   #zero out variables to check for when the robots are off
+        self.real_pos_target1 = None
 
     def convert_and_publish_velocity(self, publisher, velocity_hol): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component

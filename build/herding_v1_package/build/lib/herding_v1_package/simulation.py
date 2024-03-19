@@ -10,8 +10,7 @@ class Simulation:
         self.config = config
         self.agent, self.target = self.initialize()
 
-    def initialize(self): #pass real initial positions to here
-        #i dont think these initial values matter. they are
+    def initialize(self):
         target = Target(self.config)
         agent = Agent(self.config, target)
         return agent, target
@@ -36,11 +35,12 @@ class Agent(Entity):
 
     def push(self, i):
         k1 = self.k
-        #phi = DNN("stuff") #new dnn script not done yet
+        #phi = DNN("stuff")     #new dnn script not done yet
         self.tracking_error = self.target.position - self.target.position_previous
-        controller = k1*self.tracking_error #+ phi #Proportional control
+        controller = k1*self.tracking_error #+ phi      #Proportional control
+        
         #crank k1 up to get proportional control working for demo
-        return controller, self.tracking_error #these are both [,] filled with floats
+        return controller, self.tracking_error  #these are both [,] filled with floats
 
 class Target(Entity):
     def push(self, i):

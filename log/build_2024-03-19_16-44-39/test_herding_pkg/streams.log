@@ -1,0 +1,23 @@
+[3.806s] Invoking command in '/home/wyatt/git_ros2/ros2_ws/src/test_herding_pkg': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_herding_pkg build --build-base /home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/build install --record /home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/install.log --single-version-externally-managed
+[4.316s] running egg_info
+[4.319s] writing ../../build/test_herding_pkg/test_herding_pkg.egg-info/PKG-INFO
+[4.319s] writing dependency_links to ../../build/test_herding_pkg/test_herding_pkg.egg-info/dependency_links.txt
+[4.320s] writing entry points to ../../build/test_herding_pkg/test_herding_pkg.egg-info/entry_points.txt
+[4.320s] writing requirements to ../../build/test_herding_pkg/test_herding_pkg.egg-info/requires.txt
+[4.321s] writing top-level names to ../../build/test_herding_pkg/test_herding_pkg.egg-info/top_level.txt
+[4.325s] reading manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'
+[4.328s] writing manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'
+[4.330s] running build
+[4.331s] running build_py
+[4.331s] running install
+[4.331s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.332s]   warnings.warn(
+[4.332s] running install_lib
+[4.332s] running install_data
+[4.332s] running install_egg_info
+[4.333s] removing '/home/wyatt/git_ros2/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[4.334s] Copying ../../build/test_herding_pkg/test_herding_pkg.egg-info to /home/wyatt/git_ros2/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg-0.0.0-py3.10.egg-info
+[4.336s] running install_scripts
+[4.398s] Installing test_herding_node script to /home/wyatt/git_ros2/ros2_ws/install/test_herding_pkg/lib/test_herding_pkg
+[4.399s] writing list of installed files to '/home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/install.log'
+[4.607s] Invoked command in '/home/wyatt/git_ros2/ros2_ws/src/test_herding_pkg' returned '0': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_herding_pkg build --build-base /home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/build install --record /home/wyatt/git_ros2/ros2_ws/build/test_herding_pkg/install.log --single-version-externally-managed
