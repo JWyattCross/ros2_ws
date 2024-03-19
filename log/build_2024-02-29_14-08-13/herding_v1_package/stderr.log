@@ -1,5 +1,0 @@
-  File "/home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/herding_node.py", line 87
-    self.get_logger().info(f'Publishing: [{self.agent1_vel_hol[0]}, {self.agent1_vel_hol[1]}]
-                           ^
-SyntaxError: unterminated string literal (detected at line 87)
-
