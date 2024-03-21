@@ -65,12 +65,11 @@ class HerdingNode(Node): #create package
 
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_agent1 = np.array([msg.pose.position.x, msg.pose.position.y])
-        self.get_logger().info(f'Agent1 position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
-        #self.get_logger().info(f'{self.real_pos_agent1}')
+        #self.get_logger().info(f'Agent1 position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def target1_pos_callback(self, msg):
         self.real_pos_target1 = np.array([msg.pose.position.x, msg.pose.position.y])
-        self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
+        #self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def update_motion(self):
         if self.real_pos_agent1 is None or self.real_pos_target1 is None:
@@ -118,8 +117,8 @@ class HerdingNode(Node): #create package
         v_lin = np.linalg.norm(velocity_hol)
         v_ang = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin))
         
-        self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
+        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
+        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
 
         twist_msg = Twist()
         twist_msg.linear.x = v_lin
