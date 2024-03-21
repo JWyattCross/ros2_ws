@@ -1,9 +1,10 @@
 import numpy as np
 
 class Config:
-    def __init__(self, dt, k):
+    def __init__(self, dt, k, ang):
         self.dt = dt
         self.k = k
+        self.ang = ang
 
 class Simulation:
     def __init__(self, config):
@@ -19,6 +20,7 @@ class Entity:
     def __init__(self, config):
         self.dt = config.dt
         self.k = config.k
+        self.angular_velocity = config.ang
 
     def pass_initial_pos(self, initial_pos): #initial_pos needs to be a numpy array shaped like [x,y]
         self.position = initial_pos
@@ -44,11 +46,10 @@ class Agent(Entity):
 
 class Target(Entity):
     def push(self, i):
-        angular_velocity = 1 #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
         radius = self.position[0] #target will move in circle around origin. This means don't set the robot near the drone landing pads
-        omega_t = angular_velocity * self.dt * (i - 1)
-        dx = -radius * angular_velocity * np.sin(omega_t)
-        dy = radius * angular_velocity * np.cos(omega_t)
+        omega_t = self.angular_velocity * self.dt * (i - 1)
+        dx = -radius * self.angular_velocity * np.sin(omega_t)
+        dy = radius * self.angular_velocity * np.cos(omega_t)
         return np.array([dx, dy]) #this value is hollonomic. is converted to lin/ang components in ros node
         #these values are meaningless and need to be scaled/capped to work on real robots
     

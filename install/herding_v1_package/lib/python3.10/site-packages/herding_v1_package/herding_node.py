@@ -22,11 +22,18 @@ def create_directory_with_timestamp():
 class HerdingNode(Node): #create package
     def __init__(self):
         super().__init__('herding_pub_node') #specify node name
-        self.dt = 0.1 #0.001
-        self.k = 1
-        #crank this up for the demo. for proportional control
+        
+        # Define parameters
+        self.declare_parameter('dt', 0.1)
+        self.declare_parameter('k', 1)   #crank k up for the demo. for proportional control
+        self.declare_parameter('ang', 1) #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
 
-        self.config = Config(self.dt, self.k) #set time step and proportional gain for sim
+        # Get parameters
+        self.dt = self.get_parameter('dt').value
+        self.k = self.get_parameter('k').value
+        self.ang = self.get_parameter('ang').value
+        
+        self.config = Config(self.dt, self.k, self.ang) #set time step and proportional gain for sim
         self.simulation = Simulation(self.config) #create sim with config
 
         #working agents
@@ -66,7 +73,6 @@ class HerdingNode(Node): #create package
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_agent1 = np.array([msg.pose.position.x, msg.pose.position.y])
         self.get_logger().info(f'Agent1 position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
-        #self.get_logger().info(f'{self.real_pos_agent1}')
 
     def target1_pos_callback(self, msg):
         self.real_pos_target1 = np.array([msg.pose.position.x, msg.pose.position.y])
@@ -118,8 +124,8 @@ class HerdingNode(Node): #create package
         v_lin = np.linalg.norm(velocity_hol)
         v_ang = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin))
         
-        self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
+        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
+        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
 
         twist_msg = Twist()
         twist_msg.linear.x = v_lin
