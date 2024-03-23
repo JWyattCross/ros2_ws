@@ -7,6 +7,7 @@ from herding_v1_package.simulation import Simulation, Agent, Target, Config
 import os
 import csv
 from datetime import datetime
+import math
 
 def create_directory_with_timestamp():
     # Get current date and time
@@ -22,11 +23,15 @@ def create_directory_with_timestamp():
 class HerdingNode(Node): #create package
     def __init__(self):
         super().__init__('herding_pub_node') #specify node name
+
+        #goal position in autonomy park frame
+        self.goal_pos = np.array([0.0, 0.0])
         
         # Define parameters
         self.declare_parameter('dt', 0.1)
-        self.declare_parameter('k', 1)   #crank k up for the demo. for proportional control
-        self.declare_parameter('ang', 1) #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
+        self.declare_parameter('k', [30.0, 20.0])   #crank k up for the demo. for proportional control
+        #k is saved as a python list. that way i can add k1, k2 ... without ading varaibles
+        self.declare_parameter('ang', 3.0) #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
 
         # Get parameters
         self.dt = self.get_parameter('dt').value
@@ -38,17 +43,17 @@ class HerdingNode(Node): #create package
 
         #working agents
         #/j100_0572/
-        #/a200_0706/
-        #/a200_0708/
+        #/a200_0706/    is target today
+        #/a200_0708/    is agent today
 
         #publish velocity (anglular and linear)
         #COMMENT FOR TESTING
-        self.agent1_vel_pub = self.create_publisher(Twist, '/a200_0706/cmd_vel', 10)
-        self.target1_vel_pub = self.create_publisher(Twist, '/j100_0572/cmd_vel', 10)
+        self.agent1_vel_pub = self.create_publisher(Twist, '/a200_0708/cmd_vel', 10)
+        self.target1_vel_pub = self.create_publisher(Twist, '/a200_0706/cmd_vel', 10)
 
         #subscribe to robot position
-        self.agent1_pos_sub = self.create_subscription(PoseStamped, '/a200_0706/pose', self.agent1_pos_callback, 10)
-        self.target1_pos_sub = self.create_subscription(PoseStamped, '/j100_0572/pose', self.target1_pos_callback, 10)
+        self.agent1_pos_sub = self.create_subscription(PoseStamped, '/a200_0708/pose', self.agent1_pos_callback, 10)
+        self.target1_pos_sub = self.create_subscription(PoseStamped, '/a200_0706/pose', self.target1_pos_callback, 10)
 
         #timer
         self.timer = self.create_timer(self.dt, self.update_motion)
@@ -79,8 +84,12 @@ class HerdingNode(Node): #create package
         self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def update_motion(self):
-        if self.real_pos_agent1 is None or self.real_pos_target1 is None:
-            self.get_logger().info("Agent or target position is missing. Skipping update.")
+        if self.real_pos_agent1 is None:
+            self.get_logger().info("Agent position is missing. Skipping update.")
+            return
+        
+        if self.real_pos_target1 is None:
+            self.get_logger().info("Target position is missing. Skipping update.")
             return
         
         #give initial positions to simulation
@@ -88,6 +97,9 @@ class HerdingNode(Node): #create package
             self.simulation.target.pass_initial_pos(self.real_pos_target1)
             self.simulation.agent.pass_initial_pos(self.real_pos_agent1)
             self.First = False
+
+            self.simulation.target.give_goal_pos(self.goal_pos)
+            self.simulation.agent.give_goal_pos(self.goal_pos)
             return
 
         #give real positions to simulation
@@ -105,8 +117,8 @@ class HerdingNode(Node): #create package
 
 
         #publish velocities
-        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol)
-        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol)
+        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 1.0)
+        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.3)
         
         #save holonomic velocity commands to csv
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
@@ -119,17 +131,23 @@ class HerdingNode(Node): #create package
         self.real_pos_agent1 = None   #zero out variables to check for when the robots are off
         self.real_pos_target1 = None
 
-    def convert_and_publish_velocity(self, publisher, velocity_hol): #publish the vel commands as a twist message
+    def convert_and_publish_velocity(self, publisher, velocity_hol, v_max): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
         v_lin = np.linalg.norm(velocity_hol)
         v_ang = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin))
         
-        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
+        if math.isnan(v_lin) or math.isnan(v_ang):
+            return
+        
+        if v_lin > v_max:
+            v_lin = v_max
+        
+        self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
+        self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
 
         twist_msg = Twist()
         twist_msg.linear.x = v_lin
-        twist_msg.angular.x = v_ang
+        twist_msg.angular.z = v_ang
         publisher.publish(twist_msg)
 
 
