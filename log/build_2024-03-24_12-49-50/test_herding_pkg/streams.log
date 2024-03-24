@@ -1,0 +1,24 @@
+[2.460s] Invoking command in '/home/wyatt/ros2_ws/build/test_herding_pkg': PYTHONPATH=/home/wyatt/ros2_ws/build/test_herding_pkg/prefix_override:/home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/wyatt/ros2_ws/build/test_herding_pkg/build --no-deps symlink_data
+[3.312s] running develop
+[4.213s] running egg_info
+[4.214s] creating test_herding_pkg.egg-info
+[4.215s] writing test_herding_pkg.egg-info/PKG-INFO
+[4.216s] writing dependency_links to test_herding_pkg.egg-info/dependency_links.txt
+[4.216s] writing entry points to test_herding_pkg.egg-info/entry_points.txt
+[4.217s] writing requirements to test_herding_pkg.egg-info/requires.txt
+[4.219s] writing top-level names to test_herding_pkg.egg-info/top_level.txt
+[4.225s] writing manifest file 'test_herding_pkg.egg-info/SOURCES.txt'
+[4.232s] reading manifest file 'test_herding_pkg.egg-info/SOURCES.txt'
+[4.234s] writing manifest file 'test_herding_pkg.egg-info/SOURCES.txt'
+[4.237s] running build_ext
+[4.238s] Creating /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test-herding-pkg.egg-link (link to .)
+[4.241s] Installing test_herding_node script to /home/wyatt/ros2_ws/install/test_herding_pkg/lib/test_herding_pkg
+[4.242s] 
+[4.242s] Installed /home/wyatt/ros2_ws/build/test_herding_pkg
+[4.242s] running symlink_data
+[4.243s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index
+[4.244s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index
+[4.244s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index/packages
+[4.245s] symbolically linking /home/wyatt/ros2_ws/build/test_herding_pkg/resource/test_herding_pkg -> /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index/packages
+[4.245s] symbolically linking /home/wyatt/ros2_ws/build/test_herding_pkg/package.xml -> /home/wyatt/ros2_ws/install/test_herding_pkg/share/test_herding_pkg
+[5.008s] Invoked command in '/home/wyatt/ros2_ws/build/test_herding_pkg' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/test_herding_pkg/prefix_override:/home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/wyatt/ros2_ws/build/test_herding_pkg/build --no-deps symlink_data

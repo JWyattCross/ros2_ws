@@ -43,23 +43,23 @@ class Agent(Entity):
         k2 = self.k[1]
         #phi = DNN("stuff")     #new dnn script not done yet
         self.tracking_error = self.target.position - self.target.position_previous
-        #controller = k1*self.tracking_error #+ phi      #Proportional control
+        controller = k1*self.tracking_error #+ phi      #Proportional control
         #new U equation
         #x1 is target
         #x0 is agent
         #xG is a goal location
-        controller = (k2 - k1*k2 - 1)*(self.goal_pos) + (k1 + k1*k2 + 1)*(self.agent.position) + (k1 + k2)*(self.target.position)
+        #controller = (k2 - k1*k2 - 1)*(self.goal_pos) + (k1 + k1*k2 + 1)*(self.agent.position) + (k1 + k2)*(self.target.position)
 
         return controller, self.tracking_error  #these are both [,] filled with floats
 
 class Target(Entity):
     def push(self, i):
-        #radius = self.position[0] #target will move in circle around origin. This means don't set the robot near the drone landing pads
-        #omega_t = self.angular_velocity * self.dt * (i - 1)
-        #dx = -radius * self.angular_velocity * np.sin(omega_t)
-        #dy = radius * self.angular_velocity * np.cos(omega_t)
-        #return np.array([dx, dy]) #this value is hollonomic. is converted to lin/ang components in ros node
+        radius = self.position[0] #target will move in circle around origin. This means don't set the robot near the drone landing pads
+        omega_t = self.angular_velocity * self.dt * (i - 1)
+        dx = -radius * self.angular_velocity * np.sin(omega_t)
+        dy = radius * self.angular_velocity * np.cos(omega_t)
+        return np.array([dx, dy]) #this value is hollonomic. is converted to lin/ang components in ros node
         #these values are meaningless and need to be scaled/capped to work on real robots
-        return self.target.position - self.agent.position #delete everything else
+        #return self.target.position - self.agent.position #delete everything else
     #target goes in circle of radius equal to initial position? on line 44
     #agent starts in center and follows it
