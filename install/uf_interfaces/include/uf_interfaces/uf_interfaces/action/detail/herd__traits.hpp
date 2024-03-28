@@ -1,1 +1,0 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_generator_cpp/uf_interfaces/action/detail/herd__traits.hpp

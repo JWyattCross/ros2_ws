@@ -31,7 +31,7 @@ class HerdingNode(Node): #create package
         self.declare_parameter('dt', 0.1)
         self.declare_parameter('k', [30.0, 20.0])   #crank k up for the demo. for proportional control
         #k is saved as a python list. that way i can add k1, k2 ... without ading varaibles
-        self.declare_parameter('ang', 3.0) #tune this value as needed, controls the speed that the target travles around the circle. intuitively, this feels high
+        self.declare_parameter('ang', 3.0) #tune this value as needed, controls the speed that the target travles around the circle
 
         # Get parameters
         self.dt = self.get_parameter('dt').value
@@ -41,24 +41,25 @@ class HerdingNode(Node): #create package
         self.config = Config(self.dt, self.k, self.ang) #set time step and proportional gain for sim
         self.simulation = Simulation(self.config) #create sim with config
 
-        #working agents
+        #Robot namespaces
         #/j100_0572/
-        #/a200_0706/    is target today
-        #/a200_0708/    is agent today
+        self.agent_name = '/a200_0708' #no trailing /
+        self.target_name = '/a200_0706'
 
         #publish velocity (anglular and linear)
         #COMMENT FOR TESTING
-        self.agent1_vel_pub = self.create_publisher(Twist, '/a200_0708/cmd_vel', 10)
-        self.target1_vel_pub = self.create_publisher(Twist, '/a200_0706/cmd_vel', 10)
+        self.agent1_vel_pub = self.create_publisher(Twist, self.agent_name + '/cmd_vel', 10)
+        self.target1_vel_pub = self.create_publisher(Twist, self.target_name + '/cmd_vel', 10)
 
         #subscribe to robot position
-        self.agent1_pos_sub = self.create_subscription(PoseStamped, '/a200_0708/pose', self.agent1_pos_callback, 10)
-        self.target1_pos_sub = self.create_subscription(PoseStamped, '/a200_0706/pose', self.target1_pos_callback, 10)
+        self.agent1_pos_sub = self.create_subscription(PoseStamped, self.agent_name + '/pose', self.agent1_pos_callback, 10)
+        self.target1_pos_sub = self.create_subscription(PoseStamped, self.target_name + '/pose', self.target1_pos_callback, 10)
 
         #timer
         self.timer = self.create_timer(self.dt, self.update_motion)
         self.i = 0
 
+        #flags to make sure the program does not start with invalid values
         self.real_pos_agent1 = None
         self.real_pos_target1 = None
         self.First = True

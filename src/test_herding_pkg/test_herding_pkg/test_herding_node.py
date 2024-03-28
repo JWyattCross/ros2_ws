@@ -7,7 +7,7 @@ class PositionSimulator(Node):
     def __init__(self):
         super().__init__('test_herding_node')
         self.agent1_pos_pub = self.create_publisher(PoseStamped, '/a200_0706/pose', 10)
-        self.target1_pos_pub = self.create_publisher(PoseStamped, '/j100_0572/pose', 10)
+        self.target1_pos_pub = self.create_publisher(PoseStamped, '/a200_0708/pose', 10)#/j100_0572/pose
         dt = 0.1 #timestep
         self.timer = self.create_timer(dt, self.publish_positions)
 

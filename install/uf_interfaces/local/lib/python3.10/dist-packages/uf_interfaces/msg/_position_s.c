@@ -1,1 +1,0 @@
-/home/wyatt/ros2_ws/build/uf_interfaces/rosidl_generator_py/uf_interfaces/msg/_position_s.c
