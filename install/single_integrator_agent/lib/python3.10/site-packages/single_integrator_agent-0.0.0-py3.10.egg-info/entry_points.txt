@@ -1,3 +1,0 @@
-[console_scripts]
-single_int_node = single_integrator_agent.single_integrator_agent_node:main
-

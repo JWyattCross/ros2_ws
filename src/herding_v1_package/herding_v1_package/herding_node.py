@@ -29,7 +29,7 @@ class HerdingNode(Node): #create package
         
         # Define parameters
         self.declare_parameter('dt', 0.1)
-        self.declare_parameter('k', [30.0, 20.0])   #crank k up for the demo. for proportional control
+        self.declare_parameter('k', [300.0, 2.0])   #crank k up for the demo. for proportional control
         #k is saved as a python list. that way i can add k1, k2 ... without ading varaibles
         self.declare_parameter('ang', 3.0) #tune this value as needed, controls the speed that the target travles around the circle
 
@@ -118,8 +118,8 @@ class HerdingNode(Node): #create package
 
 
         #publish velocities
-        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 1.0)
-        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.3)
+        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 0.1)
+        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.01)
         
         #save holonomic velocity commands to csv
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
@@ -147,8 +147,11 @@ class HerdingNode(Node): #create package
         self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
 
         twist_msg = Twist()
-        twist_msg.linear.x = v_lin
-        twist_msg.angular.z = v_ang
+        #twist_msg.linear.x = v_lin
+        #twist_msg.angular.z = v_ang
+        #TESTING, using sim that takes in deltx and delty, not ang/lin
+        twist_msg.linear.x = v_max*velocity_hol[0]/v_lin
+        twist_msg.linear.y = velocity_hol[1]
         publisher.publish(twist_msg)
 
 

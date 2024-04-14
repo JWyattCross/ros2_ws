@@ -1,3 +1,0 @@
-[console_scripts]
-herding_node = herding_v1_package.herding_node:main
-
