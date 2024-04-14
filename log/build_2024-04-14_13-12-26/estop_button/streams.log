@@ -1,0 +1,36 @@
+[3.164s] Invoking command in '/home/wyatt/ros2_ws/src/estop_button': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed install_data
+[4.293s] running egg_info
+[4.294s] creating ../../build/estop_button/estop_button.egg-info
+[4.294s] writing ../../build/estop_button/estop_button.egg-info/PKG-INFO
+[4.295s] writing dependency_links to ../../build/estop_button/estop_button.egg-info/dependency_links.txt
+[4.296s] writing entry points to ../../build/estop_button/estop_button.egg-info/entry_points.txt
+[4.297s] writing requirements to ../../build/estop_button/estop_button.egg-info/requires.txt
+[4.298s] writing top-level names to ../../build/estop_button/estop_button.egg-info/top_level.txt
+[4.299s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.306s] reading manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.308s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[4.309s] running build
+[4.309s] running build_py
+[4.309s] creating /home/wyatt/ros2_ws/build/estop_button/build
+[4.310s] creating /home/wyatt/ros2_ws/build/estop_button/build/lib
+[4.310s] creating /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button
+[4.310s] copying estop_button/__init__.py -> /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button
+[4.311s] copying estop_button/estop_button.py -> /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button
+[4.312s] running install
+[4.313s] running install_lib
+[4.315s] creating /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[4.315s] copying /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button/__init__.py -> /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[4.315s] copying /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button/estop_button.py -> /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[4.316s] byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/__init__.py to __init__.cpython-310.pyc
+[4.317s] byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/estop_button.py to estop_button.cpython-310.pyc
+[4.318s] running install_data
+[4.318s] creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index
+[4.318s] creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index
+[4.319s] creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index/packages
+[4.319s] copying resource/estop_button -> /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index/packages
+[4.319s] copying package.xml -> /home/wyatt/ros2_ws/install/estop_button/share/estop_button
+[4.319s] running install_egg_info
+[4.331s] Copying ../../build/estop_button/estop_button.egg-info to /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info
+[4.331s] running install_scripts
+[4.372s] writing list of installed files to '/home/wyatt/ros2_ws/build/estop_button/install.log'
+[5.030s] Invoked command in '/home/wyatt/ros2_ws/src/estop_button' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed install_data
