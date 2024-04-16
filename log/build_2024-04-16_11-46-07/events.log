@@ -1,0 +1,950 @@
+[0.000000] (-) TimerEvent: {}
+[0.000277] (estop_button) JobQueued: {'identifier': 'estop_button', 'dependencies': OrderedDict()}
+[0.000346] (herding_v1_package) JobQueued: {'identifier': 'herding_v1_package', 'dependencies': OrderedDict()}
+[0.000399] (matplotlib_sim) JobQueued: {'identifier': 'matplotlib_sim', 'dependencies': OrderedDict()}
+[0.000446] (single_integrator_agent) JobQueued: {'identifier': 'single_integrator_agent', 'dependencies': OrderedDict()}
+[0.000550] (test_herding_pkg) JobQueued: {'identifier': 'test_herding_pkg', 'dependencies': OrderedDict()}
+[0.000587] (uf_interfaces) JobQueued: {'identifier': 'uf_interfaces', 'dependencies': OrderedDict()}
+[0.000632] (vehicle_position_checker) JobQueued: {'identifier': 'vehicle_position_checker', 'dependencies': OrderedDict()}
+[0.000680] (wind_speed_package) JobQueued: {'identifier': 'wind_speed_package', 'dependencies': OrderedDict()}
+[0.000738] (estop_button) JobStarted: {'identifier': 'estop_button'}
+[0.018017] (herding_v1_package) JobStarted: {'identifier': 'herding_v1_package'}
+[0.024480] (matplotlib_sim) JobStarted: {'identifier': 'matplotlib_sim'}
+[0.032924] (single_integrator_agent) JobStarted: {'identifier': 'single_integrator_agent'}
+[0.098526] (-) TimerEvent: {}
+[0.198949] (-) TimerEvent: {}
+[0.299377] (-) TimerEvent: {}
+[0.399792] (-) TimerEvent: {}
+[0.500240] (-) TimerEvent: {}
+[0.600594] (-) TimerEvent: {}
+[0.700953] (-) TimerEvent: {}
+[0.801339] (-) TimerEvent: {}
+[0.901683] (-) TimerEvent: {}
+[1.002053] (-) TimerEvent: {}
+[1.102425] (-) TimerEvent: {}
+[1.202993] (-) TimerEvent: {}
+[1.303810] (-) TimerEvent: {}
+[1.404186] (-) TimerEvent: {}
+[1.504543] (-) TimerEvent: {}
+[1.604918] (-) TimerEvent: {}
+[1.705467] (-) TimerEvent: {}
+[1.821374] (-) TimerEvent: {}
+[1.921929] (-) TimerEvent: {}
+[2.022495] (-) TimerEvent: {}
+[2.123055] (-) TimerEvent: {}
+[2.223615] (-) TimerEvent: {}
+[2.324059] (-) TimerEvent: {}
+[2.424503] (-) TimerEvent: {}
+[2.524947] (-) TimerEvent: {}
+[2.625351] (-) TimerEvent: {}
+[2.725810] (-) TimerEvent: {}
+[2.829376] (-) TimerEvent: {}
+[2.945486] (estop_button) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/estop_button', 'build', '--build-base', '/home/wyatt/ros2_ws/build/estop_button/build', 'install', '--record', '/home/wyatt/ros2_ws/build/estop_button/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/estop_button', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/estop_button', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.947066] (-) TimerEvent: {}
+[3.012051] (single_integrator_agent) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/single_integrator_agent', 'build', '--build-base', '/home/wyatt/ros2_ws/build/single_integrator_agent/build', 'install', '--record', '/home/wyatt/ros2_ws/build/single_integrator_agent/install.log', '--install-scripts', '$base/lib/single_integrator_agent', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/single_integrator_agent', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/single_integrator_agent', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/single_integrator_agent/prefix_override:/home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.047203] (-) TimerEvent: {}
+[3.147818] (-) TimerEvent: {}
+[3.169473] (herding_v1_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/herding_v1_package', 'build', '--build-base', '/home/wyatt/ros2_ws/build/herding_v1_package/build', 'install', '--record', '/home/wyatt/ros2_ws/build/herding_v1_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/herding_v1_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/herding_v1_package', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/herding_v1_package/prefix_override:/home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.225443] (matplotlib_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/matplotlib_sim', 'build', '--build-base', '/home/wyatt/ros2_ws/build/matplotlib_sim/build', 'install', '--record', '/home/wyatt/ros2_ws/build/matplotlib_sim/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/matplotlib_sim', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/matplotlib_sim', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/matplotlib_sim/prefix_override:/home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.247941] (-) TimerEvent: {}
+[3.357350] (-) TimerEvent: {}
+[3.457888] (-) TimerEvent: {}
+[3.558405] (-) TimerEvent: {}
+[3.658979] (-) TimerEvent: {}
+[3.759567] (-) TimerEvent: {}
+[3.860146] (-) TimerEvent: {}
+[3.985658] (-) TimerEvent: {}
+[4.086094] (-) TimerEvent: {}
+[4.186534] (-) TimerEvent: {}
+[4.232504] (estop_button) StdoutLine: {'line': b'running egg_info\n'}
+[4.233701] (estop_button) StdoutLine: {'line': b'creating ../../build/estop_button/estop_button.egg-info\n'}
+[4.233993] (estop_button) StdoutLine: {'line': b'writing ../../build/estop_button/estop_button.egg-info/PKG-INFO\n'}
+[4.235950] (estop_button) StdoutLine: {'line': b'writing dependency_links to ../../build/estop_button/estop_button.egg-info/dependency_links.txt\n'}
+[4.236314] (estop_button) StdoutLine: {'line': b'writing entry points to ../../build/estop_button/estop_button.egg-info/entry_points.txt\n'}
+[4.236641] (estop_button) StdoutLine: {'line': b'writing requirements to ../../build/estop_button/estop_button.egg-info/requires.txt\n'}
+[4.236836] (estop_button) StdoutLine: {'line': b'writing top-level names to ../../build/estop_button/estop_button.egg-info/top_level.txt\n'}
+[4.237115] (estop_button) StdoutLine: {'line': b"writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'\n"}
+[4.241402] (estop_button) StdoutLine: {'line': b"reading manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'\n"}
+[4.243085] (estop_button) StdoutLine: {'line': b"writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'\n"}
+[4.243541] (estop_button) StdoutLine: {'line': b'running build\n'}
+[4.243896] (estop_button) StdoutLine: {'line': b'running build_py\n'}
+[4.244137] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/estop_button/build\n'}
+[4.244370] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/estop_button/build/lib\n'}
+[4.244604] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button\n'}
+[4.244893] (estop_button) StdoutLine: {'line': b'copying estop_button/__init__.py -> /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button\n'}
+[4.245102] (estop_button) StdoutLine: {'line': b'copying estop_button/estop_button.py -> /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button\n'}
+[4.245364] (estop_button) StdoutLine: {'line': b'running install\n'}
+[4.245570] (estop_button) StdoutLine: {'line': b'running install_lib\n'}
+[4.246849] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button\n'}
+[4.247252] (estop_button) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button/__init__.py -> /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button\n'}
+[4.247478] (estop_button) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button/estop_button.py -> /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button\n'}
+[4.248315] (estop_button) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/__init__.py to __init__.cpython-310.pyc\n'}
+[4.248774] (estop_button) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/estop_button.py to estop_button.cpython-310.pyc\n'}
+[4.249771] (estop_button) StdoutLine: {'line': b'running install_data\n'}
+[4.250121] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index\n'}
+[4.250428] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index\n'}
+[4.250673] (estop_button) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index/packages\n'}
+[4.250879] (estop_button) StdoutLine: {'line': b'copying resource/estop_button -> /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index/packages\n'}
+[4.251160] (estop_button) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/estop_button/share/estop_button\n'}
+[4.251369] (estop_button) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.260443] (estop_button) StdoutLine: {'line': b'Copying ../../build/estop_button/estop_button.egg-info to /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info\n'}
+[4.261437] (estop_button) StdoutLine: {'line': b'running install_scripts\n'}
+[4.286704] (-) TimerEvent: {}
+[4.302683] (single_integrator_agent) StderrLine: {'line': b"/home/wyatt/.local/lib/python3.10/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[4.303180] (single_integrator_agent) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.347135] (estop_button) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/estop_button/install.log'\n"}
+[4.386837] (-) TimerEvent: {}
+[4.397958] (single_integrator_agent) StdoutLine: {'line': b'running egg_info\n'}
+[4.399919] (single_integrator_agent) StdoutLine: {'line': b'creating ../../build/single_integrator_agent/single_integrator_agent.egg-info\n'}
+[4.401200] (single_integrator_agent) StdoutLine: {'line': b'writing ../../build/single_integrator_agent/single_integrator_agent.egg-info/PKG-INFO\n'}
+[4.401633] (herding_v1_package) StdoutLine: {'line': b'running egg_info\n'}
+[4.402540] (single_integrator_agent) StdoutLine: {'line': b'writing dependency_links to ../../build/single_integrator_agent/single_integrator_agent.egg-info/dependency_links.txt\n'}
+[4.402857] (herding_v1_package) StdoutLine: {'line': b'creating ../../build/herding_v1_package/herding_v1_package.egg-info\n'}
+[4.403307] (herding_v1_package) StdoutLine: {'line': b'writing ../../build/herding_v1_package/herding_v1_package.egg-info/PKG-INFO\n'}
+[4.403832] (single_integrator_agent) StdoutLine: {'line': b'writing entry points to ../../build/single_integrator_agent/single_integrator_agent.egg-info/entry_points.txt\n'}
+[4.404158] (herding_v1_package) StdoutLine: {'line': b'writing dependency_links to ../../build/herding_v1_package/herding_v1_package.egg-info/dependency_links.txt\n'}
+[4.404447] (herding_v1_package) StdoutLine: {'line': b'writing entry points to ../../build/herding_v1_package/herding_v1_package.egg-info/entry_points.txt\n'}
+[4.404779] (herding_v1_package) StdoutLine: {'line': b'writing requirements to ../../build/herding_v1_package/herding_v1_package.egg-info/requires.txt\n'}
+[4.405069] (herding_v1_package) StdoutLine: {'line': b'writing top-level names to ../../build/herding_v1_package/herding_v1_package.egg-info/top_level.txt\n'}
+[4.405639] (single_integrator_agent) StdoutLine: {'line': b'writing requirements to ../../build/single_integrator_agent/single_integrator_agent.egg-info/requires.txt\n'}
+[4.406000] (herding_v1_package) StdoutLine: {'line': b"writing manifest file '../../build/herding_v1_package/herding_v1_package.egg-info/SOURCES.txt'\n"}
+[4.406570] (single_integrator_agent) StdoutLine: {'line': b'writing top-level names to ../../build/single_integrator_agent/single_integrator_agent.egg-info/top_level.txt\n'}
+[4.407605] (single_integrator_agent) StdoutLine: {'line': b"writing manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'\n"}
+[4.412307] (single_integrator_agent) StdoutLine: {'line': b"reading manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'\n"}
+[4.417471] (herding_v1_package) StdoutLine: {'line': b"reading manifest file '../../build/herding_v1_package/herding_v1_package.egg-info/SOURCES.txt'\n"}
+[4.417939] (herding_v1_package) StdoutLine: {'line': b"writing manifest file '../../build/herding_v1_package/herding_v1_package.egg-info/SOURCES.txt'\n"}
+[4.418170] (herding_v1_package) StdoutLine: {'line': b'running build\n'}
+[4.418380] (herding_v1_package) StdoutLine: {'line': b'running build_py\n'}
+[4.418576] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/herding_v1_package/build\n'}
+[4.418768] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/herding_v1_package/build/lib\n'}
+[4.418958] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package\n'}
+[4.419143] (herding_v1_package) StdoutLine: {'line': b'copying herding_v1_package/__init__.py -> /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package\n'}
+[4.419452] (herding_v1_package) StdoutLine: {'line': b'copying herding_v1_package/simulation.py -> /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package\n'}
+[4.419670] (herding_v1_package) StdoutLine: {'line': b'copying herding_v1_package/herding_node.py -> /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package\n'}
+[4.419861] (herding_v1_package) StdoutLine: {'line': b'running install\n'}
+[4.420119] (herding_v1_package) StdoutLine: {'line': b'running install_lib\n'}
+[4.421484] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package\n'}
+[4.421873] (herding_v1_package) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package/__init__.py -> /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package\n'}
+[4.422211] (herding_v1_package) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package/simulation.py -> /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package\n'}
+[4.422426] (herding_v1_package) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package/herding_node.py -> /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package\n'}
+[4.423473] (herding_v1_package) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/__init__.py to __init__.cpython-310.pyc\n'}
+[4.423985] (herding_v1_package) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/simulation.py to simulation.cpython-310.pyc\n'}
+[4.424393] (single_integrator_agent) StdoutLine: {'line': b"writing manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'\n"}
+[4.424986] (single_integrator_agent) StdoutLine: {'line': b'running build\n'}
+[4.425228] (single_integrator_agent) StdoutLine: {'line': b'running build_py\n'}
+[4.425753] (herding_v1_package) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/herding_node.py to herding_node.cpython-310.pyc\n'}
+[4.426432] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/single_integrator_agent/build\n'}
+[4.427015] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/single_integrator_agent/build/lib\n'}
+[4.427790] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent\n'}
+[4.428462] (single_integrator_agent) StdoutLine: {'line': b'copying single_integrator_agent/__init__.py -> /home/wyatt/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent\n'}
+[4.429440] (single_integrator_agent) StdoutLine: {'line': b'copying single_integrator_agent/single_integrator_agent_node.py -> /home/wyatt/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent\n'}
+[4.429801] (herding_v1_package) StdoutLine: {'line': b'running install_data\n'}
+[4.430204] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/herding_v1_package/share/ament_index\n'}
+[4.430568] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/herding_v1_package/share/ament_index/resource_index\n'}
+[4.430856] (herding_v1_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/herding_v1_package/share/ament_index/resource_index/packages\n'}
+[4.431153] (herding_v1_package) StdoutLine: {'line': b'copying resource/herding_v1_package -> /home/wyatt/ros2_ws/install/herding_v1_package/share/ament_index/resource_index/packages\n'}
+[4.431347] (herding_v1_package) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/herding_v1_package/share/herding_v1_package\n'}
+[4.431548] (herding_v1_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.432767] (single_integrator_agent) StdoutLine: {'line': b'running install\n'}
+[4.434101] (single_integrator_agent) StdoutLine: {'line': b'running install_lib\n'}
+[4.435558] (herding_v1_package) StdoutLine: {'line': b'Copying ../../build/herding_v1_package/herding_v1_package.egg-info to /home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package-0.0.0-py3.10.egg-info\n'}
+[4.437603] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent\n'}
+[4.438012] (herding_v1_package) StdoutLine: {'line': b'running install_scripts\n'}
+[4.438596] (single_integrator_agent) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent/__init__.py -> /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent\n'}
+[4.439275] (single_integrator_agent) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent/single_integrator_agent_node.py -> /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent\n'}
+[4.441658] (estop_button) CommandEnded: {'returncode': 0}
+[4.447617] (single_integrator_agent) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent/__init__.py to __init__.cpython-310.pyc\n'}
+[4.447940] (single_integrator_agent) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent/single_integrator_agent_node.py to single_integrator_agent_node.cpython-310.pyc\n'}
+[4.448146] (single_integrator_agent) StdoutLine: {'line': b'running install_data\n'}
+[4.448356] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/single_integrator_agent/share/ament_index\n'}
+[4.448578] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/single_integrator_agent/share/ament_index/resource_index\n'}
+[4.448805] (single_integrator_agent) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/single_integrator_agent/share/ament_index/resource_index/packages\n'}
+[4.449004] (single_integrator_agent) StdoutLine: {'line': b'copying resource/single_integrator_agent -> /home/wyatt/ros2_ws/install/single_integrator_agent/share/ament_index/resource_index/packages\n'}
+[4.449192] (single_integrator_agent) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/single_integrator_agent/share/single_integrator_agent\n'}
+[4.449427] (single_integrator_agent) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.451197] (matplotlib_sim) StdoutLine: {'line': b'running egg_info\n'}
+[4.452352] (matplotlib_sim) StdoutLine: {'line': b'creating ../../build/matplotlib_sim/matplotlib_sim.egg-info\n'}
+[4.452789] (matplotlib_sim) StdoutLine: {'line': b'writing ../../build/matplotlib_sim/matplotlib_sim.egg-info/PKG-INFO\n'}
+[4.453252] (single_integrator_agent) StdoutLine: {'line': b'Copying ../../build/single_integrator_agent/single_integrator_agent.egg-info to /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent-0.0.0-py3.10.egg-info\n'}
+[4.453570] (matplotlib_sim) StdoutLine: {'line': b'writing dependency_links to ../../build/matplotlib_sim/matplotlib_sim.egg-info/dependency_links.txt\n'}
+[4.453903] (matplotlib_sim) StdoutLine: {'line': b'writing entry points to ../../build/matplotlib_sim/matplotlib_sim.egg-info/entry_points.txt\n'}
+[4.454095] (matplotlib_sim) StdoutLine: {'line': b'writing requirements to ../../build/matplotlib_sim/matplotlib_sim.egg-info/requires.txt\n'}
+[4.454276] (matplotlib_sim) StdoutLine: {'line': b'writing top-level names to ../../build/matplotlib_sim/matplotlib_sim.egg-info/top_level.txt\n'}
+[4.454546] (matplotlib_sim) StdoutLine: {'line': b"writing manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'\n"}
+[4.455666] (single_integrator_agent) StdoutLine: {'line': b'running install_scripts\n'}
+[4.473616] (matplotlib_sim) StdoutLine: {'line': b"reading manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'\n"}
+[4.473937] (matplotlib_sim) StdoutLine: {'line': b"writing manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'\n"}
+[4.474136] (matplotlib_sim) StdoutLine: {'line': b'running build\n'}
+[4.474329] (matplotlib_sim) StdoutLine: {'line': b'running build_py\n'}
+[4.474517] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/matplotlib_sim/build\n'}
+[4.474724] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib\n'}
+[4.474907] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim\n'}
+[4.475099] (matplotlib_sim) StdoutLine: {'line': b'copying matplotlib_sim/__init__.py -> /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim\n'}
+[4.475296] (matplotlib_sim) StdoutLine: {'line': b'copying matplotlib_sim/matplotlib_sim_node.py -> /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim\n'}
+[4.475492] (matplotlib_sim) StdoutLine: {'line': b'running install\n'}
+[4.475676] (matplotlib_sim) StdoutLine: {'line': b'running install_lib\n'}
+[4.475981] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim\n'}
+[4.476189] (matplotlib_sim) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim/__init__.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim\n'}
+[4.476390] (matplotlib_sim) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim/matplotlib_sim_node.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim\n'}
+[4.476592] (matplotlib_sim) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim/__init__.py to __init__.cpython-310.pyc\n'}
+[4.476799] (matplotlib_sim) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim/matplotlib_sim_node.py to matplotlib_sim_node.cpython-310.pyc\n'}
+[4.476999] (matplotlib_sim) StdoutLine: {'line': b'running install_data\n'}
+[4.477197] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index\n'}
+[4.477418] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index/resource_index\n'}
+[4.477619] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index/resource_index/packages\n'}
+[4.477822] (matplotlib_sim) StdoutLine: {'line': b'copying resource/matplotlib_sim -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index/resource_index/packages\n'}
+[4.478099] (matplotlib_sim) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim\n'}
+[4.478277] (matplotlib_sim) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch\n'}
+[4.478456] (matplotlib_sim) StdoutLine: {'line': b'copying launch/matplotlib_herding_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch\n'}
+[4.478646] (matplotlib_sim) StdoutLine: {'line': b'copying launch/matplotlib_static_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch\n'}
+[4.478839] (matplotlib_sim) StdoutLine: {'line': b'copying launch/matplotlib_sim_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch\n'}
+[4.479024] (matplotlib_sim) StdoutLine: {'line': b'copying launch/matplotlib_demo_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch\n'}
+[4.479215] (matplotlib_sim) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.479405] (matplotlib_sim) StdoutLine: {'line': b'Copying ../../build/matplotlib_sim/matplotlib_sim.egg-info to /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim-0.0.0-py3.10.egg-info\n'}
+[4.479594] (matplotlib_sim) StdoutLine: {'line': b'running install_scripts\n'}
+[4.486941] (-) TimerEvent: {}
+[4.498113] (herding_v1_package) StdoutLine: {'line': b'Installing herding_node script to /home/wyatt/ros2_ws/install/herding_v1_package/lib/herding_v1_package\n'}
+[4.498525] (herding_v1_package) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/herding_v1_package/install.log'\n"}
+[4.501994] (single_integrator_agent) StdoutLine: {'line': b'Installing single_int_node script to /home/wyatt/ros2_ws/install/single_integrator_agent/lib/single_integrator_agent\n'}
+[4.502791] (single_integrator_agent) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/single_integrator_agent/install.log'\n"}
+[4.525897] (estop_button) JobEnded: {'identifier': 'estop_button', 'rc': 0}
+[4.526929] (test_herding_pkg) JobStarted: {'identifier': 'test_herding_pkg'}
+[4.527224] (matplotlib_sim) StdoutLine: {'line': b'Installing matplotlib_sim_node script to /home/wyatt/ros2_ws/install/matplotlib_sim/lib/matplotlib_sim\n'}
+[4.527524] (matplotlib_sim) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/matplotlib_sim/install.log'\n"}
+[4.588212] (-) TimerEvent: {}
+[4.688800] (-) TimerEvent: {}
+[4.789233] (-) TimerEvent: {}
+[4.889654] (-) TimerEvent: {}
+[4.990020] (-) TimerEvent: {}
+[5.090461] (-) TimerEvent: {}
+[5.101837] (herding_v1_package) CommandEnded: {'returncode': 0}
+[5.111184] (herding_v1_package) JobEnded: {'identifier': 'herding_v1_package', 'rc': 0}
+[5.111831] (matplotlib_sim) CommandEnded: {'returncode': 0}
+[5.120419] (matplotlib_sim) JobEnded: {'identifier': 'matplotlib_sim', 'rc': 0}
+[5.121957] (single_integrator_agent) CommandEnded: {'returncode': 0}
+[5.128923] (single_integrator_agent) JobEnded: {'identifier': 'single_integrator_agent', 'rc': 0}
+[5.131564] (uf_interfaces) JobStarted: {'identifier': 'uf_interfaces'}
+[5.134801] (vehicle_position_checker) JobStarted: {'identifier': 'vehicle_position_checker'}
+[5.140803] (wind_speed_package) JobStarted: {'identifier': 'wind_speed_package'}
+[5.153901] (uf_interfaces) JobProgress: {'identifier': 'uf_interfaces', 'progress': 'cmake'}
+[5.154212] (uf_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/wyatt/ros2_ws/src/uf_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/wyatt/ros2_ws/install/uf_interfaces'], 'cwd': '/home/wyatt/ros2_ws/build/uf_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wyatt'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wyatt'), ('OLDPWD', '/home/wyatt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1083'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wyatt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wyatt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wyatt/ros2_ws/build/uf_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.190580] (-) TimerEvent: {}
+[5.291010] (-) TimerEvent: {}
+[5.391592] (-) TimerEvent: {}
+[5.493120] (-) TimerEvent: {}
+[5.596647] (-) TimerEvent: {}
+[5.697097] (-) TimerEvent: {}
+[5.797689] (-) TimerEvent: {}
+[5.868895] (uf_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.869464] (uf_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.869711] (uf_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.897816] (-) TimerEvent: {}
+[5.998258] (-) TimerEvent: {}
+[6.014936] (uf_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.036413] (uf_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.037009] (uf_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.038283] (uf_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.044074] (uf_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.099049] (-) TimerEvent: {}
+[6.199998] (-) TimerEvent: {}
+[6.215219] (uf_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.237706] (uf_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.238258] (uf_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.239377] (uf_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.246584] (uf_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.300119] (-) TimerEvent: {}
+[6.400705] (-) TimerEvent: {}
+[6.494174] (test_herding_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/test_herding_pkg', 'build', '--build-base', '/home/wyatt/ros2_ws/build/test_herding_pkg/build', 'install', '--record', '/home/wyatt/ros2_ws/build/test_herding_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/test_herding_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/test_herding_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/test_herding_pkg/prefix_override:/home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[6.500827] (-) TimerEvent: {}
+[6.601317] (-) TimerEvent: {}
+[6.666943] (uf_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.705260] (-) TimerEvent: {}
+[6.806067] (-) TimerEvent: {}
+[6.909508] (-) TimerEvent: {}
+[7.010035] (-) TimerEvent: {}
+[7.026482] (uf_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[7.110159] (-) TimerEvent: {}
+[7.203160] (uf_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.210277] (-) TimerEvent: {}
+[7.229536] (uf_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.267044] (test_herding_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[7.268500] (test_herding_pkg) StdoutLine: {'line': b'creating ../../build/test_herding_pkg/test_herding_pkg.egg-info\n'}
+[7.269015] (test_herding_pkg) StdoutLine: {'line': b'writing ../../build/test_herding_pkg/test_herding_pkg.egg-info/PKG-INFO\n'}
+[7.269499] (test_herding_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/test_herding_pkg/test_herding_pkg.egg-info/dependency_links.txt\n'}
+[7.269826] (test_herding_pkg) StdoutLine: {'line': b'writing entry points to ../../build/test_herding_pkg/test_herding_pkg.egg-info/entry_points.txt\n'}
+[7.270178] (test_herding_pkg) StdoutLine: {'line': b'writing requirements to ../../build/test_herding_pkg/test_herding_pkg.egg-info/requires.txt\n'}
+[7.270391] (test_herding_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/test_herding_pkg/test_herding_pkg.egg-info/top_level.txt\n'}
+[7.270690] (test_herding_pkg) StdoutLine: {'line': b"writing manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'\n"}
+[7.275346] (test_herding_pkg) StdoutLine: {'line': b"reading manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'\n"}
+[7.277149] (test_herding_pkg) StdoutLine: {'line': b"writing manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'\n"}
+[7.277605] (test_herding_pkg) StdoutLine: {'line': b'running build\n'}
+[7.277868] (test_herding_pkg) StdoutLine: {'line': b'running build_py\n'}
+[7.278178] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/test_herding_pkg/build\n'}
+[7.278388] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib\n'}
+[7.278592] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg\n'}
+[7.278791] (test_herding_pkg) StdoutLine: {'line': b'copying test_herding_pkg/test_herding_node.py -> /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg\n'}
+[7.279070] (test_herding_pkg) StdoutLine: {'line': b'copying test_herding_pkg/__init__.py -> /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg\n'}
+[7.279271] (test_herding_pkg) StdoutLine: {'line': b'running install\n'}
+[7.279686] (test_herding_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[7.281306] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg\n'}
+[7.281641] (test_herding_pkg) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg/test_herding_node.py -> /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg\n'}
+[7.281888] (test_herding_pkg) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg/__init__.py -> /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg\n'}
+[7.283040] (test_herding_pkg) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg/test_herding_node.py to test_herding_node.cpython-310.pyc\n'}
+[7.283323] (uf_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.284268] (test_herding_pkg) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg/__init__.py to __init__.cpython-310.pyc\n'}
+[7.284604] (test_herding_pkg) StdoutLine: {'line': b'running install_data\n'}
+[7.284876] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index\n'}
+[7.285169] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index\n'}
+[7.285392] (test_herding_pkg) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index/packages\n'}
+[7.285684] (test_herding_pkg) StdoutLine: {'line': b'copying resource/test_herding_pkg -> /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index/packages\n'}
+[7.285886] (test_herding_pkg) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/test_herding_pkg/share/test_herding_pkg\n'}
+[7.286086] (test_herding_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.289587] (test_herding_pkg) StdoutLine: {'line': b'Copying ../../build/test_herding_pkg/test_herding_pkg.egg-info to /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg-0.0.0-py3.10.egg-info\n'}
+[7.293512] (test_herding_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[7.310397] (-) TimerEvent: {}
+[7.343890] (test_herding_pkg) StdoutLine: {'line': b'Installing test_herding_node script to /home/wyatt/ros2_ws/install/test_herding_pkg/lib/test_herding_pkg\n'}
+[7.344605] (test_herding_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/test_herding_pkg/install.log'\n"}
+[7.405653] (test_herding_pkg) CommandEnded: {'returncode': 0}
+[7.406529] (uf_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.410525] (-) TimerEvent: {}
+[7.417540] (test_herding_pkg) JobEnded: {'identifier': 'test_herding_pkg', 'rc': 0}
+[7.505541] (wind_speed_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/wind_speed_package', 'build', '--build-base', '/home/wyatt/ros2_ws/build/wind_speed_package/build', 'install', '--record', '/home/wyatt/ros2_ws/build/wind_speed_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/wind_speed_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/wind_speed_package', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/wind_speed_package/prefix_override:/home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.510662] (-) TimerEvent: {}
+[7.561555] (uf_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.610763] (-) TimerEvent: {}
+[7.701685] (vehicle_position_checker) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/vehicle_position_checker', 'build', '--build-base', '/home/wyatt/ros2_ws/build/vehicle_position_checker/build', 'install', '--record', '/home/wyatt/ros2_ws/build/vehicle_position_checker/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wyatt/ros2_ws/src/vehicle_position_checker', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wyatt', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/wyatt', 'OLDPWD': '/home/wyatt', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1083', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'wyatt', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wyatt', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wyatt/ros2_ws/build/vehicle_position_checker', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wyatt/ros2_ws/build/vehicle_position_checker/prefix_override:/home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.710899] (-) TimerEvent: {}
+[7.782868] (uf_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.815080] (-) TimerEvent: {}
+[7.917381] (-) TimerEvent: {}
+[8.017965] (-) TimerEvent: {}
+[8.123412] (-) TimerEvent: {}
+[8.213756] (wind_speed_package) StdoutLine: {'line': b'running egg_info\n'}
+[8.215137] (wind_speed_package) StdoutLine: {'line': b'creating ../../build/wind_speed_package/wind_speed_package.egg-info\n'}
+[8.215988] (wind_speed_package) StdoutLine: {'line': b'writing ../../build/wind_speed_package/wind_speed_package.egg-info/PKG-INFO\n'}
+[8.216778] (wind_speed_package) StdoutLine: {'line': b'writing dependency_links to ../../build/wind_speed_package/wind_speed_package.egg-info/dependency_links.txt\n'}
+[8.217481] (wind_speed_package) StdoutLine: {'line': b'writing entry points to ../../build/wind_speed_package/wind_speed_package.egg-info/entry_points.txt\n'}
+[8.218078] (wind_speed_package) StdoutLine: {'line': b'writing requirements to ../../build/wind_speed_package/wind_speed_package.egg-info/requires.txt\n'}
+[8.218599] (wind_speed_package) StdoutLine: {'line': b'writing top-level names to ../../build/wind_speed_package/wind_speed_package.egg-info/top_level.txt\n'}
+[8.219513] (wind_speed_package) StdoutLine: {'line': b"writing manifest file '../../build/wind_speed_package/wind_speed_package.egg-info/SOURCES.txt'\n"}
+[8.223555] (-) TimerEvent: {}
+[8.225899] (wind_speed_package) StdoutLine: {'line': b"reading manifest file '../../build/wind_speed_package/wind_speed_package.egg-info/SOURCES.txt'\n"}
+[8.228374] (wind_speed_package) StdoutLine: {'line': b"writing manifest file '../../build/wind_speed_package/wind_speed_package.egg-info/SOURCES.txt'\n"}
+[8.229086] (wind_speed_package) StdoutLine: {'line': b'running build\n'}
+[8.229521] (wind_speed_package) StdoutLine: {'line': b'running build_py\n'}
+[8.230367] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/wind_speed_package/build\n'}
+[8.230925] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/wind_speed_package/build/lib\n'}
+[8.231449] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package\n'}
+[8.232073] (wind_speed_package) StdoutLine: {'line': b'copying wind_speed_package/__init__.py -> /home/wyatt/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package\n'}
+[8.232772] (wind_speed_package) StdoutLine: {'line': b'copying wind_speed_package/wind_speed_node.py -> /home/wyatt/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package\n'}
+[8.233676] (wind_speed_package) StdoutLine: {'line': b'running install\n'}
+[8.235505] (wind_speed_package) StdoutLine: {'line': b'running install_lib\n'}
+[8.237455] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages/wind_speed_package\n'}
+[8.238058] (wind_speed_package) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package/__init__.py -> /home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages/wind_speed_package\n'}
+[8.238651] (wind_speed_package) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package/wind_speed_node.py -> /home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages/wind_speed_package\n'}
+[8.240178] (wind_speed_package) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages/wind_speed_package/__init__.py to __init__.cpython-310.pyc\n'}
+[8.241051] (wind_speed_package) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages/wind_speed_package/wind_speed_node.py to wind_speed_node.cpython-310.pyc\n'}
+[8.243039] (wind_speed_package) StdoutLine: {'line': b'running install_data\n'}
+[8.243654] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/wind_speed_package/share/ament_index\n'}
+[8.244097] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/wind_speed_package/share/ament_index/resource_index\n'}
+[8.244496] (wind_speed_package) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/wind_speed_package/share/ament_index/resource_index/packages\n'}
+[8.244971] (wind_speed_package) StdoutLine: {'line': b'copying resource/wind_speed_package -> /home/wyatt/ros2_ws/install/wind_speed_package/share/ament_index/resource_index/packages\n'}
+[8.245568] (wind_speed_package) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/wind_speed_package/share/wind_speed_package\n'}
+[8.246080] (wind_speed_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.252833] (wind_speed_package) StdoutLine: {'line': b'Copying ../../build/wind_speed_package/wind_speed_package.egg-info to /home/wyatt/ros2_ws/install/wind_speed_package/lib/python3.10/site-packages/wind_speed_package-0.0.0-py3.10.egg-info\n'}
+[8.253806] (wind_speed_package) StdoutLine: {'line': b'running install_scripts\n'}
+[8.298128] (wind_speed_package) StdoutLine: {'line': b'Installing wind_speed_node script to /home/wyatt/ros2_ws/install/wind_speed_package/lib/wind_speed_package\n'}
+[8.298797] (wind_speed_package) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/wind_speed_package/install.log'\n"}
+[8.323692] (-) TimerEvent: {}
+[8.373501] (wind_speed_package) CommandEnded: {'returncode': 0}
+[8.375978] (wind_speed_package) JobEnded: {'identifier': 'wind_speed_package', 'rc': 0}
+[8.406082] (vehicle_position_checker) StdoutLine: {'line': b'running egg_info\n'}
+[8.407507] (vehicle_position_checker) StdoutLine: {'line': b'creating ../../build/vehicle_position_checker/vehicle_position_checker.egg-info\n'}
+[8.408010] (vehicle_position_checker) StdoutLine: {'line': b'writing ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/PKG-INFO\n'}
+[8.408508] (vehicle_position_checker) StdoutLine: {'line': b'writing dependency_links to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/dependency_links.txt\n'}
+[8.408837] (vehicle_position_checker) StdoutLine: {'line': b'writing entry points to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/entry_points.txt\n'}
+[8.409144] (vehicle_position_checker) StdoutLine: {'line': b'writing requirements to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/requires.txt\n'}
+[8.409424] (vehicle_position_checker) StdoutLine: {'line': b'writing top-level names to ../../build/vehicle_position_checker/vehicle_position_checker.egg-info/top_level.txt\n'}
+[8.410002] (vehicle_position_checker) StdoutLine: {'line': b"writing manifest file '../../build/vehicle_position_checker/vehicle_position_checker.egg-info/SOURCES.txt'\n"}
+[8.414834] (vehicle_position_checker) StdoutLine: {'line': b"reading manifest file '../../build/vehicle_position_checker/vehicle_position_checker.egg-info/SOURCES.txt'\n"}
+[8.416872] (vehicle_position_checker) StdoutLine: {'line': b"writing manifest file '../../build/vehicle_position_checker/vehicle_position_checker.egg-info/SOURCES.txt'\n"}
+[8.417547] (vehicle_position_checker) StdoutLine: {'line': b'running build\n'}
+[8.417973] (vehicle_position_checker) StdoutLine: {'line': b'running build_py\n'}
+[8.418863] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/vehicle_position_checker/build\n'}
+[8.419414] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/vehicle_position_checker/build/lib\n'}
+[8.419831] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker\n'}
+[8.420350] (vehicle_position_checker) StdoutLine: {'line': b'copying vehicle_position_checker/vehicle_position_checker.py -> /home/wyatt/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker\n'}
+[8.421043] (vehicle_position_checker) StdoutLine: {'line': b'copying vehicle_position_checker/__init__.py -> /home/wyatt/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker\n'}
+[8.421860] (vehicle_position_checker) StdoutLine: {'line': b'running install\n'}
+[8.423069] (vehicle_position_checker) StdoutLine: {'line': b'running install_lib\n'}
+[8.423780] (-) TimerEvent: {}
+[8.425574] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker\n'}
+[8.426373] (vehicle_position_checker) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker/vehicle_position_checker.py -> /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker\n'}
+[8.427136] (vehicle_position_checker) StdoutLine: {'line': b'copying /home/wyatt/ros2_ws/build/vehicle_position_checker/build/lib/vehicle_position_checker/__init__.py -> /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker\n'}
+[8.428635] (vehicle_position_checker) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker/vehicle_position_checker.py to vehicle_position_checker.cpython-310.pyc\n'}
+[8.431693] (vehicle_position_checker) StdoutLine: {'line': b'byte-compiling /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker/__init__.py to __init__.cpython-310.pyc\n'}
+[8.432568] (vehicle_position_checker) StdoutLine: {'line': b'running install_data\n'}
+[8.432926] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/vehicle_position_checker/share/ament_index\n'}
+[8.433412] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/vehicle_position_checker/share/ament_index/resource_index\n'}
+[8.433919] (vehicle_position_checker) StdoutLine: {'line': b'creating /home/wyatt/ros2_ws/install/vehicle_position_checker/share/ament_index/resource_index/packages\n'}
+[8.434478] (vehicle_position_checker) StdoutLine: {'line': b'copying resource/vehicle_position_checker -> /home/wyatt/ros2_ws/install/vehicle_position_checker/share/ament_index/resource_index/packages\n'}
+[8.434827] (vehicle_position_checker) StdoutLine: {'line': b'copying package.xml -> /home/wyatt/ros2_ws/install/vehicle_position_checker/share/vehicle_position_checker\n'}
+[8.438718] (vehicle_position_checker) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.439164] (vehicle_position_checker) StdoutLine: {'line': b'Copying ../../build/vehicle_position_checker/vehicle_position_checker.egg-info to /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/python3.10/site-packages/vehicle_position_checker-0.0.0-py3.10.egg-info\n'}
+[8.441367] (vehicle_position_checker) StdoutLine: {'line': b'running install_scripts\n'}
+[8.482395] (vehicle_position_checker) StdoutLine: {'line': b'Installing vehicle_positon_checker_node script to /home/wyatt/ros2_ws/install/vehicle_position_checker/lib/vehicle_position_checker\n'}
+[8.482851] (vehicle_position_checker) StdoutLine: {'line': b"writing list of installed files to '/home/wyatt/ros2_ws/build/vehicle_position_checker/install.log'\n"}
+[8.525381] (-) TimerEvent: {}
+[8.537789] (vehicle_position_checker) CommandEnded: {'returncode': 0}
+[8.551022] (vehicle_position_checker) JobEnded: {'identifier': 'vehicle_position_checker', 'rc': 0}
+[8.625540] (-) TimerEvent: {}
+[8.725904] (-) TimerEvent: {}
+[8.754587] (uf_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[8.826035] (-) TimerEvent: {}
+[8.926436] (-) TimerEvent: {}
+[9.026831] (-) TimerEvent: {}
+[9.127282] (-) TimerEvent: {}
+[9.227714] (-) TimerEvent: {}
+[9.328198] (-) TimerEvent: {}
+[9.351298] (uf_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.428332] (-) TimerEvent: {}
+[9.528743] (-) TimerEvent: {}
+[9.629123] (-) TimerEvent: {}
+[9.629641] (uf_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.667684] (uf_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[9.670773] (uf_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.712785] (uf_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.713160] (uf_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.713393] (uf_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.713589] (uf_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.729244] (-) TimerEvent: {}
+[9.755892] (uf_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.829346] (-) TimerEvent: {}
+[9.892796] (uf_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.929478] (-) TimerEvent: {}
+[9.943652] (uf_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[9.949539] (uf_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.953006] (uf_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.964362] (uf_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.029617] (-) TimerEvent: {}
+[10.031878] (uf_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[10.035872] (uf_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/wyatt/ros2_ws/build/uf_interfaces\n'}
+[10.049722] (uf_interfaces) CommandEnded: {'returncode': 0}
+[10.050726] (uf_interfaces) JobProgress: {'identifier': 'uf_interfaces', 'progress': 'build'}
+[10.051829] (uf_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wyatt/ros2_ws/build/uf_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/wyatt/ros2_ws/build/uf_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wyatt'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wyatt'), ('OLDPWD', '/home/wyatt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1083'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wyatt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wyatt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wyatt/ros2_ws/build/uf_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.113530] (uf_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[10.129731] (-) TimerEvent: {}
+[10.133970] (uf_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[10.149187] (uf_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_uf_interfaces\n'}
+[10.229848] (-) TimerEvent: {}
+[10.331218] (-) TimerEvent: {}
+[10.431769] (-) TimerEvent: {}
+[10.533668] (-) TimerEvent: {}
+[10.634166] (-) TimerEvent: {}
+[10.734548] (-) TimerEvent: {}
+[10.808676] (uf_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[10.810458] (uf_interfaces) StdoutLine: {'line': b'creating uf_interfaces.egg-info\n'}
+[10.814249] (uf_interfaces) StdoutLine: {'line': b'writing uf_interfaces.egg-info/PKG-INFO\n'}
+[10.815213] (uf_interfaces) StdoutLine: {'line': b'writing dependency_links to uf_interfaces.egg-info/dependency_links.txt\n'}
+[10.816091] (uf_interfaces) StdoutLine: {'line': b'writing top-level names to uf_interfaces.egg-info/top_level.txt\n'}
+[10.817098] (uf_interfaces) StdoutLine: {'line': b"writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'\n"}
+[10.830708] (uf_interfaces) StdoutLine: {'line': b"reading manifest file 'uf_interfaces.egg-info/SOURCES.txt'\n"}
+[10.835908] (-) TimerEvent: {}
+[10.836412] (uf_interfaces) StdoutLine: {'line': b"writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'\n"}
+[10.897606] (uf_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_uf_interfaces_egg\n'}
+[10.936037] (-) TimerEvent: {}
+[11.036579] (-) TimerEvent: {}
+[11.136977] (-) TimerEvent: {}
+[11.237484] (-) TimerEvent: {}
+[11.337983] (-) TimerEvent: {}
+[11.438460] (-) TimerEvent: {}
+[11.538825] (-) TimerEvent: {}
+[11.639220] (-) TimerEvent: {}
+[11.739605] (-) TimerEvent: {}
+[11.840006] (-) TimerEvent: {}
+[11.940413] (-) TimerEvent: {}
+[12.040797] (-) TimerEvent: {}
+[12.141195] (-) TimerEvent: {}
+[12.244723] (-) TimerEvent: {}
+[12.256526] (uf_interfaces) StdoutLine: {'line': b'[  3%] Built target uf_interfaces__cpp\n'}
+[12.278621] (uf_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.282641] (uf_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.296150] (uf_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.344859] (-) TimerEvent: {}
+[12.445424] (-) TimerEvent: {}
+[12.545964] (-) TimerEvent: {}
+[12.646348] (-) TimerEvent: {}
+[12.746739] (-) TimerEvent: {}
+[12.847136] (-) TimerEvent: {}
+[12.947555] (-) TimerEvent: {}
+[13.047964] (-) TimerEvent: {}
+[13.114468] (uf_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__functions.c.o\x1b[0m\n'}
+[13.148090] (-) TimerEvent: {}
+[13.248676] (-) TimerEvent: {}
+[13.349194] (-) TimerEvent: {}
+[13.449733] (-) TimerEvent: {}
+[13.550245] (-) TimerEvent: {}
+[13.650767] (-) TimerEvent: {}
+[13.751292] (-) TimerEvent: {}
+[13.822604] (uf_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__functions.c.o\x1b[0m\n'}
+[13.851416] (-) TimerEvent: {}
+[13.951982] (-) TimerEvent: {}
+[14.052523] (-) TimerEvent: {}
+[14.153055] (-) TimerEvent: {}
+[14.253589] (-) TimerEvent: {}
+[14.254064] (uf_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/msg/detail/position__functions.c.o\x1b[0m\n'}
+[14.293985] (uf_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/defend__type_support.cpp.o\x1b[0m\n'}
+[14.353699] (-) TimerEvent: {}
+[14.429102] (uf_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/task_assign__functions.c.o\x1b[0m\n'}
+[14.453822] (-) TimerEvent: {}
+[14.554318] (-) TimerEvent: {}
+[14.640849] (uf_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/geo_conv__functions.c.o\x1b[0m\n'}
+[14.654536] (-) TimerEvent: {}
+[14.755083] (-) TimerEvent: {}
+[14.773117] (uf_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/defend__type_support.cpp.o\x1b[0m\n'}
+[14.813569] (uf_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libuf_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[14.855228] (-) TimerEvent: {}
+[14.907640] (uf_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/defend__type_support.cpp.o\x1b[0m\n'}
+[14.951511] (uf_interfaces) StdoutLine: {'line': b'[ 22%] Built target uf_interfaces__rosidl_generator_c\n'}
+[14.955370] (-) TimerEvent: {}
+[14.972631] (uf_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.055513] (-) TimerEvent: {}
+[15.155942] (-) TimerEvent: {}
+[15.256532] (-) TimerEvent: {}
+[15.357099] (-) TimerEvent: {}
+[15.457665] (-) TimerEvent: {}
+[15.558227] (-) TimerEvent: {}
+[15.658688] (-) TimerEvent: {}
+[15.759136] (-) TimerEvent: {}
+[15.859598] (-) TimerEvent: {}
+[15.960044] (-) TimerEvent: {}
+[16.060634] (-) TimerEvent: {}
+[16.161180] (-) TimerEvent: {}
+[16.233471] (uf_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/herd__type_support.cpp.o\x1b[0m\n'}
+[16.261331] (-) TimerEvent: {}
+[16.361888] (-) TimerEvent: {}
+[16.462473] (-) TimerEvent: {}
+[16.562900] (-) TimerEvent: {}
+[16.663319] (-) TimerEvent: {}
+[16.763744] (-) TimerEvent: {}
+[16.864340] (-) TimerEvent: {}
+[16.894977] (uf_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/herd__type_support.cpp.o\x1b[0m\n'}
+[16.943562] (uf_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/herd__type_support.cpp.o\x1b[0m\n'}
+[16.964475] (-) TimerEvent: {}
+[17.065037] (-) TimerEvent: {}
+[17.165606] (-) TimerEvent: {}
+[17.279529] (-) TimerEvent: {}
+[17.380923] (-) TimerEvent: {}
+[17.481384] (-) TimerEvent: {}
+[17.500067] (uf_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/defend__type_support_c.cpp.o\x1b[0m\n'}
+[17.549772] (uf_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/msg/position__type_support.cpp.o\x1b[0m\n'}
+[17.581517] (-) TimerEvent: {}
+[17.681963] (-) TimerEvent: {}
+[17.793372] (-) TimerEvent: {}
+[17.897376] (-) TimerEvent: {}
+[18.001373] (-) TimerEvent: {}
+[18.106840] (-) TimerEvent: {}
+[18.207276] (-) TimerEvent: {}
+[18.308124] (-) TimerEvent: {}
+[18.408740] (-) TimerEvent: {}
+[18.473561] (uf_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/task_assign__type_support.cpp.o\x1b[0m\n'}
+[18.491588] (uf_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp.o\x1b[0m\n'}
+[18.508882] (-) TimerEvent: {}
+[18.609548] (-) TimerEvent: {}
+[18.710109] (-) TimerEvent: {}
+[18.717443] (uf_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/herd__type_support_c.cpp.o\x1b[0m\n'}
+[18.769797] (uf_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/msg/detail/position__type_support.cpp.o\x1b[0m\n'}
+[18.810239] (-) TimerEvent: {}
+[18.910702] (-) TimerEvent: {}
+[19.011156] (-) TimerEvent: {}
+[19.111740] (-) TimerEvent: {}
+[19.199486] (uf_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/geo_conv__type_support.cpp.o\x1b[0m\n'}
+[19.211887] (-) TimerEvent: {}
+[19.312374] (-) TimerEvent: {}
+[19.412861] (-) TimerEvent: {}
+[19.513900] (-) TimerEvent: {}
+[19.611851] (uf_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/task_assign__type_support.cpp.o\x1b[0m\n'}
+[19.614101] (-) TimerEvent: {}
+[19.715336] (-) TimerEvent: {}
+[19.759007] (uf_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/msg/detail/position__type_support_c.cpp.o\x1b[0m\n'}
+[19.815483] (-) TimerEvent: {}
+[19.823411] (uf_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/task_assign__type_support.cpp.o\x1b[0m\n'}
+[19.900987] (uf_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.915627] (-) TimerEvent: {}
+[20.016088] (-) TimerEvent: {}
+[20.030214] (uf_interfaces) StdoutLine: {'line': b'[ 46%] Built target uf_interfaces__rosidl_typesupport_cpp\n'}
+[20.052908] (uf_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[20.116236] (-) TimerEvent: {}
+[20.216691] (-) TimerEvent: {}
+[20.317122] (-) TimerEvent: {}
+[20.417623] (-) TimerEvent: {}
+[20.518163] (-) TimerEvent: {}
+[20.618636] (-) TimerEvent: {}
+[20.664965] (uf_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/task_assign__type_support_c.cpp.o\x1b[0m\n'}
+[20.718774] (-) TimerEvent: {}
+[20.755329] (uf_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/geo_conv__type_support.cpp.o\x1b[0m\n'}
+[20.818900] (-) TimerEvent: {}
+[20.860140] (uf_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/geo_conv__type_support.cpp.o\x1b[0m\n'}
+[20.919022] (-) TimerEvent: {}
+[21.019446] (-) TimerEvent: {}
+[21.119876] (-) TimerEvent: {}
+[21.220322] (-) TimerEvent: {}
+[21.320766] (-) TimerEvent: {}
+[21.421220] (-) TimerEvent: {}
+[21.521680] (-) TimerEvent: {}
+[21.588872] (uf_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/geo_conv__type_support_c.cpp.o\x1b[0m\n'}
+[21.621796] (-) TimerEvent: {}
+[21.722226] (-) TimerEvent: {}
+[21.822659] (-) TimerEvent: {}
+[21.909432] (uf_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.922843] (-) TimerEvent: {}
+[21.923322] (uf_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[22.022957] (-) TimerEvent: {}
+[22.096836] (uf_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/action/detail/defend__type_support.c.o\x1b[0m\n'}
+[22.123109] (-) TimerEvent: {}
+[22.131059] (uf_interfaces) StdoutLine: {'line': b'[ 58%] Built target uf_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[22.146986] (uf_interfaces) StdoutLine: {'line': b'[ 58%] Built target uf_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[22.155740] (uf_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[22.166181] (uf_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/action/detail/herd__type_support.c.o\x1b[0m\n'}
+[22.223237] (-) TimerEvent: {}
+[22.253628] (uf_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/msg/detail/position__type_support.c.o\x1b[0m\n'}
+[22.288177] (uf_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/srv/detail/task_assign__type_support.c.o\x1b[0m\n'}
+[22.323368] (-) TimerEvent: {}
+[22.352860] (uf_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/srv/detail/geo_conv__type_support.c.o\x1b[0m\n'}
+[22.423502] (-) TimerEvent: {}
+[22.437950] (uf_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libuf_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[22.489943] (uf_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[22.523622] (-) TimerEvent: {}
+[22.536859] (uf_interfaces) StdoutLine: {'line': b'[ 69%] Built target uf_interfaces__rosidl_typesupport_introspection_c\n'}
+[22.623754] (-) TimerEvent: {}
+[22.632564] (uf_interfaces) StdoutLine: {'line': b'[ 69%] Built target uf_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[22.723867] (-) TimerEvent: {}
+[22.824195] (-) TimerEvent: {}
+[22.924528] (-) TimerEvent: {}
+[23.005479] (uf_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/defend__type_support.cpp.o\x1b[0m\n'}
+[23.005910] (uf_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/task_assign__type_support.cpp.o\x1b[0m\n'}
+[23.006118] (uf_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/herd__type_support.cpp.o\x1b[0m\n'}
+[23.006430] (uf_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/msg/position__type_support.cpp.o\x1b[0m\n'}
+[23.024666] (-) TimerEvent: {}
+[23.073167] (uf_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/geo_conv__type_support.cpp.o\x1b[0m\n'}
+[23.124826] (-) TimerEvent: {}
+[23.152841] (uf_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[23.218230] (uf_interfaces) StdoutLine: {'line': b'[ 79%] Built target uf_interfaces__rosidl_typesupport_c\n'}
+[23.224947] (-) TimerEvent: {}
+[23.243799] (uf_interfaces) StdoutLine: {'line': b'[ 79%] Built target uf_interfaces\n'}
+[23.271949] (uf_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[23.325069] (-) TimerEvent: {}
+[23.425431] (-) TimerEvent: {}
+[23.525756] (-) TimerEvent: {}
+[23.626080] (-) TimerEvent: {}
+[23.726394] (-) TimerEvent: {}
+[23.826715] (-) TimerEvent: {}
+[23.927025] (-) TimerEvent: {}
+[24.027409] (-) TimerEvent: {}
+[24.127743] (-) TimerEvent: {}
+[24.228078] (-) TimerEvent: {}
+[24.328409] (-) TimerEvent: {}
+[24.428746] (-) TimerEvent: {}
+[24.529073] (-) TimerEvent: {}
+[24.629459] (-) TimerEvent: {}
+[24.729780] (-) TimerEvent: {}
+[24.830144] (-) TimerEvent: {}
+[24.930471] (-) TimerEvent: {}
+[25.030791] (-) TimerEvent: {}
+[25.131113] (-) TimerEvent: {}
+[25.231446] (-) TimerEvent: {}
+[25.331766] (-) TimerEvent: {}
+[25.432088] (-) TimerEvent: {}
+[25.532411] (-) TimerEvent: {}
+[25.632735] (-) TimerEvent: {}
+[25.733093] (-) TimerEvent: {}
+[25.762750] (uf_interfaces) StdoutLine: {'line': b'[ 80%] Built target uf_interfaces__py\n'}
+[25.803772] (uf_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_defend_s.c.o\x1b[0m\n'}
+[25.804097] (uf_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_herd_s.c.o\x1b[0m\n'}
+[25.804444] (uf_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/msg/_position_s.c.o\x1b[0m\n'}
+[25.804655] (uf_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_task_assign_s.c.o\x1b[0m\n'}
+[25.833200] (-) TimerEvent: {}
+[25.933693] (-) TimerEvent: {}
+[26.034152] (-) TimerEvent: {}
+[26.134685] (-) TimerEvent: {}
+[26.235058] (-) TimerEvent: {}
+[26.335491] (-) TimerEvent: {}
+[26.349209] (uf_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_geo_conv_s.c.o\x1b[0m\n'}
+[26.435624] (-) TimerEvent: {}
+[26.536065] (-) TimerEvent: {}
+[26.554497] (uf_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uf_interfaces/libuf_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[26.631290] (uf_interfaces) StdoutLine: {'line': b'[ 90%] Built target uf_interfaces__rosidl_generator_py\n'}
+[26.636203] (-) TimerEvent: {}
+[26.673483] (uf_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[26.674558] (uf_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[26.678964] (uf_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[26.736400] (-) TimerEvent: {}
+[26.837614] (-) TimerEvent: {}
+[26.938360] (-) TimerEvent: {}
+[27.033105] (uf_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[27.041261] (-) TimerEvent: {}
+[27.051639] (uf_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[27.099772] (uf_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[27.135836] (uf_interfaces) StdoutLine: {'line': b'[100%] Built target uf_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[27.141601] (-) TimerEvent: {}
+[27.147806] (uf_interfaces) StdoutLine: {'line': b'[100%] Built target uf_interfaces__rosidl_typesupport_c__pyext\n'}
+[27.175136] (uf_interfaces) StdoutLine: {'line': b'[100%] Built target uf_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[27.191039] (uf_interfaces) CommandEnded: {'returncode': 0}
+[27.241706] (-) TimerEvent: {}
+[27.342107] (-) TimerEvent: {}
+[27.355370] (uf_interfaces) JobProgress: {'identifier': 'uf_interfaces', 'progress': 'install'}
+[27.366973] (uf_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wyatt/ros2_ws/build/uf_interfaces'], 'cwd': '/home/wyatt/ros2_ws/build/uf_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'wyatt'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wyatt'), ('OLDPWD', '/home/wyatt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1083'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'wyatt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wyatt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/wyatt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/r2d2:@/tmp/.ICE-unix/1049,unix/r2d2:/tmp/.ICE-unix/1049'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f76728ac_0e06_48ff_86a7_393856270fac'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DN6ZL2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wyatt/ros2_ws/build/uf_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[27.379439] (uf_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.379716] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/rosidl_interfaces/uf_interfaces\n'}
+[27.379890] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces\n'}
+[27.380065] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action\n'}
+[27.380231] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/herd.h\n'}
+[27.380405] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail\n'}
+[27.380564] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.h\n'}
+[27.380744] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__struct.h\n'}
+[27.380860] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__functions.c\n'}
+[27.381017] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__functions.c\n'}
+[27.381307] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__struct.h\n'}
+[27.381481] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__functions.h\n'}
+[27.381700] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.h\n'}
+[27.381871] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__functions.h\n'}
+[27.382090] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/defend.h\n'}
+[27.382250] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv\n'}
+[27.382414] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/task_assign.h\n'}
+[27.382566] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/geo_conv.h\n'}
+[27.382758] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail\n'}
+[27.382929] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__struct.h\n'}
+[27.383074] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.h\n'}
+[27.383233] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__functions.h\n'}
+[27.383393] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__functions.h\n'}
+[27.383543] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__struct.h\n'}
+[27.383707] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__functions.c\n'}
+[27.383861] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.h\n'}
+[27.384052] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__functions.c\n'}
+[27.384251] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg\n'}
+[27.384407] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/position.h\n'}
+[27.384567] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail\n'}
+[27.384726] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__functions.h\n'}
+[27.384885] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.h\n'}
+[27.384995] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__struct.h\n'}
+[27.385155] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__functions.c\n'}
+[27.385326] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[27.385442] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/library_path.sh\n'}
+[27.385550] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/library_path.dsv\n'}
+[27.385806] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_c.so\n'}
+[27.386486] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_c.so" to ""\n'}
+[27.386760] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces\n'}
+[27.386918] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action\n'}
+[27.387040] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail\n'}
+[27.387203] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_fastrtps_c.h\n'}
+[27.387440] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_fastrtps_c.h\n'}
+[27.387575] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv\n'}
+[27.387746] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail\n'}
+[27.388147] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_fastrtps_c.h\n'}
+[27.388321] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_fastrtps_c.h\n'}
+[27.388538] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg\n'}
+[27.388669] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[27.388849] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail\n'}
+[27.388963] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[27.389072] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[27.389431] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[27.389674] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces\n'}
+[27.389830] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action\n'}
+[27.390026] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/herd.hpp\n'}
+[27.390177] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/defend.hpp\n'}
+[27.390296] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail\n'}
+[27.390442] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__builder.hpp\n'}
+[27.390602] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__traits.hpp\n'}
+[27.390758] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__struct.hpp\n'}
+[27.390876] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__traits.hpp\n'}
+[27.391030] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__struct.hpp\n'}
+[27.391221] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__builder.hpp\n'}
+[27.391390] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv\n'}
+[27.391511] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/task_assign.hpp\n'}
+[27.391720] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/geo_conv.hpp\n'}
+[27.391871] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail\n'}
+[27.392023] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__traits.hpp\n'}
+[27.392183] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__struct.hpp\n'}
+[27.392331] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__struct.hpp\n'}
+[27.392508] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__builder.hpp\n'}
+[27.392700] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__traits.hpp\n'}
+[27.392867] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__builder.hpp\n'}
+[27.393028] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg\n'}
+[27.393177] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/position.hpp\n'}
+[27.393407] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail\n'}
+[27.393519] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__struct.hpp\n'}
+[27.393683] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__builder.hpp\n'}
+[27.393807] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__traits.hpp\n'}
+[27.393971] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces\n'}
+[27.394093] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action\n'}
+[27.394217] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail\n'}
+[27.394333] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.394458] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.394582] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/dds_fastrtps\n'}
+[27.394771] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv\n'}
+[27.394889] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail\n'}
+[27.395088] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.395247] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.395410] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/dds_fastrtps\n'}
+[27.395521] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg\n'}
+[27.395628] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[27.395736] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail\n'}
+[27.395843] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.395965] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/dds_fastrtps\n'}
+[27.396129] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[27.396330] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[27.396454] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces\n'}
+[27.396574] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action\n'}
+[27.396689] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail\n'}
+[27.396805] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_introspection_c.h\n'}
+[27.396980] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_introspection_c.h\n'}
+[27.397180] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.c\n'}
+[27.397390] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.c\n'}
+[27.397509] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv\n'}
+[27.397627] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail\n'}
+[27.397798] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.c\n'}
+[27.397918] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.c\n'}
+[27.398039] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_introspection_c.h\n'}
+[27.398212] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_introspection_c.h\n'}
+[27.398377] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg\n'}
+[27.398492] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[27.398642] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail\n'}
+[27.398817] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[27.398935] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.c\n'}
+[27.399101] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[27.399488] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[27.399683] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_c.so\n'}
+[27.400145] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[27.400377] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces\n'}
+[27.400550] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action\n'}
+[27.400704] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail\n'}
+[27.400851] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.401009] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.401145] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.cpp\n'}
+[27.401324] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.cpp\n'}
+[27.401522] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv\n'}
+[27.401673] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail\n'}
+[27.401785] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.401968] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.cpp\n'}
+[27.402115] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.cpp\n'}
+[27.402310] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.402477] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg\n'}
+[27.402604] (uf_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail\n'}
+[27.402731] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.402889] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.cpp\n'}
+[27.403000] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[27.403690] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[27.403894] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_cpp.so\n'}
+[27.404574] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[27.404830] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/pythonpath.sh\n'}
+[27.406420] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/pythonpath.dsv\n'}
+[27.406577] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces-0.0.0-py3.10.egg-info\n'}
+[27.406770] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[27.406930] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[27.407091] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[27.407244] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[27.407396] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces\n'}
+[27.407552] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[27.407843] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[27.408179] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/libuf_interfaces__rosidl_generator_py.so\n'}
+[27.408451] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/__init__.py\n'}
+[27.408595] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action\n'}
+[27.408753] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/_herd_s.c\n'}
+[27.408910] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/_defend.py\n'}
+[27.409097] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/__init__.py\n'}
+[27.409290] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/_herd.py\n'}
+[27.409537] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/_defend_s.c\n'}
+[27.409833] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.410102] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.410340] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv\n'}
+[27.410500] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/__init__.py\n'}
+[27.410660] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/_task_assign_s.c\n'}
+[27.410821] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/_geo_conv_s.c\n'}
+[27.410979] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/_task_assign.py\n'}
+[27.411136] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/_geo_conv.py\n'}
+[27.411294] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[27.411530] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg\n'}
+[27.411678] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg/__init__.py\n'}
+[27.411834] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg/_position.py\n'}
+[27.411979] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg/_position_s.c\n'}
+[27.412135] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.442235] (-) TimerEvent: {}
+[27.481146] (uf_interfaces) StdoutLine: {'line': b"Listing '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces'...\n"}
+[27.481491] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/__init__.py'...\n"}
+[27.481714] (uf_interfaces) StdoutLine: {'line': b"Listing '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action'...\n"}
+[27.481929] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/__init__.py'...\n"}
+[27.482652] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/_defend.py'...\n"}
+[27.482785] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/action/_herd.py'...\n"}
+[27.482925] (uf_interfaces) StdoutLine: {'line': b"Listing '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg'...\n"}
+[27.483050] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg/__init__.py'...\n"}
+[27.483172] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/msg/_position.py'...\n"}
+[27.483292] (uf_interfaces) StdoutLine: {'line': b"Listing '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv'...\n"}
+[27.483409] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/__init__.py'...\n"}
+[27.483524] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/_geo_conv.py'...\n"}
+[27.483635] (uf_interfaces) StdoutLine: {'line': b"Compiling '/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/srv/_task_assign.py'...\n"}
+[27.488614] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.489369] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[27.489766] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.490363] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[27.490692] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.491220] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/local/lib/python3.10/dist-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[27.491403] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_py.so\n'}
+[27.492014] (uf_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/wyatt/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_py.so" to ""\n'}
+[27.492219] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Defend.idl\n'}
+[27.492478] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Herd.idl\n'}
+[27.492690] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/msg/Position.idl\n'}
+[27.492945] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign.idl\n'}
+[27.493234] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv.idl\n'}
+[27.493518] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Defend.action\n'}
+[27.494492] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Herd.action\n'}
+[27.494687] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/msg/Position.msg\n'}
+[27.494878] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign.srv\n'}
+[27.495081] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign_Request.msg\n'}
+[27.495281] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign_Response.msg\n'}
+[27.495480] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv.srv\n'}
+[27.495670] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv_Request.msg\n'}
+[27.495863] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv_Response.msg\n'}
+[27.496120] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/package_run_dependencies/uf_interfaces\n'}
+[27.496378] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/parent_prefix_path/uf_interfaces\n'}
+[27.496582] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/ament_prefix_path.sh\n'}
+[27.496787] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/ament_prefix_path.dsv\n'}
+[27.496987] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/path.sh\n'}
+[27.497186] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/path.dsv\n'}
+[27.497470] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.bash\n'}
+[27.497670] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.sh\n'}
+[27.497874] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.zsh\n'}
+[27.498069] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.dsv\n'}
+[27.498259] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.dsv\n'}
+[27.498510] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/packages/uf_interfaces\n'}
+[27.498772] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_cExport.cmake\n'}
+[27.498987] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[27.499208] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[27.499420] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[27.499647] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_cppExport.cmake\n'}
+[27.499865] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[27.500072] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[27.500295] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[27.500504] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[27.500721] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[27.500934] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[27.501153] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[27.501383] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[27.501615] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[27.501827] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[27.502049] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_pyExport.cmake\n'}
+[27.502258] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[27.502477] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[27.502674] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[27.502888] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[27.503085] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[27.503291] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[27.503488] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[27.503696] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[27.503944] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfacesConfig.cmake\n'}
+[27.504173] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfacesConfig-version.cmake\n'}
+[27.504377] (uf_interfaces) StdoutLine: {'line': b'-- Installing: /home/wyatt/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.xml\n'}
+[27.508079] (uf_interfaces) CommandEnded: {'returncode': 0}
+[27.542430] (-) TimerEvent: {}
+[27.643097] (-) TimerEvent: {}
+[27.723251] (uf_interfaces) JobEnded: {'identifier': 'uf_interfaces', 'rc': 0}
+[27.724315] (-) EventReactorShutdown: {}
