@@ -76,29 +76,13 @@ class HerdingNode(Node): #create package
         #self.dnn_weights_csv = csv.writer(open(os.path.join(self.directory, "dnn_weights.csv"), mode='w', newline=''))
         #self.dnn_weights_csv.writerow(['Timestep', 'x error', 'y error'])
 
-        self.last_target = None
-        self.last_agent = None
 
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_agent1 = np.array([msg.pose.position.x, msg.pose.position.y])
-        # if self.real_pos_agent1 is None:
-        #     if self.last_agent is None:
-        #         return
-        #     else:
-        #         self.real_pos_agent1 = self.last_agent
-        #         self.get_logger().info("Using last agent position")
-        #         return
         self.get_logger().info(f'Agent1 position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def target1_pos_callback(self, msg):
         self.real_pos_target1 = np.array([msg.pose.position.x, msg.pose.position.y])
-        # if self.real_pos_target1 is None:
-        #     if self.last_target is None:
-        #         return
-        #     else:
-        #         self.real_pos_target1 = self.last_target
-        #         self.get_logger().info("Using last target position")
-        #         return
         self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def update_motion(self):
@@ -137,7 +121,7 @@ class HerdingNode(Node): #create package
         #publish velocities
         self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 0.5)
         self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.1)
-        
+
         #save holonomic velocity commands to csv
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
         self.target1_vel_hol_csv.writerow([self.i, self.target1_vel_hol[0], self.target1_vel_hol[1]])

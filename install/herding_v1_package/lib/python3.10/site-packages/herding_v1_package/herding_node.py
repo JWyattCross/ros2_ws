@@ -79,38 +79,39 @@ class HerdingNode(Node): #create package
         self.last_target = None
         self.last_agent = None
 
+        self.last_target_vel = 0.0
+        self.last_agent_vel = 0.0
+
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_agent1 = np.array([msg.pose.position.x, msg.pose.position.y])
-
-        if self.real_pos_agent1 is None:
-            if self.last_agent is None:
-                return
-            else:
-                self.real_pos_agent1 = self.last_agent
-                self.get_logger().info("Using last agent position")
-                return
+        # if self.real_pos_agent1 is None:
+        #     if self.last_agent is None:
+        #         return
+        #     else:
+        #         self.real_pos_agent1 = self.last_agent
+        #         self.get_logger().info("Using last agent position")
+        #         return
         self.get_logger().info(f'Agent1 position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def target1_pos_callback(self, msg):
         self.real_pos_target1 = np.array([msg.pose.position.x, msg.pose.position.y])
-
-        if self.real_pos_target1 is None:
-            if self.last_target is None:
-                return
-            else:
-                self.real_pos_target1 = self.last_target
-                self.get_logger().info("Using last target position")
-                return
-            
+        # if self.real_pos_target1 is None:
+        #     if self.last_target is None:
+        #         return
+        #     else:
+        #         self.real_pos_target1 = self.last_target
+        #         self.get_logger().info("Using last target position")
+        #         return
         self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def update_motion(self):
         if self.real_pos_agent1 is None:
             self.get_logger().info("Agent position is missing. Skipping update.")
-            return
+            self.publish_lin_velocity(self.agent1_vel_pub, self.last_agent_vel)
         
         if self.real_pos_target1 is None:
             self.get_logger().info("Target position is missing. Skipping update.")
+            self.publish_lin_velocity(self.target1_vel_pub, self.last_target_vel)
             return
         
         #give initial positions to simulation
@@ -138,9 +139,9 @@ class HerdingNode(Node): #create package
 
 
         #publish velocities
-        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 0.5)
-        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.1)
-        
+        self.last_agent_vel  = self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 0.5)
+        self.last_target_vel = self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.1)
+
         #save holonomic velocity commands to csv
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
         self.target1_vel_hol_csv.writerow([self.i, self.target1_vel_hol[0], self.target1_vel_hol[1]])
@@ -172,6 +173,14 @@ class HerdingNode(Node): #create package
         #TESTING, using sim that takes in deltx and delty, not ang/lin
         #twist_msg.linear.x = v_max*velocity_hol[0]/v_lin
         #twist_msg.linear.y = velocity_hol[1]
+        publisher.publish(twist_msg)
+
+        return v_lin
+
+    def publish_lin_velocity(self, publisher, v_lin):
+        self.get_logger().info(f'Publishing lin: {v_lin}')
+        twist_msg = Twist()
+        twist_msg.linear.x = v_lin
         publisher.publish(twist_msg)
 
 
