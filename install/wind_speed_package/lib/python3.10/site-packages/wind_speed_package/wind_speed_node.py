@@ -14,7 +14,7 @@ class WindSensorNode(Node):
 
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.connect((self.TCP_IP, self.TCP_PORT))
-        self.get_logger().info(f'TCP client connected. Press Ctrl+C to stop.')
+        self.get_logger().info(f'TCP connected, ctrl+c to stop')
 
         self.timer = self.create_timer(1, self.get_wind_data)
 
@@ -50,7 +50,7 @@ class WindSensorNode(Node):
         self.publisher_direction.publish(msg)
 
     def on_shutdown(self):
-        self.get_logger().info("Closing socket...")
+        self.get_logger().info("closing socket...")
         self.sock.close()
 
 
