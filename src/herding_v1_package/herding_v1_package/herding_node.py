@@ -161,8 +161,7 @@ class HerdingNode(Node): #create package
         return v_lin
     
     def pub_lin_vel(self, publisher, velocity): #publish the vel commands as a twist message
-        self.get_logger().info(f'Publishing Last Vel Hol: {velocity_hol}')
-        self.get_logger().info(f'Publishing Last lin,ang: {v_lin}, {v_ang}')
+        self.get_logger().info(f'Publishing Last linear vel: {velocity}')
 
         twist_msg = Twist()
         twist_msg.linear.x = velocity#v_lin
