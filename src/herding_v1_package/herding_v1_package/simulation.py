@@ -44,10 +44,10 @@ class Agent(Entity):
         #phi = DNN("stuff")     #new dnn script not done yet
         self.tracking_error = self.target.position - self.target.position_previous
         controller = k1*self.tracking_error #+ phi      #Proportional control
-        #new U equation
-        #x1 is target
-        #x0 is agent
-        #xG is a goal location
+        # new U equation
+        # x1 is target
+        # x0 is agent
+        # xG is a goal location
         #controller = (k2 - k1*k2 - 1)*(self.goal_pos) + (k1 + k1*k2 + 1)*(self.agent.position) + (k1 + k2)*(self.target.position)
 
         return controller, self.tracking_error  #these are both [,] filled with floats

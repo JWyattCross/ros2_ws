@@ -63,10 +63,13 @@ class HerdingNode(Node): #create package
         self.real_pos_agent1 = None
         self.real_pos_target1 = None
         self.First = True
+        self.no_repeat = False
+
+        self.agent1_vel = 0.0
+        self.target1_vel = 0.0
 
         #csv saving code ---
         self.directory = create_directory_with_timestamp() #create a directory in /ros2_ws folder to hold saved values
-        #create csv files and add headers:
         self.agent1_vel_hol_csv = csv.writer(open(os.path.join(self.directory, "agent1_vel_hol.csv"), mode='w', newline='')) #create and open file
         self.agent1_vel_hol_csv.writerow(['Timestep', 'dx', 'dy']) #header
         self.target1_vel_hol_csv = csv.writer(open(os.path.join(self.directory, "target1_vel_hol.csv"), mode='w', newline=''))
@@ -88,14 +91,18 @@ class HerdingNode(Node): #create package
     def update_motion(self):
         if self.real_pos_agent1 is None:
             self.get_logger().info("Agent position is missing. Skipping update.")
-            return
+            self.no_repeat = True
         
         if self.real_pos_target1 is None:
             self.get_logger().info("Target position is missing. Skipping update.")
+            self.no_repeat = True
+
+        if self.no_repeat: #lets me see what is missing using log messages, and publishes last velocity, default is 0
+            self.pub_lin_vel(self.agent1_vel_pub, self.agent1_vel)
+            self.pub_lin_vel(self.target1_vel_pub, self.target1_vel)
             return
         
-        #give initial positions to simulation
-        if self.First:
+        if self.First: #give initial positions to simulation
             self.simulation.target.pass_initial_pos(self.real_pos_target1)
             self.simulation.agent.pass_initial_pos(self.real_pos_agent1)
             self.First = False
@@ -117,15 +124,12 @@ class HerdingNode(Node): #create package
         self.get_logger().info(f'Agent vel_hol:        {self.agent1_vel_hol}')
         self.get_logger().info(f'Agent tracking error: {self.tracking_error}')
 
-
         #publish velocities
-        self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 1.0)
-        self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.5)
+        self.agent1_vel = self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 1.0)
+        self.target1_vel = self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.5)
 
-        #save holonomic velocity commands to csv
-        self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]])
+        self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]]) #save to csv
         self.target1_vel_hol_csv.writerow([self.i, self.target1_vel_hol[0], self.target1_vel_hol[1]])
-        #save tracking error to csv
         self.track_error_csv.writerow([self.i, self.tracking_error[0], self.tracking_error[1]])
 
         self.get_logger().info(f'\n') #empty comment to seperate steps
@@ -153,6 +157,16 @@ class HerdingNode(Node): #create package
         #TESTING, using sim that takes in deltx and delty, not ang/lin
         #twist_msg.linear.x = v_max*velocity_hol[0]/v_lin
         #twist_msg.linear.y = velocity_hol[1]
+        publisher.publish(twist_msg)
+        return v_lin
+    
+    def pub_lin_vel(self, publisher, velocity): #publish the vel commands as a twist message
+        self.get_logger().info(f'Publishing Last Vel Hol: {velocity_hol}')
+        self.get_logger().info(f'Publishing Last lin,ang: {v_lin}, {v_ang}')
+
+        twist_msg = Twist()
+        twist_msg.linear.x = velocity#v_lin
+        #twist_msg.angular.z = 0 #ignoring angular
         publisher.publish(twist_msg)
 
 
