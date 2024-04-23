@@ -45,11 +45,11 @@ class HerdingNode(Node): #create package
         #Robot namespaces
         #/j100_0572/
         #'/a200_0706' #no trailing /
-        self.agent_name = '/j100_0572'
-        self.target_name = '/a200_0706'
+        #self.agent_name = '/j100_0572'
+        #self.target_name = '/a200_0706'
 
-        #self.agent_name = 'go1_0153' #blue one
-        #self.target_name = 'go1_0154'#/a200_0708'
+        self.agent_name = 'go1_0153' #blue one
+        self.target_name = 'go1_0154'#/a200_0708'
 
         #publish velocity (anglular and linear)
         #COMMENT FOR TESTING
@@ -165,7 +165,7 @@ class HerdingNode(Node): #create package
             while v_ang < -np.pi:
                 v_ang += 2*np.pi
 
-        v_ang = 0.1*v_ang
+        v_ang = -0.8*v_ang
         #0.1 is a gain so we dont do 360deg rotations instantly
 
         if v_lin > v_max:
