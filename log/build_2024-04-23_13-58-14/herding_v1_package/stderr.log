@@ -1,0 +1,5 @@
+  File "/home/wyatt/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/herding_node.py", line 48
+    self.target_name = 'go1_154'/a200_0708'
+                                          ^
+SyntaxError: unterminated string literal (detected at line 48)
+

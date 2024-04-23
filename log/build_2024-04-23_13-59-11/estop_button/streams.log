@@ -1,0 +1,20 @@
+[2.961s] Invoking command in '/home/wyatt/ros2_ws/src/estop_button': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed install_data
+[3.839s] running egg_info
+[3.841s] writing ../../build/estop_button/estop_button.egg-info/PKG-INFO
+[3.842s] writing dependency_links to ../../build/estop_button/estop_button.egg-info/dependency_links.txt
+[3.842s] writing entry points to ../../build/estop_button/estop_button.egg-info/entry_points.txt
+[3.843s] writing requirements to ../../build/estop_button/estop_button.egg-info/requires.txt
+[3.843s] writing top-level names to ../../build/estop_button/estop_button.egg-info/top_level.txt
+[3.851s] reading manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[3.852s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[3.854s] running build
+[3.855s] running build_py
+[3.857s] running install
+[3.859s] running install_lib
+[3.862s] running install_data
+[3.863s] running install_egg_info
+[3.870s] removing '/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info' (and everything under it)
+[3.871s] Copying ../../build/estop_button/estop_button.egg-info to /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info
+[3.873s] running install_scripts
+[3.906s] writing list of installed files to '/home/wyatt/ros2_ws/build/estop_button/install.log'
+[4.362s] Invoked command in '/home/wyatt/ros2_ws/src/estop_button' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed install_data

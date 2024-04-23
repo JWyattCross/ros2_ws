@@ -8,6 +8,7 @@ import os
 import csv
 from datetime import datetime
 import math
+from tf_transformations import euler_from_quaternion
 
 def create_directory_with_timestamp():
     # Get current date and time
@@ -43,8 +44,12 @@ class HerdingNode(Node): #create package
 
         #Robot namespaces
         #/j100_0572/
-        self.agent_name = '/a200_0706' #no trailing /
-        self.target_name = '/a200_0708'
+        #'/a200_0706' #no trailing /
+        self.agent_name = '/j100_0572'
+        self.target_name = '/a200_0706'
+
+        #self.agent_name = 'go1_0153' #blue one
+        #self.target_name = 'go1_0154'#/a200_0708'
 
         #publish velocity (anglular and linear)
         #COMMENT FOR TESTING
@@ -82,13 +87,18 @@ class HerdingNode(Node): #create package
 
     def agent1_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_agent1 = np.array([msg.pose.position.x, msg.pose.position.y])
+        self.agent1_heading_list = [msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w]
+        _, _, self.agent1_yaw = euler_from_quaternion(self.agent1_heading_list)
         self.get_logger().info(f'Agent1 position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def target1_pos_callback(self, msg):
         self.real_pos_target1 = np.array([msg.pose.position.x, msg.pose.position.y])
+        self.target1_heading_list = [msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w]
+        _, _, self.target1_yaw = euler_from_quaternion(self.target1_heading_list)
         self.get_logger().info(f'Target1 position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def update_motion(self):
+        self.no_repeat = False
         if self.real_pos_agent1 is None:
             self.get_logger().info("Agent position is missing. Skipping update.")
             self.no_repeat = True
@@ -98,8 +108,8 @@ class HerdingNode(Node): #create package
             self.no_repeat = True
 
         if self.no_repeat: #lets me see what is missing using log messages, and publishes last velocity, default is 0
-            self.pub_lin_vel(self.agent1_vel_pub, self.agent1_vel)
-            self.pub_lin_vel(self.target1_vel_pub, self.target1_vel)
+            #self.pub_lin_vel(self.agent1_vel_pub, self.agent1_vel)
+            #self.pub_lin_vel(self.target1_vel_pub, self.target1_vel)
             return
         
         if self.First: #give initial positions to simulation
@@ -125,8 +135,8 @@ class HerdingNode(Node): #create package
         self.get_logger().info(f'Agent tracking error: {self.tracking_error}')
 
         #publish velocities
-        self.agent1_vel = self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 1.0)
-        self.target1_vel = self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.5)
+        self.agent1_vel = self.convert_and_publish_velocity(self.agent1_vel_pub, self.agent1_vel_hol, 0.5, self.agent1_yaw)
+        self.target1_vel = self.convert_and_publish_velocity(self.target1_vel_pub, self.target1_vel_hol, 0.2, self.target1_yaw)
 
         self.agent1_vel_hol_csv.writerow([self.i, self.agent1_vel_hol[0], self.agent1_vel_hol[1]]) #save to csv
         self.target1_vel_hol_csv.writerow([self.i, self.target1_vel_hol[0], self.target1_vel_hol[1]])
@@ -137,14 +147,27 @@ class HerdingNode(Node): #create package
         self.real_pos_agent1 = None   #zero out variables to check for when the robots are off
         self.real_pos_target1 = None
 
-    def convert_and_publish_velocity(self, publisher, velocity_hol, v_max): #publish the vel commands as a twist message
+    def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
+        #roll, pitch, yaw = euler_from_quaternion(heading_list)
         v_lin = np.linalg.norm(velocity_hol)
-        v_ang = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin))
+        atan2_angle = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin))
         
-        if math.isnan(v_lin) or math.isnan(v_ang):
+        if math.isnan(v_lin) or math.isnan(atan2_angle):
             return
-        
+
+        v_ang = (atan2_angle - yaw) #subtract current heading
+
+        if v_ang > 0: #wrap angle so it stays between -pi to pi
+            while v_ang > np.pi:
+                v_ang -= 2*np.pi
+        else:
+            while v_ang < -np.pi:
+                v_ang += 2*np.pi
+
+        v_ang = 0.1*v_ang
+        #0.1 is a gain so we dont do 360deg rotations instantly
+
         if v_lin > v_max:
             v_lin = v_max
         
@@ -161,8 +184,7 @@ class HerdingNode(Node): #create package
         return v_lin
     
     def pub_lin_vel(self, publisher, velocity): #publish the vel commands as a twist message
-        self.get_logger().info(f'Publishing Last Vel Hol: {velocity_hol}')
-        self.get_logger().info(f'Publishing Last lin,ang: {v_lin}, {v_ang}')
+        self.get_logger().info(f'Publishing Last linear vel: {velocity}')
 
         twist_msg = Twist()
         twist_msg.linear.x = velocity#v_lin
