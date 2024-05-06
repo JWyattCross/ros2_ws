@@ -1,4 +1,4 @@
-from entity import Target, Agent
+from multi_agent_tracking_pkg.entity import Target, Agent
 import numpy as np
 
 class Config:
