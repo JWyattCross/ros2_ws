@@ -83,7 +83,7 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         #random walk check
         if self.dist_from_target < self.SIGHT_RANGE:
             #call random walk funciton
-            self.target_vel_hol = self.random_walk()
+            #self.target_vel_hol = self.random_walk()
             self.target_vel_hol = self.levy_walk()
         else:
             #pass positions to gain function
@@ -111,13 +111,13 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         angle = np.random.uniform(0, 2 * np.pi)
         
         #calculate hollonomic velocities
-        x_velocity = step_length * np.cos(angle)
-        y_velocity = step_length * np.sin(angle)
+        dx = step_length * np.cos(angle)
+        dy = step_length * np.sin(angle)
         
         #heading angle (in radians)
-        heading = np.arctan2(y_velocity, x_velocity)
+        heading = np.arctan2(dx, dy)
 
-        return np.array([x_velocity, y_velocity])
+        return np.array([dx, dy])
     
     def fearFunction(target, agent, distance):
         opposite_vec = target - agent
