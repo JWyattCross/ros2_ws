@@ -1,0 +1,40 @@
+[1.967s] Invoking command in '/home/wyatt/git_ros2/ros2_ws/src/herding_v1_package': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/herding_v1_package build --build-base /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build install --record /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/install.log --single-version-externally-managed install_data
+[2.256s] running egg_info
+[2.257s] creating ../../build/herding_v1_package/herding_v1_package.egg-info
+[2.258s] writing ../../build/herding_v1_package/herding_v1_package.egg-info/PKG-INFO
+[2.258s] writing dependency_links to ../../build/herding_v1_package/herding_v1_package.egg-info/dependency_links.txt
+[2.258s] writing entry points to ../../build/herding_v1_package/herding_v1_package.egg-info/entry_points.txt
+[2.259s] writing requirements to ../../build/herding_v1_package/herding_v1_package.egg-info/requires.txt
+[2.260s] writing top-level names to ../../build/herding_v1_package/herding_v1_package.egg-info/top_level.txt
+[2.260s] writing manifest file '../../build/herding_v1_package/herding_v1_package.egg-info/SOURCES.txt'
+[2.261s] reading manifest file '../../build/herding_v1_package/herding_v1_package.egg-info/SOURCES.txt'
+[2.262s] writing manifest file '../../build/herding_v1_package/herding_v1_package.egg-info/SOURCES.txt'
+[2.262s] running build
+[2.262s] running build_py
+[2.263s] creating /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build
+[2.263s] creating /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib
+[2.263s] creating /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package
+[2.263s] copying herding_v1_package/herding_node.py -> /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package
+[2.263s] copying herding_v1_package/__init__.py -> /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package
+[2.263s] copying herding_v1_package/simulation.py -> /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package
+[2.265s] running install
+[2.265s] running install_lib
+[2.265s] creating /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package
+[2.265s] copying /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package/herding_node.py -> /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package
+[2.265s] copying /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package/__init__.py -> /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package
+[2.266s] copying /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build/lib/herding_v1_package/simulation.py -> /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package
+[2.266s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/herding_node.py to herding_node.cpython-310.pyc
+[2.269s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/__init__.py to __init__.cpython-310.pyc
+[2.269s] byte-compiling /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package/simulation.py to simulation.cpython-310.pyc
+[2.270s] running install_data
+[2.270s] creating /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/share/ament_index
+[2.270s] creating /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/share/ament_index/resource_index
+[2.271s] creating /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/share/ament_index/resource_index/packages
+[2.271s] copying resource/herding_v1_package -> /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/share/ament_index/resource_index/packages
+[2.271s] copying package.xml -> /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/share/herding_v1_package
+[2.273s] running install_egg_info
+[2.273s] Copying ../../build/herding_v1_package/herding_v1_package.egg-info to /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages/herding_v1_package-0.0.0-py3.10.egg-info
+[2.273s] running install_scripts
+[2.299s] Installing herding_node script to /home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/herding_v1_package
+[2.300s] writing list of installed files to '/home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/install.log'
+[2.333s] Invoked command in '/home/wyatt/git_ros2/ros2_ws/src/herding_v1_package' returned '0': PYTHONPATH=/home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/prefix_override:/home/wyatt/git_ros2/ros2_ws/install/herding_v1_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/herding_v1_package build --build-base /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/build install --record /home/wyatt/git_ros2/ros2_ws/build/herding_v1_package/install.log --single-version-externally-managed install_data

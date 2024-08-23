@@ -83,7 +83,8 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         #random walk check
         if self.dist_from_target < self.SIGHT_RANGE:
             #call random walk funciton
-            self.target_vel_hol = self.randomWalk()
+            self.target_vel_hol = self.random_walk()
+            self.target_vel_hol = self.levy_walk()
         else:
             #pass positions to gain function
             self.target_vel_hol = self.fearFunction(self.real_pos_target, self.real_pos_agent, self.dist_from_target)
@@ -99,10 +100,24 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         self.real_pos_agent = None #zero out variables to check for when the robots are off
         self.real_pos_target = None
 
-    def randomWalk():
+    def random_walk():
         dx = np.random.random() * 0.5   #the numbers at the end control the max velocity
         dy = np.random.random() * 0.25  #need to tune, but we want it to stay in the same area
         return np.array([dx, dy])
+    
+    def levy_walk(alpha=6.9):
+        #generate a step
+        step_length = np.random.pareto(alpha)
+        angle = np.random.uniform(0, 2 * np.pi)
+        
+        #calculate hollonomic velocities
+        x_velocity = step_length * np.cos(angle)
+        y_velocity = step_length * np.sin(angle)
+        
+        #heading angle (in radians)
+        heading = np.arctan2(y_velocity, x_velocity)
+
+        return np.array([x_velocity, y_velocity])
     
     def fearFunction(target, agent, distance):
         opposite_vec = target - agent
