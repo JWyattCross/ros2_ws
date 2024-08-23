@@ -29,8 +29,8 @@ class PubNode(Node): #this is the main method of the function where all the ros 
             /go1_0154
             /go1_0155
         no trailing '/' as it is concatenated in each pub/sub creation line below already'''
-        self.agent_name  = MAKE_SURE_THIS_IS_CORRECT; 'go1_0153'
-        self.target_name = GET_CURRENT_VEHICLE; 'go1_0154'
+        self.agent_name  = 'go1_0153'
+        self.target_name = 'go1_0154'
 
         #publish velocity (linear x and anglular z)
         self.target_vel_pub = self.create_publisher(Twist, self.target_name + '/cmd_vel', 10)
