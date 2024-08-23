@@ -83,7 +83,6 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         #random walk check
         if self.dist_from_target < self.SIGHT_RANGE:
             #call random walk funciton
-            #self.target_vel_hol = self.random_walk()
             self.target_vel_hol = self.levy_walk()
         else:
             #pass positions to gain function
@@ -100,11 +99,6 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         self.real_pos_agent = None #zero out variables to check for when the robots are off
         self.real_pos_target = None
 
-    def random_walk():
-        dx = np.random.random() * 0.5   #the numbers at the end control the max velocity
-        dy = np.random.random() * 0.25  #need to tune, but we want it to stay in the same area
-        return np.array([dx, dy])
-    
     def levy_walk(alpha=6.9):
         step_length = np.random.pareto(alpha) #generate a step
         angle = np.random.uniform(0, 2 * np.pi)
