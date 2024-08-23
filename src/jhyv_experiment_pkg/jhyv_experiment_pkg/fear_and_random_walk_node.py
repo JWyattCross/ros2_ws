@@ -106,17 +106,10 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         return np.array([dx, dy])
     
     def levy_walk(alpha=6.9):
-        #generate a step
-        step_length = np.random.pareto(alpha)
+        step_length = np.random.pareto(alpha) #generate a step
         angle = np.random.uniform(0, 2 * np.pi)
-        
-        #calculate hollonomic velocities
-        dx = step_length * np.cos(angle)
+        dx = step_length * np.cos(angle) #calculate hollonomic values
         dy = step_length * np.sin(angle)
-        
-        #heading angle (in radians)
-        heading = np.arctan2(dx, dy)
-
         return np.array([dx, dy])
     
     def fearFunction(target, agent, distance):
