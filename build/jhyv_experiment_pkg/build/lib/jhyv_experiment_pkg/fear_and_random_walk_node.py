@@ -10,16 +10,6 @@ class PubNode(Node): #this is the main method of the function where all the ros 
     def __init__(self):
         super().__init__('fear_and_random_walk_node') #node name, must match filename
 
-        #create parameters for variables
-        self.declare_parameter('dt', 0.01)
-        self.declare_parameter('GAIN', 10)
-        #self.declare_parameter('goal_pos', [1, 1, 1])
-        #self.declare_parameter('edge_set', [(1,2), (2,1), (1,3), (3,1), (2,3), (3,2)])
-
-        #get parameters
-        self.dt = self.get_parameter('dt').value
-        self.GAIN = self.get_parameter('GAIN').value
-
         #Robot namespaces
         '''AP robot names:
             /j100_0572
@@ -29,8 +19,24 @@ class PubNode(Node): #this is the main method of the function where all the ros 
             /go1_0154
             /go1_0155
         no trailing '/' as it is concatenated in each pub/sub creation line below already'''
-        self.agent_name  = MAKE_SURE_THIS_IS_CORRECT; 'go1_0153'
-        self.target_name = GET_CURRENT_VEHICLE; 'go1_0154'
+
+        #create parameters for variables
+        self.declare_parameter('AGENT', "go1_0153")
+        self.declare_parameter('TARGET', "go1_0154")
+        self.declare_parameter('dt', 0.01)
+        self.declare_parameter('GAIN', 10)
+        self.declare_parameter('MAX_SPEED_MS', 0.2)
+        self.declare_parameter('SIGHT_RANGE_METERS', 5.0)
+        self.declare_parameter('LEVY_WALK_PARAM', 6.9)
+        
+        #get parameters
+        self.agent_name = self.get_parameter('AGENT').value
+        self.target_name = self.get_parameter('TARGET').value
+        self.dt = self.get_parameter('dt').value
+        self.GAIN = self.get_parameter('GAIN').value
+        self.MAX_VEL = self.get_parameter('MAX_SPEED_MS').value
+        self.SIGHT_RANGE = self.get_parameter('SIGHT_RANGE_METERS').value
+        self.LEVY_WALK_PARAM = self.get_parameter('LEVY_WALK_PARAM').value
 
         #publish velocity (linear x and anglular z)
         self.target_vel_pub = self.create_publisher(Twist, self.target_name + '/cmd_vel', 10)
@@ -42,18 +48,13 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         #create timer using dt from parameters
         self.timer = self.create_timer(self.dt, self.update_motion)
 
-        #checks to make sure values are valid
+        #variables for checks to make sure values are valid
         self.real_pos_agent = None
         self.real_pos_target = None
 
         #set initial velocity to zero
         self.agent_vel = 0.0
         self.target_vel = 0.0
-
-        #control max linear velocity, keeps things under control
-        self.MAX_VEL = 0.2 #m/s 
-        #control how far away random walk is disabled for the fear behaviour
-        self.SIGHT_RANGE = 5.0 #m
 
 
     def agent_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
@@ -83,7 +84,7 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         #random walk check
         if self.dist_from_target < self.SIGHT_RANGE:
             #call random walk funciton
-            self.target_vel_hol = self.randomWalk()
+            self.target_vel_hol = self.levy_walk()
         else:
             #pass positions to gain function
             self.target_vel_hol = self.fearFunction(self.real_pos_target, self.real_pos_agent, self.dist_from_target)
@@ -99,9 +100,11 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         self.real_pos_agent = None #zero out variables to check for when the robots are off
         self.real_pos_target = None
 
-    def randomWalk():
-        dx = np.random.random() * 0.5   #the numbers at the end control the max velocity
-        dy = np.random.random() * 0.25  #need to tune, but we want it to stay in the same area
+    def levy_walk(alpha=6.9):
+        step_length = np.random.pareto(alpha) #generate a step
+        angle = np.random.uniform(0, 2 * np.pi)
+        dx = step_length * np.cos(angle) #calculate hollonomic values
+        dy = step_length * np.sin(angle)
         return np.array([dx, dy])
     
     def fearFunction(target, agent, distance):

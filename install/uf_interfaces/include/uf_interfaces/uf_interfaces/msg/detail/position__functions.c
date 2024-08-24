@@ -125,7 +125,7 @@ uf_interfaces__msg__Position__copy(
 }
 
 uf_interfaces__msg__Position *
-uf_interfaces__msg__Position__create()
+uf_interfaces__msg__Position__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   uf_interfaces__msg__Position * msg = (uf_interfaces__msg__Position *)allocator.allocate(sizeof(uf_interfaces__msg__Position), allocator.state);

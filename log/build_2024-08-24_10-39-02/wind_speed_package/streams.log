@@ -1,0 +1,37 @@
+[1.831s] Invoking command in '/home/wyatt/Documents/GitHub/ros2_ws/src/wind_speed_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/wind_speed_package build --build-base /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build install --record /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/install.log --single-version-externally-managed install_data
+[2.621s] running egg_info
+[2.621s] creating ../../build/wind_speed_package/wind_speed_package.egg-info
+[2.680s] writing ../../build/wind_speed_package/wind_speed_package.egg-info/PKG-INFO
+[2.680s] writing dependency_links to ../../build/wind_speed_package/wind_speed_package.egg-info/dependency_links.txt
+[2.680s] writing entry points to ../../build/wind_speed_package/wind_speed_package.egg-info/entry_points.txt
+[2.681s] writing requirements to ../../build/wind_speed_package/wind_speed_package.egg-info/requires.txt
+[2.681s] writing top-level names to ../../build/wind_speed_package/wind_speed_package.egg-info/top_level.txt
+[2.681s] writing manifest file '../../build/wind_speed_package/wind_speed_package.egg-info/SOURCES.txt'
+[2.775s] reading manifest file '../../build/wind_speed_package/wind_speed_package.egg-info/SOURCES.txt'
+[2.777s] writing manifest file '../../build/wind_speed_package/wind_speed_package.egg-info/SOURCES.txt'
+[2.777s] running build
+[2.778s] running build_py
+[2.778s] creating /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build
+[2.778s] creating /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build/lib
+[2.778s] creating /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package
+[2.778s] copying wind_speed_package/wind_speed_node.py -> /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package
+[2.778s] copying wind_speed_package/__init__.py -> /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package
+[2.779s] running install
+[2.788s] running install_lib
+[2.818s] creating /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages/wind_speed_package
+[2.818s] copying /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package/wind_speed_node.py -> /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages/wind_speed_package
+[2.819s] copying /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build/lib/wind_speed_package/__init__.py -> /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages/wind_speed_package
+[2.819s] byte-compiling /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages/wind_speed_package/wind_speed_node.py to wind_speed_node.cpython-312.pyc
+[2.820s] byte-compiling /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages/wind_speed_package/__init__.py to __init__.cpython-312.pyc
+[2.821s] running install_data
+[2.821s] creating /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/share/ament_index
+[2.821s] creating /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/share/ament_index/resource_index
+[2.821s] creating /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/share/ament_index/resource_index/packages
+[2.822s] copying resource/wind_speed_package -> /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/share/ament_index/resource_index/packages
+[2.822s] copying package.xml -> /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/share/wind_speed_package
+[2.822s] running install_egg_info
+[2.849s] Copying ../../build/wind_speed_package/wind_speed_package.egg-info to /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages/wind_speed_package-0.0.0-py3.12.egg-info
+[2.850s] running install_scripts
+[3.051s] Installing wind_speed_node script to /home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/wind_speed_package
+[3.051s] writing list of installed files to '/home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/install.log'
+[3.100s] Invoked command in '/home/wyatt/Documents/GitHub/ros2_ws/src/wind_speed_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/Documents/GitHub/ros2_ws/install/wind_speed_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/wind_speed_package build --build-base /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/build install --record /home/wyatt/Documents/GitHub/ros2_ws/build/wind_speed_package/install.log --single-version-externally-managed install_data

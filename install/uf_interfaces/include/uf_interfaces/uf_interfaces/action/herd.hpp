@@ -7,5 +7,6 @@
 #include "uf_interfaces/action/detail/herd__struct.hpp"
 #include "uf_interfaces/action/detail/herd__builder.hpp"
 #include "uf_interfaces/action/detail/herd__traits.hpp"
+#include "uf_interfaces/action/detail/herd__type_support.hpp"
 
 #endif  // UF_INTERFACES__ACTION__HERD_HPP_

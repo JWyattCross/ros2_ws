@@ -1,10 +1,10 @@
 {
   "package_name": "uf_interfaces",
   "non_idl_tuples": [
-    "/home/wyatt/git_ros2/ros2_ws/src/uf_interfaces:action/Defend.action",
-    "/home/wyatt/git_ros2/ros2_ws/src/uf_interfaces:action/Herd.action",
-    "/home/wyatt/git_ros2/ros2_ws/src/uf_interfaces:msg/Position.msg",
-    "/home/wyatt/git_ros2/ros2_ws/src/uf_interfaces:srv/TaskAssign.srv",
-    "/home/wyatt/git_ros2/ros2_ws/src/uf_interfaces:srv/GeoConv.srv"
+    "/home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces:action/Defend.action",
+    "/home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces:action/Herd.action",
+    "/home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces:msg/Position.msg",
+    "/home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces:srv/TaskAssign.srv",
+    "/home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces:srv/GeoConv.srv"
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "package_name": "uf_interfaces",
+  "output_dir": "/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces/rosidl_generator_type_description/uf_interfaces",
+  "idl_tuples": [
+    "/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces:action/Defend.idl",
+    "/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces:action/Herd.idl",
+    "/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces:msg/Position.idl",
+    "/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces:srv/TaskAssign.idl",
+    "/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces/rosidl_adapter/uf_interfaces:srv/GeoConv.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

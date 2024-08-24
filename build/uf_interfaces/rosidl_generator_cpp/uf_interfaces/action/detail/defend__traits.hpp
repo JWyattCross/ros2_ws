@@ -2,6 +2,9 @@
 // with input from uf_interfaces:action/Defend.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "uf_interfaces/action/defend.hpp"
+
+
 #ifndef UF_INTERFACES__ACTION__DETAIL__DEFEND__TRAITS_HPP_
 #define UF_INTERFACES__ACTION__DETAIL__DEFEND__TRAITS_HPP_
 
@@ -515,6 +518,175 @@ struct is_message<uf_interfaces::action::Defend_SendGoal_Response>
 
 }  // namespace rosidl_generator_traits
 
+// Include directives for member types
+// Member 'info'
+#include "service_msgs/msg/detail/service_event_info__traits.hpp"
+
+namespace uf_interfaces
+{
+
+namespace action
+{
+
+inline void to_flow_style_yaml(
+  const Defend_SendGoal_Event & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: info
+  {
+    out << "info: ";
+    to_flow_style_yaml(msg.info, out);
+    out << ", ";
+  }
+
+  // member: request
+  {
+    if (msg.request.size() == 0) {
+      out << "request: []";
+    } else {
+      out << "request: [";
+      size_t pending_items = msg.request.size();
+      for (auto item : msg.request) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: response
+  {
+    if (msg.response.size() == 0) {
+      out << "response: []";
+    } else {
+      out << "response: [";
+      size_t pending_items = msg.response.size();
+      for (auto item : msg.response) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const Defend_SendGoal_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: info
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "info:\n";
+    to_block_style_yaml(msg.info, out, indentation + 2);
+  }
+
+  // member: request
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.request.size() == 0) {
+      out << "request: []\n";
+    } else {
+      out << "request:\n";
+      for (auto item : msg.request) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+
+  // member: response
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.response.size() == 0) {
+      out << "response: []\n";
+    } else {
+      out << "response:\n";
+      for (auto item : msg.response) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const Defend_SendGoal_Event & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace action
+
+}  // namespace uf_interfaces
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use uf_interfaces::action::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const uf_interfaces::action::Defend_SendGoal_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  uf_interfaces::action::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use uf_interfaces::action::to_yaml() instead")]]
+inline std::string to_yaml(const uf_interfaces::action::Defend_SendGoal_Event & msg)
+{
+  return uf_interfaces::action::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<uf_interfaces::action::Defend_SendGoal_Event>()
+{
+  return "uf_interfaces::action::Defend_SendGoal_Event";
+}
+
+template<>
+inline const char * name<uf_interfaces::action::Defend_SendGoal_Event>()
+{
+  return "uf_interfaces/action/Defend_SendGoal_Event";
+}
+
+template<>
+struct has_fixed_size<uf_interfaces::action::Defend_SendGoal_Event>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct has_bounded_size<uf_interfaces::action::Defend_SendGoal_Event>
+  : std::integral_constant<bool, has_bounded_size<service_msgs::msg::ServiceEventInfo>::value && has_bounded_size<uf_interfaces::action::Defend_SendGoal_Request>::value && has_bounded_size<uf_interfaces::action::Defend_SendGoal_Response>::value> {};
+
+template<>
+struct is_message<uf_interfaces::action::Defend_SendGoal_Event>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
 namespace rosidl_generator_traits
 {
 
@@ -775,6 +947,176 @@ struct has_bounded_size<uf_interfaces::action::Defend_GetResult_Response>
 
 template<>
 struct is_message<uf_interfaces::action::Defend_GetResult_Response>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
+// Include directives for member types
+// Member 'info'
+// already included above
+// #include "service_msgs/msg/detail/service_event_info__traits.hpp"
+
+namespace uf_interfaces
+{
+
+namespace action
+{
+
+inline void to_flow_style_yaml(
+  const Defend_GetResult_Event & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: info
+  {
+    out << "info: ";
+    to_flow_style_yaml(msg.info, out);
+    out << ", ";
+  }
+
+  // member: request
+  {
+    if (msg.request.size() == 0) {
+      out << "request: []";
+    } else {
+      out << "request: [";
+      size_t pending_items = msg.request.size();
+      for (auto item : msg.request) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: response
+  {
+    if (msg.response.size() == 0) {
+      out << "response: []";
+    } else {
+      out << "response: [";
+      size_t pending_items = msg.response.size();
+      for (auto item : msg.response) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const Defend_GetResult_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: info
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "info:\n";
+    to_block_style_yaml(msg.info, out, indentation + 2);
+  }
+
+  // member: request
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.request.size() == 0) {
+      out << "request: []\n";
+    } else {
+      out << "request:\n";
+      for (auto item : msg.request) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+
+  // member: response
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.response.size() == 0) {
+      out << "response: []\n";
+    } else {
+      out << "response:\n";
+      for (auto item : msg.response) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const Defend_GetResult_Event & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace action
+
+}  // namespace uf_interfaces
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use uf_interfaces::action::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const uf_interfaces::action::Defend_GetResult_Event & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  uf_interfaces::action::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use uf_interfaces::action::to_yaml() instead")]]
+inline std::string to_yaml(const uf_interfaces::action::Defend_GetResult_Event & msg)
+{
+  return uf_interfaces::action::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<uf_interfaces::action::Defend_GetResult_Event>()
+{
+  return "uf_interfaces::action::Defend_GetResult_Event";
+}
+
+template<>
+inline const char * name<uf_interfaces::action::Defend_GetResult_Event>()
+{
+  return "uf_interfaces/action/Defend_GetResult_Event";
+}
+
+template<>
+struct has_fixed_size<uf_interfaces::action::Defend_GetResult_Event>
+  : std::integral_constant<bool, false> {};
+
+template<>
+struct has_bounded_size<uf_interfaces::action::Defend_GetResult_Event>
+  : std::integral_constant<bool, has_bounded_size<service_msgs::msg::ServiceEventInfo>::value && has_bounded_size<uf_interfaces::action::Defend_GetResult_Request>::value && has_bounded_size<uf_interfaces::action::Defend_GetResult_Response>::value> {};
+
+template<>
+struct is_message<uf_interfaces::action::Defend_GetResult_Event>
   : std::true_type {};
 
 }  // namespace rosidl_generator_traits

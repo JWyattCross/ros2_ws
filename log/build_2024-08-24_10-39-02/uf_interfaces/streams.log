@@ -1,0 +1,403 @@
+[0.697s] Invoking command in '/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces -DCMAKE_INSTALL_PREFIX=/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces
+[1.078s] -- The C compiler identification is GNU 13.2.0
+[1.510s] -- The CXX compiler identification is GNU 13.2.0
+[1.586s] -- Detecting C compiler ABI info
+[1.985s] -- Detecting C compiler ABI info - done
+[2.042s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.050s] -- Detecting C compile features
+[2.052s] -- Detecting C compile features - done
+[2.086s] -- Detecting CXX compiler ABI info
+[2.321s] -- Detecting CXX compiler ABI info - done
+[2.346s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.347s] -- Detecting CXX compile features
+[2.349s] -- Detecting CXX compile features - done
+[2.369s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.723s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.070s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.238s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.288s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.411s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.566s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[3.618s] -- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.488s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[6.946s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.323s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.343s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[7.506s] -- Found PythonExtra: /usr/bin/python3  
+[8.041s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[8.111s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.162s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.166s] -- Added test 'lint_cmake' to check CMake code style
+[8.169s] -- Added test 'xmllint' to check XML markup files
+[8.173s] -- Configuring done (7.4s)
+[8.234s] -- Generating done (0.0s)
+[8.237s] -- Build files have been written to: /home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces
+[8.250s] Invoked command in '/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/wyatt/Documents/GitHub/ros2_ws/src/uf_interfaces -DCMAKE_INSTALL_PREFIX=/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces
+[8.253s] Invoking command in '/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces -- -j4 -l4
+[8.318s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[8.328s] [  1%] Built target ament_cmake_python_copy_uf_interfaces
+[8.638s] running egg_info
+[8.639s] creating uf_interfaces.egg-info
+[8.678s] writing uf_interfaces.egg-info/PKG-INFO
+[8.679s] writing dependency_links to uf_interfaces.egg-info/dependency_links.txt
+[8.679s] writing top-level names to uf_interfaces.egg-info/top_level.txt
+[8.679s] writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
+[8.695s] [  1%] Built target uf_interfaces__rosidl_generator_type_description
+[8.715s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.727s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.798s] reading manifest file 'uf_interfaces.egg-info/SOURCES.txt'
+[8.799s] writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
+[8.858s] [  4%] Built target ament_cmake_python_build_uf_interfaces_egg
+[10.167s] [  4%] Built target uf_interfaces__cpp
+[10.406s] [  5%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__description.c.o[0m
+[10.419s] [  6%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__functions.c.o[0m
+[10.426s] [  8%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__type_support.c.o[0m
+[10.431s] [  9%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__description.c.o[0m
+[10.635s] [ 10%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__functions.c.o[0m
+[10.752s] [ 12%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__type_support.c.o[0m
+[10.755s] [ 13%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/msg/detail/position__description.c.o[0m
+[10.886s] [ 14%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/msg/detail/position__functions.c.o[0m
+[10.899s] [ 16%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/msg/detail/position__type_support.c.o[0m
+[10.934s] [ 17%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/task_assign__description.c.o[0m
+[10.974s] [ 18%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/task_assign__functions.c.o[0m
+[11.007s] [ 20%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/task_assign__type_support.c.o[0m
+[11.048s] [ 21%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/geo_conv__description.c.o[0m
+[11.068s] [ 22%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/geo_conv__functions.c.o[0m
+[11.104s] [ 24%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/geo_conv__type_support.c.o[0m
+[11.195s] [ 25%] [32m[1mLinking C shared library libuf_interfaces__rosidl_generator_c.so[0m
+[11.246s] [ 25%] Built target uf_interfaces__rosidl_generator_c
+[11.267s] [ 28%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.268s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[11.268s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.268s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.331s] [ 32%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/defend__type_support.cpp.o[0m
+[12.861s] [ 33%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/action/detail/defend__type_support.c.o[0m
+[13.021s] [ 35%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/action/detail/herd__type_support.c.o[0m
+[13.175s] [ 36%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/msg/detail/position__type_support.c.o[0m
+[13.263s] [ 37%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/srv/detail/task_assign__type_support.c.o[0m
+[13.371s] [ 39%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/srv/detail/geo_conv__type_support.c.o[0m
+[13.479s] [ 40%] [32m[1mLinking C shared library libuf_interfaces__rosidl_typesupport_introspection_c.so[0m
+[13.549s] [ 40%] Built target uf_interfaces__rosidl_typesupport_introspection_c
+[13.579s] [ 41%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/herd__type_support.cpp.o[0m
+[13.684s] [ 43%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/defend__type_support.cpp.o[0m
+[14.033s] [ 44%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/defend__type_support_c.cpp.o[0m
+[14.096s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.202s] [ 47%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/msg/position__type_support.cpp.o[0m
+[15.355s] [ 48%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/defend__type_support.cpp.o[0m
+[15.564s] [ 50%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/herd__type_support.cpp.o[0m
+[15.716s] [ 51%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/msg/position__type_support.cpp.o[0m
+[15.751s] [ 52%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/herd__type_support_c.cpp.o[0m
+[15.828s] [ 54%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/task_assign__type_support.cpp.o[0m
+[15.948s] [ 55%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/geo_conv__type_support.cpp.o[0m
+[16.072s] [ 56%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_c.so[0m
+[16.205s] [ 56%] Built target uf_interfaces__rosidl_typesupport_c
+[16.231s] [ 58%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/herd__type_support.cpp.o[0m
+[16.324s] [ 59%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/task_assign__type_support.cpp.o[0m
+[16.368s] [ 60%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.330s] [ 62%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/msg/detail/position__type_support_c.cpp.o[0m
+[17.448s] [ 63%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/geo_conv__type_support.cpp.o[0m
+[18.180s] [ 64%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/defend__type_support.cpp.o[0m
+[18.407s] [ 66%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_cpp.so[0m
+[18.595s] [ 66%] Built target uf_interfaces__rosidl_typesupport_cpp
+[18.628s] [ 67%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/task_assign__type_support_c.cpp.o[0m
+[18.629s] [ 68%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/herd__type_support.cpp.o[0m
+[19.039s] [ 70%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp.o[0m
+[19.944s] [ 71%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/geo_conv__type_support_c.cpp.o[0m
+[20.208s] [ 72%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/task_assign__type_support.cpp.o[0m
+[20.260s] [ 74%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/msg/detail/position__type_support.cpp.o[0m
+[20.484s] [ 75%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/geo_conv__type_support.cpp.o[0m
+[21.041s] [ 77%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/task_assign__type_support.cpp.o[0m
+[21.234s] [ 78%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[21.405s] [ 78%] Built target uf_interfaces__rosidl_typesupport_fastrtps_c
+[21.423s] [ 79%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/geo_conv__type_support.cpp.o[0m
+[21.963s] [ 81%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.105s] [ 81%] Built target uf_interfaces__rosidl_typesupport_fastrtps_cpp
+[22.278s] [ 82%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[22.383s] [ 82%] Built target uf_interfaces__rosidl_typesupport_introspection_cpp
+[22.406s] [ 82%] Built target uf_interfaces
+[22.431s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[24.444s] [ 83%] Built target uf_interfaces__py
+[24.475s] [ 89%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_herd_s.c.o[0m
+[24.475s] [ 89%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_defend_s.c.o[0m
+[24.475s] [ 89%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_task_assign_s.c.o[0m
+[24.475s] [ 89%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/msg/_position_s.c.o[0m
+[24.806s] [ 90%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_geo_conv_s.c.o[0m
+[25.063s] [ 91%] [32m[1mLinking C shared library libuf_interfaces__rosidl_generator_py.so[0m
+[25.118s] [ 91%] Built target uf_interfaces__rosidl_generator_py
+[25.147s] [ 93%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[25.149s] [ 94%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[25.151s] [ 95%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[25.424s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.so[0m
+[25.472s] [ 97%] Built target uf_interfaces_s__rosidl_typesupport_c
+[25.551s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[25.557s] [100%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[25.595s] [100%] Built target uf_interfaces_s__rosidl_typesupport_introspection_c
+[25.604s] [100%] Built target uf_interfaces_s__rosidl_typesupport_fastrtps_c
+[25.621s] Invoked command in '/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces -- -j4 -l4
+[25.800s] Invoking command in '/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces
+[25.810s] -- Install configuration: ""
+[25.810s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/rosidl_interfaces/uf_interfaces
+[25.810s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Defend.json
+[25.811s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Herd.json
+[25.811s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/msg/Position.json
+[25.811s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign.json
+[25.811s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv.json
+[25.812s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces
+[25.812s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg
+[25.812s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_generator_c__visibility_control.h
+[25.812s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail
+[25.812s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__struct.h
+[25.813s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__functions.h
+[25.813s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__functions.c
+[25.813s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.c
+[25.813s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__description.c
+[25.814s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.h
+[25.814s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/position.h
+[25.814s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv
+[25.814s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/task_assign.h
+[25.814s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail
+[25.815s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__struct.h
+[25.815s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__functions.c
+[25.815s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__description.c
+[25.815s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.h
+[25.816s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__functions.c
+[25.816s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__struct.h
+[25.816s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__description.c
+[25.816s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.c
+[25.816s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.h
+[25.817s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.c
+[25.817s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__functions.h
+[25.817s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__functions.h
+[25.817s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/geo_conv.h
+[25.817s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action
+[25.818s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/defend.h
+[25.818s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail
+[25.818s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__description.c
+[25.818s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__struct.h
+[25.818s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.h
+[25.819s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__functions.c
+[25.819s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__functions.c
+[25.819s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.h
+[25.819s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__functions.h
+[25.819s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.c
+[25.820s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__struct.h
+[25.820s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.c
+[25.820s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__description.c
+[25.820s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__functions.h
+[25.820s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/herd.h
+[25.820s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/library_path.sh
+[25.821s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/library_path.dsv
+[25.821s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_c.so
+[25.821s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_c.so" to ""
+[25.821s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces
+[25.821s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg
+[25.822s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail
+[25.822s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[25.822s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[25.822s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv
+[25.822s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail
+[25.822s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_fastrtps_c.h
+[25.822s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_fastrtps_c.h
+[25.822s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action
+[25.823s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail
+[25.823s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_fastrtps_c.h
+[25.823s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_fastrtps_c.h
+[25.823s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_c.so
+[25.824s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[25.824s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces
+[25.824s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg
+[25.824s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/position.hpp
+[25.824s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail
+[25.825s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.hpp
+[25.825s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__builder.hpp
+[25.825s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__traits.hpp
+[25.825s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__struct.hpp
+[25.826s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[25.826s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv
+[25.826s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail
+[25.826s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.hpp
+[25.826s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__traits.hpp
+[25.827s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__struct.hpp
+[25.827s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__builder.hpp
+[25.827s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.hpp
+[25.827s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__struct.hpp
+[25.828s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__traits.hpp
+[25.828s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__builder.hpp
+[25.828s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/geo_conv.hpp
+[25.828s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/task_assign.hpp
+[25.828s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action
+[25.829s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail
+[25.829s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__builder.hpp
+[25.829s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__builder.hpp
+[25.829s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.hpp
+[25.829s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__traits.hpp
+[25.830s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.hpp
+[25.830s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__struct.hpp
+[25.830s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__traits.hpp
+[25.830s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__struct.hpp
+[25.830s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/defend.hpp
+[25.831s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/herd.hpp
+[25.831s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces
+[25.831s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg
+[25.831s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail
+[25.831s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/dds_fastrtps
+[25.832s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[25.832s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[25.832s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv
+[25.832s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail
+[25.832s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_fastrtps_cpp.hpp
+[25.833s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/dds_fastrtps
+[25.833s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_fastrtps_cpp.hpp
+[25.833s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action
+[25.833s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail
+[25.834s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/dds_fastrtps
+[25.834s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_fastrtps_cpp.hpp
+[25.834s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_fastrtps_cpp.hpp
+[25.834s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[25.834s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[25.835s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces
+[25.835s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg
+[25.835s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail
+[25.835s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.c
+[25.835s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
+[25.836s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[25.836s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv
+[25.836s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail
+[25.836s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_introspection_c.h
+[25.836s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_introspection_c.h
+[25.837s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.c
+[25.837s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.c
+[25.837s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action
+[25.837s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail
+[25.838s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_introspection_c.h
+[25.838s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.c
+[25.838s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.c
+[25.838s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_introspection_c.h
+[25.838s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_c.so
+[25.839s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[25.839s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_c.so
+[25.839s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_c.so" to ""
+[25.839s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces
+[25.839s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg
+[25.840s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail
+[25.840s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[25.840s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/msg/detail/position__type_support.cpp
+[25.840s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv
+[25.840s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail
+[25.841s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__rosidl_typesupport_introspection_cpp.hpp
+[25.841s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__rosidl_typesupport_introspection_cpp.hpp
+[25.841s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/task_assign__type_support.cpp
+[25.841s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/srv/detail/geo_conv__type_support.cpp
+[25.841s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action
+[25.842s] -- Up-to-date: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail
+[25.842s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__type_support.cpp
+[25.842s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__rosidl_typesupport_introspection_cpp.hpp
+[25.842s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/herd__rosidl_typesupport_introspection_cpp.hpp
+[25.842s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/include/uf_interfaces/uf_interfaces/action/detail/defend__type_support.cpp
+[25.843s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_cpp.so
+[25.843s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[25.843s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_cpp.so
+[25.843s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_typesupport_cpp.so" to ""
+[25.843s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/pythonpath.sh
+[25.844s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/pythonpath.dsv
+[25.844s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces-0.0.0-py3.12.egg-info
+[25.844s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[25.844s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[25.845s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[25.845s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[25.845s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces
+[25.845s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[25.845s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[25.846s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.so
+[25.846s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg
+[25.846s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg/_position_s.c
+[25.846s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg/__init__.py
+[25.847s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg/_position.py
+[25.847s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/__init__.py
+[25.847s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv
+[25.847s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/_geo_conv_s.c
+[25.847s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/_task_assign_s.c
+[25.848s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/__init__.py
+[25.848s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/_geo_conv.py
+[25.848s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/_task_assign.py
+[25.848s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.so
+[25.849s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_c.c
+[25.849s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[25.849s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action
+[25.849s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/_herd.py
+[25.849s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/_defend_s.c
+[25.850s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/__init__.py
+[25.850s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/_herd_s.c
+[25.850s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/_defend.py
+[25.944s] Listing '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/__init__.py'...
+[25.945s] Listing '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/__init__.py'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/_defend.py'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/action/_herd.py'...
+[25.945s] Listing '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg/__init__.py'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/msg/_position.py'...
+[25.945s] Listing '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/__init__.py'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/_geo_conv.py'...
+[25.945s] Compiling '/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/srv/_task_assign.py'...
+[25.952s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[25.952s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[25.952s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.so
+[25.953s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[25.953s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.so
+[25.954s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/python3.12/site-packages/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.so" to ""
+[25.954s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_py.so
+[25.955s] -- Set non-toolchain portion of runtime path of "/home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/lib/libuf_interfaces__rosidl_generator_py.so" to ""
+[25.955s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Defend.idl
+[25.955s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Herd.idl
+[25.955s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/msg/Position.idl
+[25.955s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign.idl
+[25.956s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv.idl
+[25.956s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Defend.action
+[25.956s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Herd.action
+[25.956s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/msg/Position.msg
+[25.956s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/TaskAssign.srv
+[25.957s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/srv/GeoConv.srv
+[25.957s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/package_run_dependencies/uf_interfaces
+[25.957s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/parent_prefix_path/uf_interfaces
+[25.957s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/ament_prefix_path.sh
+[25.958s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/ament_prefix_path.dsv
+[25.958s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/path.sh
+[25.958s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/environment/path.dsv
+[25.958s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.bash
+[25.959s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.sh
+[25.959s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.zsh
+[25.959s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/local_setup.dsv
+[25.959s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.dsv
+[25.959s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/packages/uf_interfaces
+[25.959s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_cExport.cmake
+[25.960s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_cExport-noconfig.cmake
+[25.960s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[25.960s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[25.960s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_cppExport.cmake
+[25.960s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[25.960s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[25.961s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[25.961s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[25.961s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cExport.cmake
+[25.961s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[25.961s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[25.961s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[25.962s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cppExport.cmake
+[25.962s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[25.962s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_pyExport.cmake
+[25.962s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/export_uf_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[25.962s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/rosidl_cmake-extras.cmake
+[25.963s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.963s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.963s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[25.963s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[25.963s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[25.963s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[25.964s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfacesConfig.cmake
+[25.964s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/cmake/uf_interfacesConfig-version.cmake
+[25.964s] -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/package.xml
+[25.966s] Invoked command in '/home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/wyatt/Documents/GitHub/ros2_ws/build/uf_interfaces

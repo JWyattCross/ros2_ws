@@ -2,6 +2,9 @@
 // with input from uf_interfaces:srv/GeoConv.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "uf_interfaces/srv/geo_conv.hpp"
+
+
 #ifndef UF_INTERFACES__SRV__DETAIL__GEO_CONV__BUILDER_HPP_
 #define UF_INTERFACES__SRV__DETAIL__GEO_CONV__BUILDER_HPP_
 
@@ -155,6 +158,80 @@ inline
 auto build<::uf_interfaces::srv::GeoConv_Response>()
 {
   return uf_interfaces::srv::builder::Init_GeoConv_Response_output_x();
+}
+
+}  // namespace uf_interfaces
+
+
+namespace uf_interfaces
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_GeoConv_Event_response
+{
+public:
+  explicit Init_GeoConv_Event_response(::uf_interfaces::srv::GeoConv_Event & msg)
+  : msg_(msg)
+  {}
+  ::uf_interfaces::srv::GeoConv_Event response(::uf_interfaces::srv::GeoConv_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::uf_interfaces::srv::GeoConv_Event msg_;
+};
+
+class Init_GeoConv_Event_request
+{
+public:
+  explicit Init_GeoConv_Event_request(::uf_interfaces::srv::GeoConv_Event & msg)
+  : msg_(msg)
+  {}
+  Init_GeoConv_Event_response request(::uf_interfaces::srv::GeoConv_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_GeoConv_Event_response(msg_);
+  }
+
+private:
+  ::uf_interfaces::srv::GeoConv_Event msg_;
+};
+
+class Init_GeoConv_Event_info
+{
+public:
+  Init_GeoConv_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_GeoConv_Event_request info(::uf_interfaces::srv::GeoConv_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_GeoConv_Event_request(msg_);
+  }
+
+private:
+  ::uf_interfaces::srv::GeoConv_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::uf_interfaces::srv::GeoConv_Event>()
+{
+  return uf_interfaces::srv::builder::Init_GeoConv_Event_info();
 }
 
 }  // namespace uf_interfaces

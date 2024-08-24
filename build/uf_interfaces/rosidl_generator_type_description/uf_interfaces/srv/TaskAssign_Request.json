@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "uf_interfaces/srv/TaskAssign_Request",
+      "fields": [
+        {
+          "name": "target",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "uf_interfaces/srv/TaskAssign_Request",
+      "hash_string": "RIHS01_a4ccfd60f7c8b6f1ba9ad0074ea343fce87ece247e5b1381c1616eb440b2b17a"
+    }
+  ]
+}

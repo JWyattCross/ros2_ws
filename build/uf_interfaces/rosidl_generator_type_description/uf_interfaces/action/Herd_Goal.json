@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "uf_interfaces/action/Herd_Goal",
+      "fields": [
+        {
+          "name": "target",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "uf_interfaces/action/Herd_Goal",
+      "hash_string": "RIHS01_e1fee2f6e5e50dbf7b36d19fbf75deef02f51bc6b7730f99c6fd15b03fa648ba"
+    }
+  ]
+}
