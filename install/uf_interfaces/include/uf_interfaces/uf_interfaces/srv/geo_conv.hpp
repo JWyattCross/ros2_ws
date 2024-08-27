@@ -7,6 +7,5 @@
 #include "uf_interfaces/srv/detail/geo_conv__struct.hpp"
 #include "uf_interfaces/srv/detail/geo_conv__builder.hpp"
 #include "uf_interfaces/srv/detail/geo_conv__traits.hpp"
-#include "uf_interfaces/srv/detail/geo_conv__type_support.hpp"
 
 #endif  // UF_INTERFACES__SRV__GEO_CONV_HPP_

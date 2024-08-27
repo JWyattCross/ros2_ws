@@ -6,5 +6,9 @@ msg/Position.idl
 msg/Position.msg
 srv/GeoConv.idl
 srv/GeoConv.srv
+srv/GeoConv_Request.msg
+srv/GeoConv_Response.msg
 srv/TaskAssign.idl
 srv/TaskAssign.srv
+srv/TaskAssign_Request.msg
+srv/TaskAssign_Response.msg

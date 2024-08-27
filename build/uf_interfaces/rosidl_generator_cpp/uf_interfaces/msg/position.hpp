@@ -7,6 +7,5 @@
 #include "uf_interfaces/msg/detail/position__struct.hpp"
 #include "uf_interfaces/msg/detail/position__builder.hpp"
 #include "uf_interfaces/msg/detail/position__traits.hpp"
-#include "uf_interfaces/msg/detail/position__type_support.hpp"
 
 #endif  // UF_INTERFACES__MSG__POSITION_HPP_

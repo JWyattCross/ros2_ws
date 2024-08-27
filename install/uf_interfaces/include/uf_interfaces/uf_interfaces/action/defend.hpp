@@ -7,6 +7,5 @@
 #include "uf_interfaces/action/detail/defend__struct.hpp"
 #include "uf_interfaces/action/detail/defend__builder.hpp"
 #include "uf_interfaces/action/detail/defend__traits.hpp"
-#include "uf_interfaces/action/detail/defend__type_support.hpp"
 
 #endif  // UF_INTERFACES__ACTION__DEFEND_HPP_

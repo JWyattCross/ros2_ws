@@ -6,7 +6,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "uf_interfaces/action/detail/herd__struct.h"
 #include "uf_interfaces/action/detail/herd__type_support.h"
-#include "uf_interfaces/action/detail/herd__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t Herd_Goal_message_type_support_handle
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_Goal_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_Goal__get_type_hash,
-  &uf_interfaces__action__Herd_Goal__get_type_description,
-  &uf_interfaces__action__Herd_Goal__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -106,8 +102,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -179,9 +173,6 @@ static const rosidl_message_type_support_t Herd_Result_message_type_support_hand
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_Result_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_Result__get_type_hash,
-  &uf_interfaces__action__Herd_Result__get_type_description,
-  &uf_interfaces__action__Herd_Result__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -212,8 +203,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -285,9 +274,6 @@ static const rosidl_message_type_support_t Herd_Feedback_message_type_support_ha
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_Feedback_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_Feedback__get_type_hash,
-  &uf_interfaces__action__Herd_Feedback__get_type_description,
-  &uf_interfaces__action__Herd_Feedback__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -318,8 +304,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -391,9 +375,6 @@ static const rosidl_message_type_support_t Herd_SendGoal_Request_message_type_su
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_SendGoal_Request_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_SendGoal_Request__get_type_hash,
-  &uf_interfaces__action__Herd_SendGoal_Request__get_type_description,
-  &uf_interfaces__action__Herd_SendGoal_Request__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -424,8 +405,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -497,9 +476,6 @@ static const rosidl_message_type_support_t Herd_SendGoal_Response_message_type_s
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_SendGoal_Response_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_SendGoal_Response__get_type_hash,
-  &uf_interfaces__action__Herd_SendGoal_Response__get_type_description,
-  &uf_interfaces__action__Herd_SendGoal_Response__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -524,112 +500,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 
 // already included above
 // #include "cstddef"
-// already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__struct.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
-// already included above
-// #include "rosidl_typesupport_c/identifier.h"
-// already included above
-// #include "rosidl_typesupport_c/message_type_support_dispatch.h"
-// already included above
-// #include "rosidl_typesupport_c/type_support_map.h"
-// already included above
-// #include "rosidl_typesupport_c/visibility_control.h"
-// already included above
-// #include "rosidl_typesupport_interface/macros.h"
-
-namespace uf_interfaces
-{
-
-namespace action
-{
-
-namespace rosidl_typesupport_c
-{
-
-typedef struct _Herd_SendGoal_Event_type_support_ids_t
-{
-  const char * typesupport_identifier[2];
-} _Herd_SendGoal_Event_type_support_ids_t;
-
-static const _Herd_SendGoal_Event_type_support_ids_t _Herd_SendGoal_Event_message_typesupport_ids = {
-  {
-    "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
-    "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
-  }
-};
-
-typedef struct _Herd_SendGoal_Event_type_support_symbol_names_t
-{
-  const char * symbol_name[2];
-} _Herd_SendGoal_Event_type_support_symbol_names_t;
-
-#define STRINGIFY_(s) #s
-#define STRINGIFY(s) STRINGIFY_(s)
-
-static const _Herd_SendGoal_Event_type_support_symbol_names_t _Herd_SendGoal_Event_message_typesupport_symbol_names = {
-  {
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, uf_interfaces, action, Herd_SendGoal_Event)),
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, uf_interfaces, action, Herd_SendGoal_Event)),
-  }
-};
-
-typedef struct _Herd_SendGoal_Event_type_support_data_t
-{
-  void * data[2];
-} _Herd_SendGoal_Event_type_support_data_t;
-
-static _Herd_SendGoal_Event_type_support_data_t _Herd_SendGoal_Event_message_typesupport_data = {
-  {
-    0,  // will store the shared library later
-    0,  // will store the shared library later
-  }
-};
-
-static const type_support_map_t _Herd_SendGoal_Event_message_typesupport_map = {
-  2,
-  "uf_interfaces",
-  &_Herd_SendGoal_Event_message_typesupport_ids.typesupport_identifier[0],
-  &_Herd_SendGoal_Event_message_typesupport_symbol_names.symbol_name[0],
-  &_Herd_SendGoal_Event_message_typesupport_data.data[0],
-};
-
-static const rosidl_message_type_support_t Herd_SendGoal_Event_message_type_support_handle = {
-  rosidl_typesupport_c__typesupport_identifier,
-  reinterpret_cast<const type_support_map_t *>(&_Herd_SendGoal_Event_message_typesupport_map),
-  rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_SendGoal_Event__get_type_hash,
-  &uf_interfaces__action__Herd_SendGoal_Event__get_type_description,
-  &uf_interfaces__action__Herd_SendGoal_Event__get_type_description_sources,
-};
-
-}  // namespace rosidl_typesupport_c
-
-}  // namespace action
-
-}  // namespace uf_interfaces
-
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
-const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_interfaces, action, Herd_SendGoal_Event)() {
-  return &::uf_interfaces::action::rosidl_typesupport_c::Herd_SendGoal_Event_message_type_support_handle;
-}
-
-#ifdef __cplusplus
-}
-#endif
-
-// already included above
-// #include "cstddef"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
@@ -640,8 +510,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "rosidl_typesupport_c/type_support_map.h"
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
-#include "service_msgs/msg/service_event_info.h"
-#include "builtin_interfaces/msg/time.h"
 
 namespace uf_interfaces
 {
@@ -651,6 +519,7 @@ namespace action
 
 namespace rosidl_typesupport_c
 {
+
 typedef struct _Herd_SendGoal_type_support_ids_t
 {
   const char * typesupport_identifier[2];
@@ -702,24 +571,6 @@ static const rosidl_service_type_support_t Herd_SendGoal_service_type_support_ha
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_SendGoal_service_typesupport_map),
   rosidl_typesupport_c__get_service_typesupport_handle_function,
-  &Herd_SendGoal_Request_message_type_support_handle,
-  &Herd_SendGoal_Response_message_type_support_handle,
-  &Herd_SendGoal_Event_message_type_support_handle,
-  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_CREATE_EVENT_MESSAGE_SYMBOL_NAME(
-    rosidl_typesupport_c,
-    uf_interfaces,
-    action,
-    Herd_SendGoal
-  ),
-  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_DESTROY_EVENT_MESSAGE_SYMBOL_NAME(
-    rosidl_typesupport_c,
-    uf_interfaces,
-    action,
-    Herd_SendGoal
-  ),
-  &uf_interfaces__action__Herd_SendGoal__get_type_hash,
-  &uf_interfaces__action__Herd_SendGoal__get_type_description,
-  &uf_interfaces__action__Herd_SendGoal__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -750,8 +601,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -823,9 +672,6 @@ static const rosidl_message_type_support_t Herd_GetResult_Request_message_type_s
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_GetResult_Request_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_GetResult_Request__get_type_hash,
-  &uf_interfaces__action__Herd_GetResult_Request__get_type_description,
-  &uf_interfaces__action__Herd_GetResult_Request__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -856,8 +702,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -929,9 +773,6 @@ static const rosidl_message_type_support_t Herd_GetResult_Response_message_type_
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_GetResult_Response_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_GetResult_Response__get_type_hash,
-  &uf_interfaces__action__Herd_GetResult_Response__get_type_description,
-  &uf_interfaces__action__Herd_GetResult_Response__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -957,112 +798,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // already included above
 // #include "cstddef"
 // already included above
-// #include "rosidl_runtime_c/message_type_support_struct.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__struct.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
-// already included above
-// #include "rosidl_typesupport_c/identifier.h"
-// already included above
-// #include "rosidl_typesupport_c/message_type_support_dispatch.h"
-// already included above
-// #include "rosidl_typesupport_c/type_support_map.h"
-// already included above
-// #include "rosidl_typesupport_c/visibility_control.h"
-// already included above
-// #include "rosidl_typesupport_interface/macros.h"
-
-namespace uf_interfaces
-{
-
-namespace action
-{
-
-namespace rosidl_typesupport_c
-{
-
-typedef struct _Herd_GetResult_Event_type_support_ids_t
-{
-  const char * typesupport_identifier[2];
-} _Herd_GetResult_Event_type_support_ids_t;
-
-static const _Herd_GetResult_Event_type_support_ids_t _Herd_GetResult_Event_message_typesupport_ids = {
-  {
-    "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
-    "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
-  }
-};
-
-typedef struct _Herd_GetResult_Event_type_support_symbol_names_t
-{
-  const char * symbol_name[2];
-} _Herd_GetResult_Event_type_support_symbol_names_t;
-
-#define STRINGIFY_(s) #s
-#define STRINGIFY(s) STRINGIFY_(s)
-
-static const _Herd_GetResult_Event_type_support_symbol_names_t _Herd_GetResult_Event_message_typesupport_symbol_names = {
-  {
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, uf_interfaces, action, Herd_GetResult_Event)),
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, uf_interfaces, action, Herd_GetResult_Event)),
-  }
-};
-
-typedef struct _Herd_GetResult_Event_type_support_data_t
-{
-  void * data[2];
-} _Herd_GetResult_Event_type_support_data_t;
-
-static _Herd_GetResult_Event_type_support_data_t _Herd_GetResult_Event_message_typesupport_data = {
-  {
-    0,  // will store the shared library later
-    0,  // will store the shared library later
-  }
-};
-
-static const type_support_map_t _Herd_GetResult_Event_message_typesupport_map = {
-  2,
-  "uf_interfaces",
-  &_Herd_GetResult_Event_message_typesupport_ids.typesupport_identifier[0],
-  &_Herd_GetResult_Event_message_typesupport_symbol_names.symbol_name[0],
-  &_Herd_GetResult_Event_message_typesupport_data.data[0],
-};
-
-static const rosidl_message_type_support_t Herd_GetResult_Event_message_type_support_handle = {
-  rosidl_typesupport_c__typesupport_identifier,
-  reinterpret_cast<const type_support_map_t *>(&_Herd_GetResult_Event_message_typesupport_map),
-  rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_GetResult_Event__get_type_hash,
-  &uf_interfaces__action__Herd_GetResult_Event__get_type_description,
-  &uf_interfaces__action__Herd_GetResult_Event__get_type_description_sources,
-};
-
-}  // namespace rosidl_typesupport_c
-
-}  // namespace action
-
-}  // namespace uf_interfaces
-
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
-const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_interfaces, action, Herd_GetResult_Event)() {
-  return &::uf_interfaces::action::rosidl_typesupport_c::Herd_GetResult_Event_message_type_support_handle;
-}
-
-#ifdef __cplusplus
-}
-#endif
-
-// already included above
-// #include "cstddef"
-// already included above
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
@@ -1074,10 +809,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "rosidl_typesupport_c/type_support_map.h"
 // already included above
 // #include "rosidl_typesupport_interface/macros.h"
-// already included above
-// #include "service_msgs/msg/service_event_info.h"
-// already included above
-// #include "builtin_interfaces/msg/time.h"
 
 namespace uf_interfaces
 {
@@ -1087,6 +818,7 @@ namespace action
 
 namespace rosidl_typesupport_c
 {
+
 typedef struct _Herd_GetResult_type_support_ids_t
 {
   const char * typesupport_identifier[2];
@@ -1138,24 +870,6 @@ static const rosidl_service_type_support_t Herd_GetResult_service_type_support_h
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_GetResult_service_typesupport_map),
   rosidl_typesupport_c__get_service_typesupport_handle_function,
-  &Herd_GetResult_Request_message_type_support_handle,
-  &Herd_GetResult_Response_message_type_support_handle,
-  &Herd_GetResult_Event_message_type_support_handle,
-  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_CREATE_EVENT_MESSAGE_SYMBOL_NAME(
-    rosidl_typesupport_c,
-    uf_interfaces,
-    action,
-    Herd_GetResult
-  ),
-  ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_DESTROY_EVENT_MESSAGE_SYMBOL_NAME(
-    rosidl_typesupport_c,
-    uf_interfaces,
-    action,
-    Herd_GetResult
-  ),
-  &uf_interfaces__action__Herd_GetResult__get_type_hash,
-  &uf_interfaces__action__Herd_GetResult__get_type_description,
-  &uf_interfaces__action__Herd_GetResult__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -1186,8 +900,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // #include "uf_interfaces/action/detail/herd__struct.h"
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
-// already included above
-// #include "uf_interfaces/action/detail/herd__functions.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -1259,9 +971,6 @@ static const rosidl_message_type_support_t Herd_FeedbackMessage_message_type_sup
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_Herd_FeedbackMessage_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &uf_interfaces__action__Herd_FeedbackMessage__get_type_hash,
-  &uf_interfaces__action__Herd_FeedbackMessage__get_type_description,
-  &uf_interfaces__action__Herd_FeedbackMessage__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -1290,12 +999,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, uf_inter
 // already included above
 // #include "uf_interfaces/action/detail/herd__type_support.h"
 
-static rosidl_action_type_support_t _uf_interfaces__action__Herd__typesupport_c = {
-  NULL, NULL, NULL, NULL, NULL,
-  &uf_interfaces__action__Herd__get_type_hash,
-  &uf_interfaces__action__Herd__get_type_description,
-  &uf_interfaces__action__Herd__get_type_description_sources,
-};
+static rosidl_action_type_support_t _uf_interfaces__action__Herd__typesupport_c;
 
 #ifdef __cplusplus
 extern "C"

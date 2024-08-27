@@ -45,7 +45,6 @@ static rosidl_typesupport_introspection_c__MessageMember uf_interfaces__msg__Pos
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -63,7 +62,6 @@ static rosidl_typesupport_introspection_c__MessageMember uf_interfaces__msg__Pos
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -81,7 +79,6 @@ static rosidl_typesupport_introspection_c__MessageMember uf_interfaces__msg__Pos
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -99,7 +96,6 @@ static rosidl_typesupport_introspection_c__MessageMember uf_interfaces__msg__Pos
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -117,7 +113,6 @@ static rosidl_typesupport_introspection_c__MessageMember uf_interfaces__msg__Pos
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -135,7 +130,6 @@ static rosidl_typesupport_introspection_c__MessageMember uf_interfaces__msg__Pos
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -155,7 +149,6 @@ static const rosidl_typesupport_introspection_c__MessageMembers uf_interfaces__m
   "Position",  // message name
   6,  // number of fields
   sizeof(uf_interfaces__msg__Position),
-  false,  // has_any_key_member_
   uf_interfaces__msg__Position__rosidl_typesupport_introspection_c__Position_message_member_array,  // message members
   uf_interfaces__msg__Position__rosidl_typesupport_introspection_c__Position_init_function,  // function to initialize message memory (memory has to be allocated)
   uf_interfaces__msg__Position__rosidl_typesupport_introspection_c__Position_fini_function  // function to terminate message instance (will not free memory)
@@ -167,9 +160,6 @@ static rosidl_message_type_support_t uf_interfaces__msg__Position__rosidl_typesu
   0,
   &uf_interfaces__msg__Position__rosidl_typesupport_introspection_c__Position_message_members,
   get_message_typesupport_handle_function,
-  &uf_interfaces__msg__Position__get_type_hash,
-  &uf_interfaces__msg__Position__get_type_description,
-  &uf_interfaces__msg__Position__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_uf_interfaces

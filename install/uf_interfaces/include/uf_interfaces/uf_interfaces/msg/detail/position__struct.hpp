@@ -2,9 +2,6 @@
 // with input from uf_interfaces:msg/Position.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "uf_interfaces/msg/position.hpp"
-
-
 #ifndef UF_INTERFACES__MSG__DETAIL__POSITION__STRUCT_HPP_
 #define UF_INTERFACES__MSG__DETAIL__POSITION__STRUCT_HPP_
 

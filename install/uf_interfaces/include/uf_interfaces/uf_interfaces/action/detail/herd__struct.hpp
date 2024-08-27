@@ -2,9 +2,6 @@
 // with input from uf_interfaces:action/Herd.idl
 // generated code does not contain a copyright notice
 
-// IWYU pragma: private, include "uf_interfaces/action/herd.hpp"
-
-
 #ifndef UF_INTERFACES__ACTION__DETAIL__HERD__STRUCT_HPP_
 #define UF_INTERFACES__ACTION__DETAIL__HERD__STRUCT_HPP_
 
@@ -617,141 +614,6 @@ using Herd_SendGoal_Response =
 
 }  // namespace uf_interfaces
 
-
-// Include directives for member types
-// Member 'info'
-#include "service_msgs/msg/detail/service_event_info__struct.hpp"
-
-#ifndef _WIN32
-# define DEPRECATED__uf_interfaces__action__Herd_SendGoal_Event __attribute__((deprecated))
-#else
-# define DEPRECATED__uf_interfaces__action__Herd_SendGoal_Event __declspec(deprecated)
-#endif
-
-namespace uf_interfaces
-{
-
-namespace action
-{
-
-// message struct
-template<class ContainerAllocator>
-struct Herd_SendGoal_Event_
-{
-  using Type = Herd_SendGoal_Event_<ContainerAllocator>;
-
-  explicit Herd_SendGoal_Event_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : info(_init)
-  {
-    (void)_init;
-  }
-
-  explicit Herd_SendGoal_Event_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : info(_alloc, _init)
-  {
-    (void)_init;
-  }
-
-  // field types and members
-  using _info_type =
-    service_msgs::msg::ServiceEventInfo_<ContainerAllocator>;
-  _info_type info;
-  using _request_type =
-    rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_SendGoal_Request_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_SendGoal_Request_<ContainerAllocator>>>;
-  _request_type request;
-  using _response_type =
-    rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_SendGoal_Response_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_SendGoal_Response_<ContainerAllocator>>>;
-  _response_type response;
-
-  // setters for named parameter idiom
-  Type & set__info(
-    const service_msgs::msg::ServiceEventInfo_<ContainerAllocator> & _arg)
-  {
-    this->info = _arg;
-    return *this;
-  }
-  Type & set__request(
-    const rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_SendGoal_Request_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_SendGoal_Request_<ContainerAllocator>>> & _arg)
-  {
-    this->request = _arg;
-    return *this;
-  }
-  Type & set__response(
-    const rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_SendGoal_Response_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_SendGoal_Response_<ContainerAllocator>>> & _arg)
-  {
-    this->response = _arg;
-    return *this;
-  }
-
-  // constant declarations
-
-  // pointer types
-  using RawPtr =
-    uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator> *;
-  using ConstRawPtr =
-    const uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator> *;
-  using SharedPtr =
-    std::shared_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator>>;
-  using ConstSharedPtr =
-    std::shared_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator> const>;
-
-  template<typename Deleter = std::default_delete<
-      uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator>>>
-  using UniquePtrWithDeleter =
-    std::unique_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator>, Deleter>;
-
-  using UniquePtr = UniquePtrWithDeleter<>;
-
-  template<typename Deleter = std::default_delete<
-      uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator>>>
-  using ConstUniquePtrWithDeleter =
-    std::unique_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator> const, Deleter>;
-  using ConstUniquePtr = ConstUniquePtrWithDeleter<>;
-
-  using WeakPtr =
-    std::weak_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator>>;
-  using ConstWeakPtr =
-    std::weak_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator> const>;
-
-  // pointer types similar to ROS 1, use SharedPtr / ConstSharedPtr instead
-  // NOTE: Can't use 'using' here because GNU C++ can't parse attributes properly
-  typedef DEPRECATED__uf_interfaces__action__Herd_SendGoal_Event
-    std::shared_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator>>
-    Ptr;
-  typedef DEPRECATED__uf_interfaces__action__Herd_SendGoal_Event
-    std::shared_ptr<uf_interfaces::action::Herd_SendGoal_Event_<ContainerAllocator> const>
-    ConstPtr;
-
-  // comparison operators
-  bool operator==(const Herd_SendGoal_Event_ & other) const
-  {
-    if (this->info != other.info) {
-      return false;
-    }
-    if (this->request != other.request) {
-      return false;
-    }
-    if (this->response != other.response) {
-      return false;
-    }
-    return true;
-  }
-  bool operator!=(const Herd_SendGoal_Event_ & other) const
-  {
-    return !this->operator==(other);
-  }
-};  // struct Herd_SendGoal_Event_
-
-// alias to use template instance with default allocator
-using Herd_SendGoal_Event =
-  uf_interfaces::action::Herd_SendGoal_Event_<std::allocator<void>>;
-
-// constant definitions
-
-}  // namespace action
-
-}  // namespace uf_interfaces
-
 namespace uf_interfaces
 {
 
@@ -762,7 +624,6 @@ struct Herd_SendGoal
 {
   using Request = uf_interfaces::action::Herd_SendGoal_Request;
   using Response = uf_interfaces::action::Herd_SendGoal_Response;
-  using Event = uf_interfaces::action::Herd_SendGoal_Event;
 };
 
 }  // namespace action
@@ -1013,142 +874,6 @@ using Herd_GetResult_Response =
 
 }  // namespace uf_interfaces
 
-
-// Include directives for member types
-// Member 'info'
-// already included above
-// #include "service_msgs/msg/detail/service_event_info__struct.hpp"
-
-#ifndef _WIN32
-# define DEPRECATED__uf_interfaces__action__Herd_GetResult_Event __attribute__((deprecated))
-#else
-# define DEPRECATED__uf_interfaces__action__Herd_GetResult_Event __declspec(deprecated)
-#endif
-
-namespace uf_interfaces
-{
-
-namespace action
-{
-
-// message struct
-template<class ContainerAllocator>
-struct Herd_GetResult_Event_
-{
-  using Type = Herd_GetResult_Event_<ContainerAllocator>;
-
-  explicit Herd_GetResult_Event_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : info(_init)
-  {
-    (void)_init;
-  }
-
-  explicit Herd_GetResult_Event_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : info(_alloc, _init)
-  {
-    (void)_init;
-  }
-
-  // field types and members
-  using _info_type =
-    service_msgs::msg::ServiceEventInfo_<ContainerAllocator>;
-  _info_type info;
-  using _request_type =
-    rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_GetResult_Request_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_GetResult_Request_<ContainerAllocator>>>;
-  _request_type request;
-  using _response_type =
-    rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_GetResult_Response_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_GetResult_Response_<ContainerAllocator>>>;
-  _response_type response;
-
-  // setters for named parameter idiom
-  Type & set__info(
-    const service_msgs::msg::ServiceEventInfo_<ContainerAllocator> & _arg)
-  {
-    this->info = _arg;
-    return *this;
-  }
-  Type & set__request(
-    const rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_GetResult_Request_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_GetResult_Request_<ContainerAllocator>>> & _arg)
-  {
-    this->request = _arg;
-    return *this;
-  }
-  Type & set__response(
-    const rosidl_runtime_cpp::BoundedVector<uf_interfaces::action::Herd_GetResult_Response_<ContainerAllocator>, 1, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uf_interfaces::action::Herd_GetResult_Response_<ContainerAllocator>>> & _arg)
-  {
-    this->response = _arg;
-    return *this;
-  }
-
-  // constant declarations
-
-  // pointer types
-  using RawPtr =
-    uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator> *;
-  using ConstRawPtr =
-    const uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator> *;
-  using SharedPtr =
-    std::shared_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator>>;
-  using ConstSharedPtr =
-    std::shared_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator> const>;
-
-  template<typename Deleter = std::default_delete<
-      uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator>>>
-  using UniquePtrWithDeleter =
-    std::unique_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator>, Deleter>;
-
-  using UniquePtr = UniquePtrWithDeleter<>;
-
-  template<typename Deleter = std::default_delete<
-      uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator>>>
-  using ConstUniquePtrWithDeleter =
-    std::unique_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator> const, Deleter>;
-  using ConstUniquePtr = ConstUniquePtrWithDeleter<>;
-
-  using WeakPtr =
-    std::weak_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator>>;
-  using ConstWeakPtr =
-    std::weak_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator> const>;
-
-  // pointer types similar to ROS 1, use SharedPtr / ConstSharedPtr instead
-  // NOTE: Can't use 'using' here because GNU C++ can't parse attributes properly
-  typedef DEPRECATED__uf_interfaces__action__Herd_GetResult_Event
-    std::shared_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator>>
-    Ptr;
-  typedef DEPRECATED__uf_interfaces__action__Herd_GetResult_Event
-    std::shared_ptr<uf_interfaces::action::Herd_GetResult_Event_<ContainerAllocator> const>
-    ConstPtr;
-
-  // comparison operators
-  bool operator==(const Herd_GetResult_Event_ & other) const
-  {
-    if (this->info != other.info) {
-      return false;
-    }
-    if (this->request != other.request) {
-      return false;
-    }
-    if (this->response != other.response) {
-      return false;
-    }
-    return true;
-  }
-  bool operator!=(const Herd_GetResult_Event_ & other) const
-  {
-    return !this->operator==(other);
-  }
-};  // struct Herd_GetResult_Event_
-
-// alias to use template instance with default allocator
-using Herd_GetResult_Event =
-  uf_interfaces::action::Herd_GetResult_Event_<std::allocator<void>>;
-
-// constant definitions
-
-}  // namespace action
-
-}  // namespace uf_interfaces
-
 namespace uf_interfaces
 {
 
@@ -1159,7 +884,6 @@ struct Herd_GetResult
 {
   using Request = uf_interfaces::action::Herd_GetResult_Request;
   using Response = uf_interfaces::action::Herd_GetResult_Response;
-  using Event = uf_interfaces::action::Herd_GetResult_Event;
 };
 
 }  // namespace action
