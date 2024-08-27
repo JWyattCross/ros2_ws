@@ -2,6 +2,9 @@
 // with input from uf_interfaces:action/Herd.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "uf_interfaces/action/herd.h"
+
+
 #ifndef UF_INTERFACES__ACTION__DETAIL__HERD__STRUCT_H_
 #define UF_INTERFACES__ACTION__DETAIL__HERD__STRUCT_H_
 
@@ -37,7 +40,6 @@ typedef struct uf_interfaces__action__Herd_Goal__Sequence
   size_t capacity;
 } uf_interfaces__action__Herd_Goal__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -61,7 +63,6 @@ typedef struct uf_interfaces__action__Herd_Result__Sequence
   size_t capacity;
 } uf_interfaces__action__Herd_Result__Sequence;
 
-
 // Constants defined in the message
 
 /// Struct defined in action/Herd in the package uf_interfaces.
@@ -79,7 +80,6 @@ typedef struct uf_interfaces__action__Herd_Feedback__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } uf_interfaces__action__Herd_Feedback__Sequence;
-
 
 // Constants defined in the message
 
@@ -106,7 +106,6 @@ typedef struct uf_interfaces__action__Herd_SendGoal_Request__Sequence
   size_t capacity;
 } uf_interfaces__action__Herd_SendGoal_Request__Sequence;
 
-
 // Constants defined in the message
 
 // Include directives for member types
@@ -130,6 +129,41 @@ typedef struct uf_interfaces__action__Herd_SendGoal_Response__Sequence
   size_t capacity;
 } uf_interfaces__action__Herd_SendGoal_Response__Sequence;
 
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'info'
+#include "service_msgs/msg/detail/service_event_info__struct.h"
+
+// constants for array fields with an upper bound
+// request
+enum
+{
+  uf_interfaces__action__Herd_SendGoal_Event__request__MAX_SIZE = 1
+};
+// response
+enum
+{
+  uf_interfaces__action__Herd_SendGoal_Event__response__MAX_SIZE = 1
+};
+
+/// Struct defined in action/Herd in the package uf_interfaces.
+typedef struct uf_interfaces__action__Herd_SendGoal_Event
+{
+  service_msgs__msg__ServiceEventInfo info;
+  uf_interfaces__action__Herd_SendGoal_Request__Sequence request;
+  uf_interfaces__action__Herd_SendGoal_Response__Sequence response;
+} uf_interfaces__action__Herd_SendGoal_Event;
+
+// Struct for a sequence of uf_interfaces__action__Herd_SendGoal_Event.
+typedef struct uf_interfaces__action__Herd_SendGoal_Event__Sequence
+{
+  uf_interfaces__action__Herd_SendGoal_Event * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} uf_interfaces__action__Herd_SendGoal_Event__Sequence;
 
 // Constants defined in the message
 
@@ -153,7 +187,6 @@ typedef struct uf_interfaces__action__Herd_GetResult_Request__Sequence
   /// The number of allocated items in data
   size_t capacity;
 } uf_interfaces__action__Herd_GetResult_Request__Sequence;
-
 
 // Constants defined in the message
 
@@ -179,6 +212,42 @@ typedef struct uf_interfaces__action__Herd_GetResult_Response__Sequence
   size_t capacity;
 } uf_interfaces__action__Herd_GetResult_Response__Sequence;
 
+// Constants defined in the message
+
+// Include directives for member types
+// Member 'info'
+// already included above
+// #include "service_msgs/msg/detail/service_event_info__struct.h"
+
+// constants for array fields with an upper bound
+// request
+enum
+{
+  uf_interfaces__action__Herd_GetResult_Event__request__MAX_SIZE = 1
+};
+// response
+enum
+{
+  uf_interfaces__action__Herd_GetResult_Event__response__MAX_SIZE = 1
+};
+
+/// Struct defined in action/Herd in the package uf_interfaces.
+typedef struct uf_interfaces__action__Herd_GetResult_Event
+{
+  service_msgs__msg__ServiceEventInfo info;
+  uf_interfaces__action__Herd_GetResult_Request__Sequence request;
+  uf_interfaces__action__Herd_GetResult_Response__Sequence response;
+} uf_interfaces__action__Herd_GetResult_Event;
+
+// Struct for a sequence of uf_interfaces__action__Herd_GetResult_Event.
+typedef struct uf_interfaces__action__Herd_GetResult_Event__Sequence
+{
+  uf_interfaces__action__Herd_GetResult_Event * data;
+  /// The number of valid items in data
+  size_t size;
+  /// The number of allocated items in data
+  size_t capacity;
+} uf_interfaces__action__Herd_GetResult_Event__Sequence;
 
 // Constants defined in the message
 

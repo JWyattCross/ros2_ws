@@ -2,6 +2,9 @@
 // with input from uf_interfaces:msg/Position.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "uf_interfaces/msg/position.h"
+
+
 #ifndef UF_INTERFACES__MSG__DETAIL__POSITION__TYPE_SUPPORT_H_
 #define UF_INTERFACES__MSG__DETAIL__POSITION__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   uf_interfaces,
   msg,
   Position
-)();
+)(void);
 
 #ifdef __cplusplus
 }

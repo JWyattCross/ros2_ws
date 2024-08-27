@@ -1,3 +1,0 @@
-[console_scripts]
-matplotlib_sim_node = matplotlib_sim.matplotlib_sim_node:main
-

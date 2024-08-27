@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "uf_interfaces/srv/GeoConv_Request",
+      "fields": [
+        {
+          "name": "input_x",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "input_y",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "uf_interfaces/srv/GeoConv_Request",
+      "hash_string": "RIHS01_3ff0f532e18e3dc207fc976ff09ebd830421823fc9a1d94963514b355093c784"
+    }
+  ]
+}

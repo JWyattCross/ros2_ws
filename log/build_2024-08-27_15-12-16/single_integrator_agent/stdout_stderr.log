@@ -1,0 +1,50 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'script-dir' will not be supported in future
+        versions. Please use the underscore name 'script_dir' instead.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+running egg_info
+creating ../../build/single_integrator_agent/single_integrator_agent.egg-info
+writing ../../build/single_integrator_agent/single_integrator_agent.egg-info/PKG-INFO
+writing dependency_links to ../../build/single_integrator_agent/single_integrator_agent.egg-info/dependency_links.txt
+writing entry points to ../../build/single_integrator_agent/single_integrator_agent.egg-info/entry_points.txt
+writing requirements to ../../build/single_integrator_agent/single_integrator_agent.egg-info/requires.txt
+writing top-level names to ../../build/single_integrator_agent/single_integrator_agent.egg-info/top_level.txt
+writing manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'
+reading manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'
+writing manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build
+creating /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build/lib
+creating /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent
+copying single_integrator_agent/__init__.py -> /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent
+copying single_integrator_agent/single_integrator_agent_node.py -> /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent
+running install
+running install_lib
+creating /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/python3.12/site-packages/single_integrator_agent
+copying /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent/__init__.py -> /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/python3.12/site-packages/single_integrator_agent
+copying /home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/build/lib/single_integrator_agent/single_integrator_agent_node.py -> /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/python3.12/site-packages/single_integrator_agent
+byte-compiling /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/python3.12/site-packages/single_integrator_agent/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/python3.12/site-packages/single_integrator_agent/single_integrator_agent_node.py to single_integrator_agent_node.cpython-312.pyc
+running install_data
+creating /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/share/ament_index
+creating /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/share/ament_index/resource_index
+creating /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/share/ament_index/resource_index/packages
+copying resource/single_integrator_agent -> /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/share/ament_index/resource_index/packages
+copying package.xml -> /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/share/single_integrator_agent
+running install_egg_info
+Copying ../../build/single_integrator_agent/single_integrator_agent.egg-info to /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/python3.12/site-packages/single_integrator_agent-0.0.0-py3.12.egg-info
+running install_scripts
+Installing single_int_node script to /home/wyatt/Documents/GitHub/ros2_ws/install/single_integrator_agent/lib/single_integrator_agent
+writing list of installed files to '/home/wyatt/Documents/GitHub/ros2_ws/build/single_integrator_agent/install.log'
