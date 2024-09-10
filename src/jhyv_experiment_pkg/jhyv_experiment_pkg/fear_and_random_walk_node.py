@@ -109,7 +109,7 @@ class PubNode(Node): #this is the main method of the function where all the ros 
     
     def fearFunction(target, agent, distance):
         opposite_vec = target - agent
-        fear_factor = np.exp(distance)
+        fear_factor = 1.0 #np.exp(distance)
         t_dot = fear_factor * opposite_vec
         return t_dot
 
