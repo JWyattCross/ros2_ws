@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "uf_interfaces/action/detail/defend__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "uf_interfaces/action/detail/defend__type_support.h"
 #include "uf_interfaces/action/detail/defend__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

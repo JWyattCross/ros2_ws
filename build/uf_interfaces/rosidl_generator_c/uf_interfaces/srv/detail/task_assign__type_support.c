@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "uf_interfaces/srv/detail/task_assign__functions.h"
+#include "uf_interfaces/srv/detail/task_assign__struct.h"
 #include "uf_interfaces/srv/detail/task_assign__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "uf_interfaces/srv/detail/task_assign__struct.h"
+#include "uf_interfaces/srv/detail/task_assign__functions.h"
 
 #ifdef __cplusplus
 extern "C"

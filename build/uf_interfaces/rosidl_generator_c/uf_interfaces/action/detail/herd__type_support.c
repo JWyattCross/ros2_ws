@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "uf_interfaces/action/detail/herd__type_support.h"
+#include "uf_interfaces/action/detail/herd__functions.h"
 #include "uf_interfaces/action/detail/herd__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "uf_interfaces/action/detail/herd__functions.h"
 
 #ifdef __cplusplus
 extern "C"

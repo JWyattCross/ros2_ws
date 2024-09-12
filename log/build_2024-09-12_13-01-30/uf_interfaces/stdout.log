@@ -40,17 +40,17 @@ writing uf_interfaces.egg-info/PKG-INFO
 writing dependency_links to uf_interfaces.egg-info/dependency_links.txt
 writing top-level names to uf_interfaces.egg-info/top_level.txt
 writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'uf_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_uf_interfaces_egg
 [  1%] Built target uf_interfaces__rosidl_generator_type_description
 [  2%] [34m[1mGenerating C code for ROS interfaces[0m
 [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
-reading manifest file 'uf_interfaces.egg-info/SOURCES.txt'
-writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
-[  4%] Built target ament_cmake_python_build_uf_interfaces_egg
 [  4%] Built target uf_interfaces__cpp
-[  5%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__description.c.o[0m
-[  6%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__type_support.c.o[0m
-[  8%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__functions.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__description.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__type_support.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__description.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__description.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/defend__functions.c.o[0m
 [ 10%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__functions.c.o[0m
 [ 12%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/action/detail/herd__type_support.c.o[0m
 [ 13%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/msg/detail/position__description.c.o[0m
@@ -64,9 +64,9 @@ writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
 [ 24%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uf_interfaces/srv/detail/geo_conv__type_support.c.o[0m
 [ 25%] [32m[1mLinking C shared library libuf_interfaces__rosidl_generator_c.so[0m
 [ 25%] Built target uf_interfaces__rosidl_generator_c
-[ 28%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
-[ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
 [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
 [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
 [ 32%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/defend__type_support.cpp.o[0m
 [ 33%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/action/detail/defend__type_support.c.o[0m
@@ -74,63 +74,63 @@ writing manifest file 'uf_interfaces.egg-info/SOURCES.txt'
 [ 36%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/msg/detail/position__type_support.c.o[0m
 [ 37%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/srv/detail/task_assign__type_support.c.o[0m
 [ 39%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uf_interfaces/srv/detail/geo_conv__type_support.c.o[0m
-[ 40%] [32m[1mLinking C shared library libuf_interfaces__rosidl_typesupport_introspection_c.so[0m
-[ 40%] Built target uf_interfaces__rosidl_typesupport_introspection_c
-[ 41%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/herd__type_support.cpp.o[0m
-[ 43%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/defend__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/defend__type_support.cpp.o[0m
+[ 41%] [32m[1mLinking C shared library libuf_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 41%] Built target uf_interfaces__rosidl_typesupport_introspection_c
+[ 43%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/herd__type_support.cpp.o[0m
 [ 44%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/defend__type_support_c.cpp.o[0m
-[ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
-[ 47%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/msg/position__type_support.cpp.o[0m
-[ 48%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/defend__type_support.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/herd__type_support_c.cpp.o[0m
-[ 51%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/herd__type_support.cpp.o[0m
-[ 52%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/msg/position__type_support.cpp.o[0m
-[ 54%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/task_assign__type_support.cpp.o[0m
-[ 55%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/geo_conv__type_support.cpp.o[0m
-[ 56%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_c.so[0m
-[ 58%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/task_assign__type_support.cpp.o[0m
-[ 58%] Built target uf_interfaces__rosidl_typesupport_c
-[ 59%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/msg/detail/position__type_support_c.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/action/detail/dds_fastrtps/herd__type_support.cpp.o[0m
-[ 62%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/geo_conv__type_support.cpp.o[0m
-[ 63%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
-[ 64%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/task_assign__type_support_c.cpp.o[0m
-[ 66%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_cpp.so[0m
-[ 66%] Built target uf_interfaces__rosidl_typesupport_cpp
-[ 67%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp.o[0m
-[ 68%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/geo_conv__type_support_c.cpp.o[0m
-[ 70%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/task_assign__type_support.cpp.o[0m
-[ 71%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/defend__type_support.cpp.o[0m
-[ 72%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/geo_conv__type_support.cpp.o[0m
-[ 74%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_c.so[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/herd__type_support.cpp.o[0m
-[ 75%] Built target uf_interfaces__rosidl_typesupport_fastrtps_c
-[ 77%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/msg/detail/position__type_support.cpp.o[0m
-[ 78%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/task_assign__type_support.cpp.o[0m
-[ 79%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/action/herd__type_support.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/action/detail/herd__type_support_c.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/msg/position__type_support.cpp.o[0m
+[ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/task_assign__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/msg/detail/position__type_support_c.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/defend__type_support.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/task_assign__type_support.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/action/herd__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/msg/position__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uf_interfaces/srv/geo_conv__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/task_assign__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uf_interfaces/srv/geo_conv__type_support.cpp.o[0m
+[ 64%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_c.so[0m
+[ 64%] Built target uf_interfaces__rosidl_typesupport_c
+[ 66%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/task_assign__type_support_c.cpp.o[0m
+[ 67%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 68%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_cpp.so[0m
+[ 68%] Built target uf_interfaces__rosidl_typesupport_cpp
+[ 70%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uf_interfaces/srv/detail/dds_fastrtps/geo_conv__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uf_interfaces/srv/detail/geo_conv__type_support_c.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/herd__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/action/detail/defend__type_support.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 77%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 77%] Built target uf_interfaces__rosidl_typesupport_fastrtps_c
+[ 78%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/msg/detail/position__type_support.cpp.o[0m
+[ 78%] Built target uf_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 79%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/task_assign__type_support.cpp.o[0m
 [ 81%] [32mBuilding CXX object CMakeFiles/uf_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uf_interfaces/srv/detail/geo_conv__type_support.cpp.o[0m
-[ 81%] Built target uf_interfaces__rosidl_typesupport_fastrtps_cpp
 [ 82%] [32m[1mLinking CXX shared library libuf_interfaces__rosidl_typesupport_introspection_cpp.so[0m
 [ 82%] Built target uf_interfaces__rosidl_typesupport_introspection_cpp
 [ 82%] Built target uf_interfaces
 [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
 [ 83%] Built target uf_interfaces__py
-[ 87%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_herd_s.c.o[0m
-[ 87%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_defend_s.c.o[0m
-[ 87%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/msg/_position_s.c.o[0m
-[ 89%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_task_assign_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_defend_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/action/_herd_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_task_assign_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/msg/_position_s.c.o[0m
 [ 90%] [32mBuilding C object CMakeFiles/uf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uf_interfaces/srv/_geo_conv_s.c.o[0m
 [ 91%] [32m[1mLinking C shared library libuf_interfaces__rosidl_generator_py.so[0m
 [ 91%] Built target uf_interfaces__rosidl_generator_py
-[ 93%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
-[ 94%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
-[ 97%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.so[0m
-[ 97%] Built target uf_interfaces_s__rosidl_typesupport_c
-[ 98%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.so[0m
-[100%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 93%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/uf_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/uf_interfaces/_uf_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 97%] Built target uf_interfaces_s__rosidl_typesupport_fastrtps_c
+[ 98%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/uf_interfaces/uf_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[100%] Built target uf_interfaces_s__rosidl_typesupport_c
 [100%] Built target uf_interfaces_s__rosidl_typesupport_introspection_c
-[100%] Built target uf_interfaces_s__rosidl_typesupport_fastrtps_c
 -- Install configuration: ""
 -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/ament_index/resource_index/rosidl_interfaces/uf_interfaces
 -- Installing: /home/wyatt/Documents/GitHub/ros2_ws/install/uf_interfaces/share/uf_interfaces/action/Defend.json
