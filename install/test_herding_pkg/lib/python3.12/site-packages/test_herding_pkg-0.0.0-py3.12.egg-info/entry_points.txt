@@ -1,2 +1,0 @@
-[console_scripts]
-test_herding_node = test_herding_pkg.test_herding_node:main
