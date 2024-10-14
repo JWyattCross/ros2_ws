@@ -1,3 +1,0 @@
-[console_scripts]
-wind_speed_node = wind_speed_package.wind_speed_node:main
-
