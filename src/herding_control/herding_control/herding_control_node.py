@@ -5,7 +5,33 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from std_msgs.msg import Float64
+from geometry_msgs.msg import Twist
 
+class HerdingControl(Node):
+    def __init__(self):
+        super().__init__('herding_control_node')
+
+        # Define parameters
+        self.declare_parameter('name', 'r1')
+
+        # Get the parameters
+        self.name = self.get_parameter('name').value
+
+        # Define publishers and subscribers
+        self.cmd_vel_pub = self.create_publisher(Twist, f'{self.name}/cmd_vel', 10)
+
+        # Placeholder to receive external commands (replace this as needed)
+        self.create_timer(1.0, self.control_loop)
+
+    def control_loop(self):
+        # Generate a sample command for moving the agent
+        twist_msg = Twist()
+        twist_msg.linear.x = 0.1  # example linear velocity
+        twist_msg.linear.y = 0.0
+        twist_msg.angular.z = 0.0
+        self.cmd_vel_pub.publish(twist_msg)
+
+'''
 # Define the HerdingControl class
 class HerdingControl(Node):
     def __init__(self):
@@ -39,7 +65,7 @@ class HerdingControl(Node):
 
         # Publish the pose message
         self.pose_pub_.publish(msg)
-
+'''
 # Boilerplate to make the node work
 def main(args=None):
     rclpy.init(args=args)
