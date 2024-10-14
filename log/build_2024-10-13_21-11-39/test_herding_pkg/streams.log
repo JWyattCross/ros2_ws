@@ -1,0 +1,37 @@
+[7.793s] Invoking command in '/home/wyatt/ros2_ws/src/test_herding_pkg': PYTHONPATH=/home/wyatt/ros2_ws/build/test_herding_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/test_herding_pkg build --build-base /home/wyatt/ros2_ws/build/test_herding_pkg/build install --record /home/wyatt/ros2_ws/build/test_herding_pkg/install.log --single-version-externally-managed install_data
+[10.739s] running egg_info
+[10.752s] creating ../../build/test_herding_pkg/test_herding_pkg.egg-info
+[10.758s] writing ../../build/test_herding_pkg/test_herding_pkg.egg-info/PKG-INFO
+[10.759s] writing dependency_links to ../../build/test_herding_pkg/test_herding_pkg.egg-info/dependency_links.txt
+[10.762s] writing entry points to ../../build/test_herding_pkg/test_herding_pkg.egg-info/entry_points.txt
+[10.770s] writing requirements to ../../build/test_herding_pkg/test_herding_pkg.egg-info/requires.txt
+[10.772s] writing top-level names to ../../build/test_herding_pkg/test_herding_pkg.egg-info/top_level.txt
+[10.780s] writing manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'
+[10.795s] reading manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'
+[10.807s] writing manifest file '../../build/test_herding_pkg/test_herding_pkg.egg-info/SOURCES.txt'
+[10.807s] running build
+[10.807s] running build_py
+[10.807s] creating /home/wyatt/ros2_ws/build/test_herding_pkg/build
+[10.808s] creating /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib
+[10.812s] creating /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg
+[10.812s] copying test_herding_pkg/test_herding_node.py -> /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg
+[10.815s] copying test_herding_pkg/__init__.py -> /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg
+[10.816s] running install
+[10.819s] running install_lib
+[10.823s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg
+[10.824s] copying /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg/test_herding_node.py -> /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg
+[10.827s] copying /home/wyatt/ros2_ws/build/test_herding_pkg/build/lib/test_herding_pkg/__init__.py -> /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg
+[10.834s] byte-compiling /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg/test_herding_node.py to test_herding_node.cpython-310.pyc
+[10.838s] byte-compiling /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg/__init__.py to __init__.cpython-310.pyc
+[10.849s] running install_data
+[10.849s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index
+[10.850s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index
+[10.850s] creating /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index/packages
+[10.850s] copying resource/test_herding_pkg -> /home/wyatt/ros2_ws/install/test_herding_pkg/share/ament_index/resource_index/packages
+[10.854s] copying package.xml -> /home/wyatt/ros2_ws/install/test_herding_pkg/share/test_herding_pkg
+[10.854s] running install_egg_info
+[10.875s] Copying ../../build/test_herding_pkg/test_herding_pkg.egg-info to /home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages/test_herding_pkg-0.0.0-py3.10.egg-info
+[10.876s] running install_scripts
+[11.036s] Installing test_herding_node script to /home/wyatt/ros2_ws/install/test_herding_pkg/lib/test_herding_pkg
+[11.047s] writing list of installed files to '/home/wyatt/ros2_ws/build/test_herding_pkg/install.log'
+[12.629s] Invoked command in '/home/wyatt/ros2_ws/src/test_herding_pkg' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/test_herding_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/test_herding_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/test_herding_pkg build --build-base /home/wyatt/ros2_ws/build/test_herding_pkg/build install --record /home/wyatt/ros2_ws/build/test_herding_pkg/install.log --single-version-externally-managed install_data

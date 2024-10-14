@@ -1,0 +1,37 @@
+[5.121s] Invoking command in '/home/wyatt/ros2_ws/src/jhyv_experiment_pkg': PYTHONPATH=/home/wyatt/ros2_ws/build/jhyv_experiment_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/jhyv_experiment_pkg build --build-base /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build install --record /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/install.log --single-version-externally-managed install_data
+[6.566s] running egg_info
+[6.569s] creating ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info
+[6.574s] writing ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/PKG-INFO
+[6.574s] writing dependency_links to ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/dependency_links.txt
+[6.575s] writing entry points to ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/entry_points.txt
+[6.575s] writing requirements to ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/requires.txt
+[6.577s] writing top-level names to ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/top_level.txt
+[6.578s] writing manifest file '../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/SOURCES.txt'
+[6.581s] reading manifest file '../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/SOURCES.txt'
+[6.581s] writing manifest file '../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info/SOURCES.txt'
+[6.581s] running build
+[6.582s] running build_py
+[6.583s] creating /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build
+[6.583s] creating /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build/lib
+[6.583s] creating /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build/lib/jhyv_experiment_pkg
+[6.583s] copying jhyv_experiment_pkg/__init__.py -> /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build/lib/jhyv_experiment_pkg
+[6.584s] copying jhyv_experiment_pkg/fear_and_random_walk_node.py -> /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build/lib/jhyv_experiment_pkg
+[6.586s] running install
+[6.586s] running install_lib
+[6.587s] creating /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages/jhyv_experiment_pkg
+[6.587s] copying /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build/lib/jhyv_experiment_pkg/__init__.py -> /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages/jhyv_experiment_pkg
+[6.588s] copying /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build/lib/jhyv_experiment_pkg/fear_and_random_walk_node.py -> /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages/jhyv_experiment_pkg
+[6.588s] byte-compiling /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages/jhyv_experiment_pkg/__init__.py to __init__.cpython-310.pyc
+[6.588s] byte-compiling /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages/jhyv_experiment_pkg/fear_and_random_walk_node.py to fear_and_random_walk_node.cpython-310.pyc
+[6.590s] running install_data
+[6.590s] creating /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/share/ament_index
+[6.591s] creating /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/share/ament_index/resource_index
+[6.591s] creating /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/share/ament_index/resource_index/packages
+[6.592s] copying resource/jhyv_experiment_pkg -> /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/share/ament_index/resource_index/packages
+[6.593s] copying package.xml -> /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/share/jhyv_experiment_pkg
+[6.595s] running install_egg_info
+[6.600s] Copying ../../build/jhyv_experiment_pkg/jhyv_experiment_pkg.egg-info to /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages/jhyv_experiment_pkg-0.0.0-py3.10.egg-info
+[6.605s] running install_scripts
+[6.681s] Installing fear_and_random_walk_node script to /home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/jhyv_experiment_pkg
+[6.684s] writing list of installed files to '/home/wyatt/ros2_ws/build/jhyv_experiment_pkg/install.log'
+[7.053s] Invoked command in '/home/wyatt/ros2_ws/src/jhyv_experiment_pkg' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/jhyv_experiment_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/jhyv_experiment_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/jhyv_experiment_pkg build --build-base /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/build install --record /home/wyatt/ros2_ws/build/jhyv_experiment_pkg/install.log --single-version-externally-managed install_data

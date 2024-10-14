@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'herding_control_node = herding_control.herding_control_node:main',
         ],
     },
 )
