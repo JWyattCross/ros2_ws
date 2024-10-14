@@ -1,2 +1,0 @@
-[console_scripts]
-fear_and_random_walk_node = jhyv_experiment_pkg.fear_and_random_walk_node:main

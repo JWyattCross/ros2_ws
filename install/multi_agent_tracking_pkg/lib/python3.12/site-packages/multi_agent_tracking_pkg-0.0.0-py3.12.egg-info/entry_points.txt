@@ -1,2 +1,0 @@
-[console_scripts]
-multi_agent_tracking_node = multi_agent_tracking_pkg.multi_agent_tracking_node:main
