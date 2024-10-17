@@ -18,7 +18,7 @@ class PubNode(Node): #this is the main method of the function where all the ros 
             /go1_0153  #small dog with blue parts
             /go1_0154
             /go1_0155
-        no trailing '/' as it is concatenated in each pub/sub creation line below already'''
+            '''
 
         #create parameters for variables
         self.declare_parameter('name', "dummy")
