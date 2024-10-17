@@ -28,6 +28,8 @@ class PubNode(Node): #this is the main method of the function where all the ros 
         self.declare_parameter('MAX_SPEED_MS', 0.2)
         self.declare_parameter('SIGHT_RANGE_METERS', 5.0)
         self.declare_parameter('LEVY_WALK_PARAM', 6.9)
+        self.declare_parameter('TARGET_LIST', [])
+        self.declare_parameter('BIG_BAD_WOLF', "dummy")
         
         #get parameters
         #self.namespace = self.get_parameter('name').value
