@@ -9,7 +9,8 @@ setup.py
 ../../build/herding_control/herding_control.egg-info/top_level.txt
 ../../build/herding_control/herding_control.egg-info/zip-safe
 herding_control/__init__.py
-herding_control/herding_control_node.py
+herding_control/herding_agent_node.py
+herding_control/herding_target_node.py
 resource/herding_control
 test/test_copyright.py
 test/test_flake8.py

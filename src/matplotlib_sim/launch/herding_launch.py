@@ -7,40 +7,50 @@ from launch_ros.substitutions import FindPackageShare
 
 from ament_index_python.packages import get_package_share_directory
 
+'''AP robot names:
+    /j100_0572
+    /a200_0706 
+    /a200_0708
+    /go1_0153  #small dog with blue parts
+    /go1_0154
+    /go1_0155
+    '''
+
+'''Node(
+    package='matplotlib_sim',
+    executable='matplotlib_sim_node',
+    name='matplotlib_sim',
+),
+# Herder and Herding Control
+Node(
+    package='single_integrator_agent',
+    namespace='sheepdog',
+    executable='single_int_node',
+    name='single_integrator_agent_1',
+    parameters=[
+        {'x_init': 0.0},
+        {'y_init': 8.0},
+        {'name': 'sheepdog'},
+    ],
+),
+Node(
+    package='herding_control',
+    namespace='sheepdog',
+    executable='herding_control_node',
+    name='herding_control_node_1',
+    output='screen',
+    parameters=[
+        {'name': 'sheepdog'},
+        {'IS_AGENT': True},
+        {'TARGET_LIST': ['1sheep', '2sheep']},
+        {'dt': 0.1},
+        {'MAX_SPEED_MS': 5.0},
+        {'LEVY_WALK_PARAM': 7.0},
+    ],
+),'''
+
 def generate_launch_description():
     return LaunchDescription([
-        Node(
-            package='matplotlib_sim',
-            executable='matplotlib_sim_node',
-            name='matplotlib_sim',
-        ),
-        # Herder and Herding Control
-        Node(
-            package='single_integrator_agent',
-            namespace='sheepdog',
-            executable='single_int_node',
-            name='single_integrator_agent_1',
-            parameters=[
-                {'x_init': 0.0},
-                {'y_init': 8.0},
-                {'name': 'sheepdog'},
-            ],
-        ),
-        Node(
-            package='herding_control',
-            namespace='sheepdog',
-            executable='herding_control_node',
-            name='herding_control_node_1',
-            output='screen',
-            parameters=[
-                {'name': 'sheepdog'},
-                {'IS_AGENT': True},
-                {'TARGET_LIST': ['1sheep', '2sheep']},
-                {'dt': 0.1},
-                {'MAX_SPEED_MS': 5.0},
-                {'LEVY_WALK_PARAM': 7.0},
-            ],
-        ),
         # Agent 1 and Herding Control
         Node(
             package='single_integrator_agent',
@@ -56,16 +66,14 @@ def generate_launch_description():
         Node(
             package='herding_control',
             namespace='1sheep',
-            executable='herding_control_node',
-            name='herding_control_node_2',
+            executable='herding_target_node',
+            name='herding_target_node_1',
             output='screen',
             parameters=[
-                {'name': '1sheep'},
-                {'IS_AGENT': False},
-                {'BIG_BAD_WOLF': 'sheepdog'},
                 {'dt': 0.1},
                 {'MAX_SPEED_MS': 2.0},
                 {'LEVY_WALK_PARAM': 7.0},
+                {'BIG_BAD_WOLF': 'sheepdog'},
             ],
         ),
         # Agent 2 and Herding Control
@@ -83,16 +91,14 @@ def generate_launch_description():
         Node(
             package='herding_control',
             namespace='2sheep',
-            executable='herding_control_node',
-            name='herding_control_node_3',
+            executable='herding_target_node',
+            name='herding_target_node_2',
             output='screen',
             parameters=[
-                {'name': '2sheep'},
-                {'IS_AGENT': False},
-                {'BIG_BAD_WOLF': 'sheepdog'},
                 {'dt': 0.1},
                 {'MAX_SPEED_MS': 2.0},
                 {'LEVY_WALK_PARAM': 7.0},
+                {'BIG_BAD_WOLF': 'sheepdog'},
             ],
         ),
     ])
