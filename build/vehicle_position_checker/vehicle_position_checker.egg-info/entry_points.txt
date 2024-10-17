@@ -1,3 +1,0 @@
-[console_scripts]
-vehicle_positon_checker_node = vehicle_position_checker.vehicle_position_checker:main
-

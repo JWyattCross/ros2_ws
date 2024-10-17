@@ -90,7 +90,7 @@ class SingleIntegrator(Node):
     def twist_callback(self, msg):
         self.twist = msg
         self.cmd_epoch = self.get_clock().now()
-        self.get_logger().info(f'Received Twist: linear x: {msg.linear.x}, angular z: {msg.angular.z}')
+        #self.get_logger().info(f'Received Twist: linear x: {msg.linear.x}, angular z: {msg.angular.z}')
 
 #This is some boiler plate code that you slap at the bottom
 #to make the node work.

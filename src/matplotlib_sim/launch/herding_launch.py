@@ -29,6 +29,7 @@ def generate_launch_description():
             namespace='sheep1',
             executable='single_int_node',
             name='single_integrator_agent_1',
+            output='log',
             parameters=[
                 {'x_init': -5.0},
                 {'y_init': 0.0},
@@ -40,7 +41,7 @@ def generate_launch_description():
             namespace='sheep1',
             executable='herding_target_node',
             name='herding_target_node_1',
-            output='screen',
+            #output='screen',
             parameters=[
                 {'dt': 0.1},
                 {'MAX_SPEED_MS': 2.0},
@@ -54,6 +55,7 @@ def generate_launch_description():
             namespace='sheep2',
             executable='single_int_node',
             name='single_integrator_agent_1',
+            output='log',
             parameters=[
                 {'x_init': 5.0},
                 {'y_init': 0.0},
@@ -65,7 +67,7 @@ def generate_launch_description():
             namespace='sheep2',
             executable='herding_target_node',
             name='herding_target_node_2',
-            output='screen',
+            #output='screen',
             parameters=[
                 {'dt': 0.1},
                 {'MAX_SPEED_MS': 2.0},
@@ -74,12 +76,14 @@ def generate_launch_description():
             ],
         ),
 
+
         # Agent and Herding Control
         Node(
             package='single_integrator_agent',
             namespace='sheepdog',
             executable='single_int_node',
             name='single_integrator_agent_3',
+            output='log',
             parameters=[
                 {'x_init': 0.0},
                 {'y_init': 8.0},
@@ -100,3 +104,7 @@ def generate_launch_description():
 
 
     ])
+
+#need to run 
+#ros2 run joy joy_node
+#in a terminal window with contorller connnected

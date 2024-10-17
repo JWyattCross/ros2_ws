@@ -13,7 +13,7 @@ class PubNode(Node):
         self.declare_parameter('dt', 0.01)
         self.declare_parameter('GAIN', 10)
         self.declare_parameter('MAX_SPEED_MS', 0.2)
-        self.declare_parameter('SIGHT_RANGE_METERS', 5.0)
+        self.declare_parameter('SIGHT_RANGE_METERS', 3.0)
         self.declare_parameter('LEVY_WALK_PARAM', 6.9)
         self.declare_parameter('BIG_BAD_WOLF', "dummy")
         
@@ -55,14 +55,15 @@ class PubNode(Node):
 
     def update_motion(self):
         if self.real_pos_target is None:
-            self.get_logger().info("Position is missing. Skipping update.")
+            #self.get_logger().info("Position is missing. Skipping update.")
             return
         if self.real_pos_agent is None:
-            self.get_logger().info("Agent position is missing.")
+            #self.get_logger().info("Agent position is missing.")
             self.target_vel_hol = self.levy_walk(self.LEVY_WALK_PARAM)
         else:
             #find displacement between them
             self.dist_from_target = np.linalg.norm(self.real_pos_target - self.real_pos_agent)
+            self.get_logger().info(f'distance from target: {self.dist_from_target}')
 
             #random walk check
             if self.dist_from_target < self.SIGHT_RANGE:
@@ -70,7 +71,7 @@ class PubNode(Node):
             else:
                 self.target_vel_hol = self.levy_walk(self.LEVY_WALK_PARAM)
         
-        self.get_logger().info(f'vel_hol: {self.target_vel_hol}')
+        #self.get_logger().info(f'vel_hol: {self.target_vel_hol}')
 
         #publish velocities
         #_, _, self.target_yaw = euler_from_quaternion(self.target_heading_list)
@@ -78,7 +79,7 @@ class PubNode(Node):
         self.pub_delta_vel(self.target_vel_pub, self.target_vel_hol, self.MAX_VEL)
         #swap the commented sections to make it wokr with ground robots
 
-        self.get_logger().info(f'\n') #empty comment to seperate steps in console window
+        #self.get_logger().info(f'\n') #empty comment to seperate steps in console window
         self.real_pos_target = None #zero out variables to check for when the robots are off
         self.real_pos_agent = None
 
@@ -145,7 +146,7 @@ class PubNode(Node):
         twist_msg.linear.y = dy
         twist_msg.angular.z = 0.0
         publisher.publish(twist_msg)
-        self.get_logger().info(f'Publishing Twist: linear x: {twist_msg.linear.x}, y: {twist_msg.linear.y}')
+        #self.get_logger().info(f'Publishing Twist: linear x: {twist_msg.linear.x}, y: {twist_msg.linear.y}')
 
 
 #ros2 boilerplate, make sure pub_node matches the main function above

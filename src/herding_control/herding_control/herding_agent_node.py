@@ -23,13 +23,13 @@ class PubNode(Node):
         self.agent_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
 
         #subscribe to  my real-world robot position
-        self.agent_pos_sub = self.create_subscription(PoseStamped, 'pose', self.pos_callback, 10)
+        self.agent_pos_sub = self.create_subscription(PoseStamped, 'pose', self.agent_pos_callback, 10)
         #subscribe to agent real-world robot position
         #todo later
         #self.target_pos_sub = self.create_subscription(PoseStamped, self.TARGET_LIST + '/pose', self.agent_pos_callback, 10)
         
         # subscribe to joystick input
-        self.joy_sub = self.create_subscription(Joy, 'joy', self.joy_callback, 10)
+        self.joy_sub = self.create_subscription(Joy, '/joy', self.joy_callback, 10)
 
         #create timer using dt from parameters
         self.timer = self.create_timer(self.dt, self.update_motion)
@@ -47,16 +47,16 @@ class PubNode(Node):
         #self.get_logger().info(f'Agent position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def joy_callback(self, msg):
-        # Assuming left stick is at index 1 and 0 (Y and X axis)
-        self.agent_vel_hol[0] = msg.axes[1]  # Vertical axis (Y)
-        self.agent_vel_hol[1] = msg.axes[0]  # Horizontal axis (X)
+        #owrks with xbox gamepad. might need to change things with a different gamepad
+        self.agent_vel_hol[0] = -msg.axes[0] *self.MAX_VEL
+        self.agent_vel_hol[1] = msg.axes[1] *self.MAX_VEL
 
     def update_motion(self):
         if self.real_pos_agent is None:
             self.get_logger().info("Position is missing. Skipping update.")
             return
 
-        self.get_logger().info(f'vel_hol: {self.agent_vel_hol}')
+        #self.get_logger().info(f'vel_hol: {self.agent_vel_hol}')
 
         #publish velocities
         #_, _, self.target_yaw = euler_from_quaternion(self.target_heading_list)
@@ -118,7 +118,7 @@ class PubNode(Node):
         twist_msg.linear.y = dy
         twist_msg.angular.z = 0.0
         publisher.publish(twist_msg)
-        self.get_logger().info(f'Publishing Twist: linear x: {twist_msg.linear.x}, y: {twist_msg.linear.y}')
+        #self.get_logger().info(f'Publishing Twist: linear x: {twist_msg.linear.x}, y: {twist_msg.linear.y}')
 
 
 #ros2 boilerplate, make sure pub_node matches the main function above
