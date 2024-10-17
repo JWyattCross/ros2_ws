@@ -1,0 +1,28 @@
+[1.842s] Invoking command in '/home/wyatt/ros2_ws/src/herding_control': PYTHONPATH=/home/wyatt/ros2_ws/build/herding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/herding_control build --build-base /home/wyatt/ros2_ws/build/herding_control/build install --record /home/wyatt/ros2_ws/build/herding_control/install.log --single-version-externally-managed install_data
+[2.379s] running egg_info
+[2.384s] writing ../../build/herding_control/herding_control.egg-info/PKG-INFO
+[2.385s] writing dependency_links to ../../build/herding_control/herding_control.egg-info/dependency_links.txt
+[2.385s] writing entry points to ../../build/herding_control/herding_control.egg-info/entry_points.txt
+[2.385s] writing requirements to ../../build/herding_control/herding_control.egg-info/requires.txt
+[2.386s] writing top-level names to ../../build/herding_control/herding_control.egg-info/top_level.txt
+[2.392s] reading manifest file '../../build/herding_control/herding_control.egg-info/SOURCES.txt'
+[2.395s] writing manifest file '../../build/herding_control/herding_control.egg-info/SOURCES.txt'
+[2.395s] running build
+[2.395s] running build_py
+[2.400s] copying herding_control/herding_agent_node.py -> /home/wyatt/ros2_ws/build/herding_control/build/lib/herding_control
+[2.400s] copying herding_control/herding_target_node.py -> /home/wyatt/ros2_ws/build/herding_control/build/lib/herding_control
+[2.400s] running install
+[2.404s] running install_lib
+[2.406s] copying /home/wyatt/ros2_ws/build/herding_control/build/lib/herding_control/herding_agent_node.py -> /home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages/herding_control
+[2.406s] copying /home/wyatt/ros2_ws/build/herding_control/build/lib/herding_control/herding_target_node.py -> /home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages/herding_control
+[2.408s] byte-compiling /home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages/herding_control/herding_agent_node.py to herding_agent_node.cpython-310.pyc
+[2.411s] byte-compiling /home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages/herding_control/herding_target_node.py to herding_target_node.cpython-310.pyc
+[2.413s] running install_data
+[2.415s] running install_egg_info
+[2.419s] removing '/home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages/herding_control-0.0.0-py3.10.egg-info' (and everything under it)
+[2.419s] Copying ../../build/herding_control/herding_control.egg-info to /home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages/herding_control-0.0.0-py3.10.egg-info
+[2.424s] running install_scripts
+[2.457s] Installing herding_agent_node script to /home/wyatt/ros2_ws/install/herding_control/lib/herding_control
+[2.459s] Installing herding_target_node script to /home/wyatt/ros2_ws/install/herding_control/lib/herding_control
+[2.459s] writing list of installed files to '/home/wyatt/ros2_ws/build/herding_control/install.log'
+[2.776s] Invoked command in '/home/wyatt/ros2_ws/src/herding_control' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/herding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/herding_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/herding_control build --build-base /home/wyatt/ros2_ws/build/herding_control/build install --record /home/wyatt/ros2_ws/build/herding_control/install.log --single-version-externally-managed install_data
