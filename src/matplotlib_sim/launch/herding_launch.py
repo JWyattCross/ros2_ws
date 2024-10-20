@@ -48,39 +48,63 @@ def generate_launch_description():
                 {'BIG_BAD_WOLF': 'sheepdog'},
             ],
         ),
-        # # Target 2 and Herding Control
-        # Node(
-        #     package='single_integrator_agent',
-        #     namespace='sheep2',
-        #     executable='single_int_node',
-        #     name='single_integrator_agent_1',
-        #     parameters=[
-        #         {'x_init': 5.0},
-        #         {'y_init': 0.0},
-        #         {'name': 'sheep2'},
-        #     ],
-        # ),
-        # Node(
-        #     package='herding_control',
-        #     namespace='sheep2',
-        #     executable='herding_target_node',
-        #     name='herding_target_node_2',
-        #     #output='screen',
-        #     parameters=[
-        #         {'dt': 0.1},
-        #         {'MAX_SPEED_MS': 2.0},
-        #         {'LEVY_WALK_PARAM': 7.0},
-        #         {'BIG_BAD_WOLF': 'sheepdog'},
-        #     ],
-        # ),
+        # Target 2 and Herding Control
+        Node(
+            package='single_integrator_agent',
+            namespace='sheep2',
+            executable='single_int_node',
+            name='single_integrator_agent_2',
+            parameters=[
+                {'x_init': 5.0},
+                {'y_init': 0.0},
+                {'name': 'sheep2'},
+            ],
+        ),
+        Node(
+            package='herding_control',
+            namespace='sheep2',
+            executable='herding_target_node',
+            name='herding_target_node_2',
+            output='screen',
+            parameters=[
+                {'dt': 0.1},
+                {'MAX_SPEED_MS': 2.0},
+                {'LEVY_WALK_PARAM': 7.0},
+                {'BIG_BAD_WOLF': 'sheepdog'},
+            ],
+        ),
 
-
+        # Target 3 and Herding Control
+        Node(
+            package='single_integrator_agent',
+            namespace='sheep3',
+            executable='single_int_node',
+            name='single_integrator_agent_3',
+            parameters=[
+                {'x_init': 4.0},
+                {'y_init': 0.0},
+                {'name': 'sheep3'},
+            ],
+        ),
+        Node(
+            package='herding_control',
+            namespace='sheep3',
+            executable='herding_target_node',
+            name='herding_target_node_3',
+            output='screen',
+            parameters=[
+                {'dt': 0.1},
+                {'MAX_SPEED_MS': 2.0},
+                {'LEVY_WALK_PARAM': 7.0},
+                {'BIG_BAD_WOLF': 'sheepdog'},
+            ],
+        ),
         # Agent and Herding Control
         Node(
             package='single_integrator_agent',
             namespace='sheepdog',
             executable='single_int_node',
-            name='single_integrator_agent_3',
+            name='single_integrator_agent_4',
             parameters=[
                 {'x_init': 0.0},
                 {'y_init': 8.0},
