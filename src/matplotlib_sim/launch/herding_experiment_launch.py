@@ -14,6 +14,7 @@ from ament_index_python.packages import get_package_share_directory
     /go1_0153  #small dog with blue parts
     /go1_0154
     /go1_0155
+    /go1_0165/cmd_vel
     '''
 
 def generate_launch_description():
@@ -45,24 +46,24 @@ def generate_launch_description():
         #         {'dt': 0.1},
         #         {'MAX_SPEED_MS': 1.0},
         #         {'LEVY_WALK_PARAM': 20.0},
-        #         {'BIG_BAD_WOLF': 'go1_0153'},
+        #         {'BIG_BAD_WOLF': 'go1_0165'},   #remmeber to change me!!!!!!!!!!!!
         #     ],
         # ),
         # Agent and Herding Control
-        Node(
-            package='single_integrator_agent',
-            namespace='go1_0153',
-            executable='single_int_node',
-            name='single_integrator_agent_2',
-            parameters=[
-                {'x_init': 0.0},
-                {'y_init': -2.0},
-                {'name': 'go1_0153'},
-            ],
-        ),
+        # Node(
+        #     package='single_integrator_agent',
+        #     namespace='go1_0165',
+        #     executable='single_int_node',
+        #     name='single_integrator_agent_2',
+        #     parameters=[
+        #         {'x_init': 0.0},
+        #         {'y_init': -2.0},
+        #         {'name': 'go1_0153'},
+        #     ],
+        # ),
         Node(
             package='herding_control',
-            namespace='go1_0153',
+            namespace='go1_0165',
             executable='herding_agent_node',
             name='herding_agent_node_1',
             output='screen',
