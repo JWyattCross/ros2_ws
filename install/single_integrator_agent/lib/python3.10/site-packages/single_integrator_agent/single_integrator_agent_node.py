@@ -41,7 +41,7 @@ class SingleIntegrator(Node):
 
         #Define the subscribers here
         #self.'subscriber_var_name' = self.create_subscription('MessageType', '/topic_name', self.'callback_function', 'queue length')
-        self.twist_sub_ = self.create_subscription(Twist, 'cmd_vel', self.twist_callback, 10)
+        self.twist_sub_ = self.create_subscription(Twist, 'holonomic_cmd_vel', self.twist_callback, 10)
 
         #Variable to track the current time
         self.current_time = self.get_clock().now()
@@ -56,16 +56,23 @@ class SingleIntegrator(Node):
 
     #This is the timer function that runs at the desired rate from above
     def timer_callback(self):
-        # #update position based on twist msg
-        # self.pos[0] = self.pos[0] + self.time_period*self.twist.twist.linear.x*math.cos(self.twist.twist.angular.z)
-        # self.pos[1] = self.pos[1] + self.time_period*self.twist.twist.linear.x*math.sin(self.twist.twist.angular.z) + self.time_period*self.twist.twist.linear.x
-
         if (self.get_clock().now()-self.cmd_epoch).nanoseconds*(10**-9) > 1:
             self.twist.linear.x = 0.0
             self.twist.linear.y = 0.0
 
         self.pos[0] = self.pos[0] + self.time_period*self.twist.linear.x
         self.pos[1] = self.pos[1] + self.time_period*self.twist.linear.y
+        
+        
+        #delta_heading = self.twist.angular.z * self.time_period
+        #self.heading += delta_heading  # Update the heading
+
+        # Calculate the new position based on the current heading
+        #self.pos[0] += self.time_period * self.twist.linear.x * math.cos(self.heading)
+        #self.pos[1] += self.time_period * self.twist.linear.x * math.sin(self.heading)
+        #or
+        #self.pos[0] += self.time_period*self.twist.linear.x*math.cos(self.twist.angular.z)
+        #self.pos[1] += self.time_period*self.twist.linear.x*math.sin(self.twist.angular.z) + self.time_period*self.twist.linear.x
 
 
         msg = PoseStamped()
@@ -84,6 +91,9 @@ class SingleIntegrator(Node):
 
         #This is how to keep track of the current time in a ROS2 node
         self.current_time = self.get_clock().now()
+
+
+    
 
     #Put your callback functions here - these are run whenever the node
     #loops and when there are messages available to process.

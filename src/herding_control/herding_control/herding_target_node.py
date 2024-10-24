@@ -27,6 +27,7 @@ class PubNode(Node):
 
         #publish velocity (linear x and anglular z)
         self.target_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.target_holonomic_vel_pub = self.create_publisher(Twist, 'holonomic_cmd_vel', 10)
 
         #subscribe to  my real-world robot position
         self.target_pos_sub = self.create_subscription(PoseStamped, 'pose', self.pos_callback, 10)
@@ -78,9 +79,9 @@ class PubNode(Node):
         #self.get_logger().info(f'vel_hol: {self.target_vel_hol}')
 
         #publish velocities
-        #_, _, self.target_yaw = euler_from_quaternion(self.target_heading_list)
-        #self.target_vel = self.convert_and_publish_velocity(self.target_vel_pub, self.target_vel_hol, self.MAX_VEL, self.target_yaw)
-        self.pub_delta_vel(self.target_vel_pub, self.target_vel_hol, self.MAX_VEL)
+        _, _, self.target_yaw = euler_from_quaternion(self.target_heading_list)
+        self.target_vel = self.convert_and_publish_velocity(self.target_vel_pub, self.target_vel_hol, self.MAX_VEL, self.target_yaw)
+        self.pub_delta_vel(self.target_holonomic_vel_pub, self.target_vel_hol, self.MAX_VEL)
         #swap the commented sections to make it wokr with ground robots
 
         #self.get_logger().info(f'\n') #empty comment to seperate steps in console window
@@ -88,7 +89,7 @@ class PubNode(Node):
         self.real_pos_agent = None
 
     def levy_walk(self, alpha):
-        step_length = 3.0 * np.random.pareto(alpha) #generate a step    #iadded *n since it seemed like it was not moving much
+        step_length = np.random.pareto(alpha) #generate a step
         angle = np.random.uniform(0, 2 * np.pi)
         dx = step_length * np.cos(angle) #calculate hollonomic values
         dy = step_length * np.sin(angle)
@@ -100,7 +101,7 @@ class PubNode(Node):
         t_dot = fear_factor * opposite_vec
         return t_dot
 
-    def convert_and_publish_hollonomic_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
+    def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
         v_lin = np.linalg.norm(velocity_hol) #take the norm for the linear component
         atan2_angle = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin)) #atan2 for the amount to turn from x axis. this is not the correct heading, do not directly publish this value or things will not work.
@@ -122,8 +123,8 @@ class PubNode(Node):
         if v_lin > v_max: #cap linear speed so we don't tell the dogs to run too fast
             v_lin = v_max
         
-        self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
+        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
+        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
 
         twist_msg = Twist() #create twist message to pack data into to publish
         twist_msg.linear.x = v_lin

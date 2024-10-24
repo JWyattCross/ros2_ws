@@ -21,6 +21,7 @@ class PubNode(Node):
         
         #publish velocity (linear x and anglular z)
         self.agent_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.agent_holonomic_vel_pub = self.create_publisher(Twist, 'holonomic_cmd_vel', 10)
 
         #subscribe to  my real-world robot position
         self.agent_pos_sub = self.create_subscription(PoseStamped, 'pose', self.agent_pos_callback, 10)
@@ -40,6 +41,8 @@ class PubNode(Node):
         #set intitial vel to 0
         self.agent_vel_hol = np.array([0.0, 0.0])
 
+        self.joy_pressed = False  # Track if the joystick is pressed
+
 
     def agent_pos_callback(self, msg):
         self.real_pos_agent = np.array([msg.pose.position.x, msg.pose.position.y])
@@ -47,9 +50,13 @@ class PubNode(Node):
         #self.get_logger().info(f'Agent position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
     def joy_callback(self, msg):
-        #owrks with xbox gamepad. might need to change things with a different gamepad
-        self.agent_vel_hol[0] = -msg.axes[0] *self.MAX_VEL
-        self.agent_vel_hol[1] = msg.axes[1] *self.MAX_VEL
+        # Check joystick axes to determine if it is pressed
+        if abs(msg.axes[0]) > 0.1 or abs(msg.axes[1]) > 0.1:
+            self.joy_pressed = True
+            self.agent_vel_hol[0] = -msg.axes[0] * self.MAX_VEL #horzontal left stick, inverted correctly, controls x_pos
+            self.agent_vel_hol[1] = msg.axes[1] * self.MAX_VEL #vertical left stick, controls y_pos
+        else:
+            self.agent_vel_hol = np.array([0.0, 0.0])
 
     def update_motion(self):
         if self.real_pos_agent is None:
@@ -59,39 +66,47 @@ class PubNode(Node):
         #self.get_logger().info(f'vel_hol: {self.agent_vel_hol}')
 
         #publish velocities
-        #_, _, self.target_yaw = euler_from_quaternion(self.target_heading_list)
-        #self.target_vel = self.convert_and_publish_velocity(self.target_vel_pub, self.target_vel_hol, self.MAX_VEL, self.target_yaw)
-        self.pub_delta_vel(self.agent_vel_pub, self.agent_vel_hol, self.MAX_VEL)
+        _, _, self.agent_yaw = euler_from_quaternion(self.agent_heading_list)
+        self.get_logger().info(f'current heading: {self.agent_yaw}')
+
+        self.convert_and_publish_velocity(self.agent_vel_pub, self.agent_vel_hol, self.MAX_VEL, self.agent_yaw)
+        self.pub_delta_vel(self.agent_holonomic_vel_pub, self.agent_vel_hol, self.MAX_VEL)
         #swap the commented sections to make it wokr with ground robots
         
         #self.get_logger().info(f'\n') #empty comment to seperate steps in console window
         self.real_pos_agent = None
 
 
-    def convert_and_publish_hollonomic_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
+    def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
         v_lin = np.linalg.norm(velocity_hol) #take the norm for the linear component
-        atan2_angle = np.arctan2((velocity_hol[1]/v_lin), (velocity_hol[0]/v_lin)) #atan2 for the amount to turn from x axis. this is not the correct heading, do not directly publish this value or things will not work.
-        
-        if math.isnan(v_lin) or math.isnan(atan2_angle): #check if our values are divide by 0 errors and skip update
+
+        if v_lin == 0:
+            atan2_angle = 0
+        else:
+            atan2_angle = np.arctan2(velocity_hol[1], velocity_hol[0])  # Correctly use the y and x
+
+        if math.isnan(v_lin) or math.isnan(atan2_angle):
             return
 
         v_ang = atan2_angle - yaw #subtract current heading
 
-        if v_ang > 0: #wrap angle so it stays between -pi to pi
-            while v_ang > np.pi:
-                v_ang -= 2*np.pi
-        else:
-            while v_ang < -np.pi:
-                v_ang += 2*np.pi
-
-        v_ang = -0.8*v_ang #coefficient is a gain so we dont do 360deg rotations instantly. negative worked best but i need to investigate further.
+        #if v_ang > 0: #wrap angle so it stays between -pi to pi
+        #    while v_ang > np.pi:
+        #        v_ang -= 2*np.pi
+        #else:
+        #    while v_ang < -np.pi:
+        #        v_ang += 2*np.pi
+        # Normalize the angle to be within -pi to pi
+        v_ang = (v_ang + np.pi) % (2 * np.pi) - np.pi
+        
+        #v_ang *= -0.8 #coefficient is a gain so we dont do 360deg rotations instantly. negative worked best but i need to investigate further.
 
         if v_lin > v_max: #cap linear speed so we don't tell the dogs to run too fast
             v_lin = v_max
         
-        self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
+        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
+        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
 
         twist_msg = Twist() #create twist message to pack data into to publish
         twist_msg.linear.x = v_lin

@@ -8,6 +8,7 @@ setup.py
 ../../build/matplotlib_sim/matplotlib_sim.egg-info/requires.txt
 ../../build/matplotlib_sim/matplotlib_sim.egg-info/top_level.txt
 ../../build/matplotlib_sim/matplotlib_sim.egg-info/zip-safe
+launch/herding_experiment_launch.py
 launch/herding_launch.py
 launch/matplotlib_demo_launch.py
 launch/matplotlib_herding_launch.py
