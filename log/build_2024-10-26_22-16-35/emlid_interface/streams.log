@@ -1,0 +1,39 @@
+[1.460s] Invoking command in '/home/wyatt/ros2_ws/src/common/emlid_interface': PYTHONPATH=/home/wyatt/ros2_ws/build/emlid_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/emlid_interface build --build-base /home/wyatt/ros2_ws/build/emlid_interface/build install --record /home/wyatt/ros2_ws/build/emlid_interface/install.log --single-version-externally-managed install_data
+[1.978s] running egg_info
+[1.978s] creating ../../../build/emlid_interface/emlid_interface.egg-info
+[1.979s] writing ../../../build/emlid_interface/emlid_interface.egg-info/PKG-INFO
+[1.979s] writing dependency_links to ../../../build/emlid_interface/emlid_interface.egg-info/dependency_links.txt
+[1.979s] writing entry points to ../../../build/emlid_interface/emlid_interface.egg-info/entry_points.txt
+[1.979s] writing requirements to ../../../build/emlid_interface/emlid_interface.egg-info/requires.txt
+[1.979s] writing top-level names to ../../../build/emlid_interface/emlid_interface.egg-info/top_level.txt
+[1.979s] writing manifest file '../../../build/emlid_interface/emlid_interface.egg-info/SOURCES.txt'
+[1.985s] reading manifest file '../../../build/emlid_interface/emlid_interface.egg-info/SOURCES.txt'
+[1.985s] writing manifest file '../../../build/emlid_interface/emlid_interface.egg-info/SOURCES.txt'
+[1.985s] running build
+[1.985s] running build_py
+[1.986s] creating /home/wyatt/ros2_ws/build/emlid_interface/build
+[1.986s] creating /home/wyatt/ros2_ws/build/emlid_interface/build/lib
+[1.986s] creating /home/wyatt/ros2_ws/build/emlid_interface/build/lib/emlid_interface
+[1.986s] copying emlid_interface/emlid_interface_node.py -> /home/wyatt/ros2_ws/build/emlid_interface/build/lib/emlid_interface
+[1.986s] copying emlid_interface/__init__.py -> /home/wyatt/ros2_ws/build/emlid_interface/build/lib/emlid_interface
+[1.986s] running install
+[1.986s] running install_lib
+[1.987s] creating /home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages/emlid_interface
+[1.987s] copying /home/wyatt/ros2_ws/build/emlid_interface/build/lib/emlid_interface/emlid_interface_node.py -> /home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages/emlid_interface
+[1.988s] copying /home/wyatt/ros2_ws/build/emlid_interface/build/lib/emlid_interface/__init__.py -> /home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages/emlid_interface
+[1.989s] byte-compiling /home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages/emlid_interface/emlid_interface_node.py to emlid_interface_node.cpython-310.pyc
+[1.991s] byte-compiling /home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages/emlid_interface/__init__.py to __init__.cpython-310.pyc
+[1.993s] running install_data
+[1.993s] creating /home/wyatt/ros2_ws/install/emlid_interface/share/ament_index
+[1.993s] creating /home/wyatt/ros2_ws/install/emlid_interface/share/ament_index/resource_index
+[1.993s] creating /home/wyatt/ros2_ws/install/emlid_interface/share/ament_index/resource_index/packages
+[1.993s] copying resource/emlid_interface -> /home/wyatt/ros2_ws/install/emlid_interface/share/ament_index/resource_index/packages
+[1.994s] copying package.xml -> /home/wyatt/ros2_ws/install/emlid_interface/share/emlid_interface
+[1.994s] creating /home/wyatt/ros2_ws/install/emlid_interface/share/emlid_interface/launch
+[1.994s] copying launch/emlid_interface_launch.py -> /home/wyatt/ros2_ws/install/emlid_interface/share/emlid_interface/launch
+[1.994s] running install_egg_info
+[1.999s] Copying ../../../build/emlid_interface/emlid_interface.egg-info to /home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages/emlid_interface-0.0.0-py3.10.egg-info
+[2.003s] running install_scripts
+[2.055s] Installing emlid_interface_node script to /home/wyatt/ros2_ws/install/emlid_interface/lib/emlid_interface
+[2.058s] writing list of installed files to '/home/wyatt/ros2_ws/build/emlid_interface/install.log'
+[2.105s] Invoked command in '/home/wyatt/ros2_ws/src/common/emlid_interface' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/emlid_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/emlid_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/emlid_interface build --build-base /home/wyatt/ros2_ws/build/emlid_interface/build install --record /home/wyatt/ros2_ws/build/emlid_interface/install.log --single-version-externally-managed install_data

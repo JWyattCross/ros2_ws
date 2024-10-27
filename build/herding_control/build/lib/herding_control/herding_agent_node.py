@@ -59,9 +59,9 @@ class PubNode(Node):
             self.agent_vel_hol = np.array([0.0, 0.0])
 
     def update_motion(self):
-        #if self.real_pos_agent is None:
-        #    self.get_logger().info("Position is missing. Skipping update.")
-        #    return
+        if self.real_pos_agent is None:
+            self.get_logger().info("Position is missing. Skipping update.")
+            return
 
         #self.get_logger().info(f'vel_hol: {self.agent_vel_hol}')
 

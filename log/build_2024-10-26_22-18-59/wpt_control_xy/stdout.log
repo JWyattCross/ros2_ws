@@ -1,0 +1,37 @@
+running egg_info
+creating ../../../build/wpt_control_xy/wpt_control_xy.egg-info
+writing ../../../build/wpt_control_xy/wpt_control_xy.egg-info/PKG-INFO
+writing dependency_links to ../../../build/wpt_control_xy/wpt_control_xy.egg-info/dependency_links.txt
+writing entry points to ../../../build/wpt_control_xy/wpt_control_xy.egg-info/entry_points.txt
+writing requirements to ../../../build/wpt_control_xy/wpt_control_xy.egg-info/requires.txt
+writing top-level names to ../../../build/wpt_control_xy/wpt_control_xy.egg-info/top_level.txt
+writing manifest file '../../../build/wpt_control_xy/wpt_control_xy.egg-info/SOURCES.txt'
+reading manifest file '../../../build/wpt_control_xy/wpt_control_xy.egg-info/SOURCES.txt'
+writing manifest file '../../../build/wpt_control_xy/wpt_control_xy.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wyatt/ros2_ws/build/wpt_control_xy/build
+creating /home/wyatt/ros2_ws/build/wpt_control_xy/build/lib
+creating /home/wyatt/ros2_ws/build/wpt_control_xy/build/lib/wpt_control_xy
+copying wpt_control_xy/wpt_control_xy_node.py -> /home/wyatt/ros2_ws/build/wpt_control_xy/build/lib/wpt_control_xy
+copying wpt_control_xy/__init__.py -> /home/wyatt/ros2_ws/build/wpt_control_xy/build/lib/wpt_control_xy
+running install
+running install_lib
+creating /home/wyatt/ros2_ws/install/wpt_control_xy/lib/python3.10/site-packages/wpt_control_xy
+copying /home/wyatt/ros2_ws/build/wpt_control_xy/build/lib/wpt_control_xy/wpt_control_xy_node.py -> /home/wyatt/ros2_ws/install/wpt_control_xy/lib/python3.10/site-packages/wpt_control_xy
+copying /home/wyatt/ros2_ws/build/wpt_control_xy/build/lib/wpt_control_xy/__init__.py -> /home/wyatt/ros2_ws/install/wpt_control_xy/lib/python3.10/site-packages/wpt_control_xy
+byte-compiling /home/wyatt/ros2_ws/install/wpt_control_xy/lib/python3.10/site-packages/wpt_control_xy/wpt_control_xy_node.py to wpt_control_xy_node.cpython-310.pyc
+byte-compiling /home/wyatt/ros2_ws/install/wpt_control_xy/lib/python3.10/site-packages/wpt_control_xy/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/wyatt/ros2_ws/install/wpt_control_xy/share/ament_index
+creating /home/wyatt/ros2_ws/install/wpt_control_xy/share/ament_index/resource_index
+creating /home/wyatt/ros2_ws/install/wpt_control_xy/share/ament_index/resource_index/packages
+copying resource/wpt_control_xy -> /home/wyatt/ros2_ws/install/wpt_control_xy/share/ament_index/resource_index/packages
+copying package.xml -> /home/wyatt/ros2_ws/install/wpt_control_xy/share/wpt_control_xy
+creating /home/wyatt/ros2_ws/install/wpt_control_xy/share/wpt_control_xy/launch
+copying launch/wpt_control_xy_launch.py -> /home/wyatt/ros2_ws/install/wpt_control_xy/share/wpt_control_xy/launch
+running install_egg_info
+Copying ../../../build/wpt_control_xy/wpt_control_xy.egg-info to /home/wyatt/ros2_ws/install/wpt_control_xy/lib/python3.10/site-packages/wpt_control_xy-0.0.0-py3.10.egg-info
+running install_scripts
+Installing wpt_control_xy_node script to /home/wyatt/ros2_ws/install/wpt_control_xy/lib/wpt_control_xy
+writing list of installed files to '/home/wyatt/ros2_ws/build/wpt_control_xy/install.log'

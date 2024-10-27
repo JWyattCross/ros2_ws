@@ -1,0 +1,3 @@
+[console_scripts]
+emlid_interface_node = emlid_interface.emlid_interface_node:main
+

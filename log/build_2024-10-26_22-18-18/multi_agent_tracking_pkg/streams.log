@@ -1,0 +1,21 @@
+[1.451s] Invoking command in '/home/wyatt/ros2_ws/multi_agent_tracking_pkg': PYTHONPATH=/home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/multi_agent_tracking_pkg build --build-base /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build install --record /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/install.log --single-version-externally-managed install_data
+[1.958s] running egg_info
+[1.962s] writing ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/PKG-INFO
+[1.962s] writing dependency_links to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/dependency_links.txt
+[1.963s] writing entry points to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/entry_points.txt
+[1.963s] writing requirements to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/requires.txt
+[1.963s] writing top-level names to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/top_level.txt
+[1.965s] reading manifest file '../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/SOURCES.txt'
+[1.966s] writing manifest file '../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/SOURCES.txt'
+[1.966s] running build
+[1.966s] running build_py
+[1.968s] running install
+[1.968s] running install_lib
+[1.971s] running install_data
+[1.972s] running install_egg_info
+[1.973s] removing '/home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.974s] Copying ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info to /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg-0.0.0-py3.10.egg-info
+[1.976s] running install_scripts
+[2.016s] Installing multi_agent_tracking_node script to /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/multi_agent_tracking_pkg
+[2.017s] writing list of installed files to '/home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/install.log'
+[2.232s] Invoked command in '/home/wyatt/ros2_ws/multi_agent_tracking_pkg' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/multi_agent_tracking_pkg build --build-base /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build install --record /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/install.log --single-version-externally-managed install_data

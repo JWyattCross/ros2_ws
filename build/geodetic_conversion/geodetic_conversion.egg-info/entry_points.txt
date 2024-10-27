@@ -1,0 +1,3 @@
+[console_scripts]
+geodetic_conversion_node = geodetic_conversion.geodetic_conversion_node:main
+
