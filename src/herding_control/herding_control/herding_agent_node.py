@@ -66,16 +66,41 @@ class PubNode(Node):
         #self.get_logger().info(f'vel_hol: {self.agent_vel_hol}')
 
         #publish velocities
-        _, _, self.agent_yaw = euler_from_quaternion(self.agent_heading_list)
+        _, _, self.agent_yaw = euler_from_quaternion(tuple(self.agent_heading_list))
         self.get_logger().info(f'current heading: {self.agent_yaw}')
 
+        #self.convert_and_publish_velocity(self.agent_vel_pub, self.agent_vel_hol, self.MAX_VEL, self.agent_yaw)
         self.convert_and_publish_velocity(self.agent_vel_pub, self.agent_vel_hol, self.MAX_VEL, self.agent_yaw)
+
         self.pub_delta_vel(self.agent_holonomic_vel_pub, self.agent_vel_hol, self.MAX_VEL)
         #swap the commented sections to make it wokr with ground robots
         
         #self.get_logger().info(f'\n') #empty comment to seperate steps in console window
         self.real_pos_agent = None
 
+    #--------------------------------
+
+    def cnvt_and_pub(self, publisher, velocity_hol, v_max, yaw):
+        theta = yaw # Extract yaw from pose
+        linear_x = np.linalg.norm(velocity_hol)
+        angular_z = math.atan2(self.velocity_hol[1], self.velocity_hol[0]) - theta
+        angular_z = self.normalize_angle(angular_z)
+
+        if linear_x > v_max: #cap linear speed so we don't tell the dogs to run too fast
+            linear_x = v_max
+        
+        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
+        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
+
+        twist_msg = Twist() #create twist message to pack data into to publish
+        twist_msg.linear.x = linear_x
+        twist_msg.angular.z = angular_z
+
+        publisher.publish(twist_msg) #publish twist message   
+
+    def normalize_angle(self, angle):
+        """Normalize an angle to the range [-pi, pi]."""
+        return (angle + math.pi) % (2 * math.pi) - math.pi
 
     def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
