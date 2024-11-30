@@ -1,0 +1,36 @@
+[1.455s] Invoking command in '/home/wyatt/ros2_ws/src/estop_button': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed install_data
+[1.878s] running egg_info
+[1.879s] creating ../../build/estop_button/estop_button.egg-info
+[1.880s] writing ../../build/estop_button/estop_button.egg-info/PKG-INFO
+[1.884s] writing dependency_links to ../../build/estop_button/estop_button.egg-info/dependency_links.txt
+[1.884s] writing entry points to ../../build/estop_button/estop_button.egg-info/entry_points.txt
+[1.884s] writing requirements to ../../build/estop_button/estop_button.egg-info/requires.txt
+[1.884s] writing top-level names to ../../build/estop_button/estop_button.egg-info/top_level.txt
+[1.884s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[1.887s] reading manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[1.887s] writing manifest file '../../build/estop_button/estop_button.egg-info/SOURCES.txt'
+[1.887s] running build
+[1.887s] running build_py
+[1.887s] creating /home/wyatt/ros2_ws/build/estop_button/build
+[1.887s] creating /home/wyatt/ros2_ws/build/estop_button/build/lib
+[1.887s] creating /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button
+[1.888s] copying estop_button/estop_button.py -> /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button
+[1.888s] copying estop_button/__init__.py -> /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button
+[1.888s] running install
+[1.888s] running install_lib
+[1.890s] creating /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[1.890s] copying /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button/estop_button.py -> /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[1.892s] copying /home/wyatt/ros2_ws/build/estop_button/build/lib/estop_button/__init__.py -> /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button
+[1.893s] byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/estop_button.py to estop_button.cpython-310.pyc
+[1.893s] byte-compiling /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button/__init__.py to __init__.cpython-310.pyc
+[1.894s] running install_data
+[1.897s] creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index
+[1.898s] creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index
+[1.898s] creating /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index/packages
+[1.901s] copying resource/estop_button -> /home/wyatt/ros2_ws/install/estop_button/share/ament_index/resource_index/packages
+[1.901s] copying package.xml -> /home/wyatt/ros2_ws/install/estop_button/share/estop_button
+[1.901s] running install_egg_info
+[1.901s] Copying ../../build/estop_button/estop_button.egg-info to /home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages/estop_button-0.0.0-py3.10.egg-info
+[1.909s] running install_scripts
+[1.937s] writing list of installed files to '/home/wyatt/ros2_ws/build/estop_button/install.log'
+[1.980s] Invoked command in '/home/wyatt/ros2_ws/src/estop_button' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/estop_button/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/estop_button/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/estop_button build --build-base /home/wyatt/ros2_ws/build/estop_button/build install --record /home/wyatt/ros2_ws/build/estop_button/install.log --single-version-externally-managed install_data

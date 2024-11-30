@@ -7,15 +7,6 @@ from launch_ros.substitutions import FindPackageShare
 
 from ament_index_python.packages import get_package_share_directory
 
-'''AP robot names:
-    /j100_0572
-    /a200_0706 
-    /a200_0708
-    /go1_0153  #small dog with blue parts
-    /go1_0154
-    /go1_0155
-    '''
-
 def generate_launch_description():
     return LaunchDescription([
         Node(
