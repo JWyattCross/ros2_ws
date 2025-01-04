@@ -77,7 +77,8 @@ class SingleIntegrator(Node):
 
         msg = PoseStamped()
         msg.header.stamp = self.get_clock().now().to_msg()
-        msg.header.frame_id = self.name
+        #msg.header.frame_id = self.name
+        msg.header.frame_id = 'autonomy_park' #THIS IS CHANGED. REVERT TO LINE ABOVE IF YOU HAVE ISSUES
         msg.pose.position.x = self.pos[0]
         msg.pose.position.y = self.pos[1]
         msg.pose.position.z = 0.0

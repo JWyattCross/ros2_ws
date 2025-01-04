@@ -1,0 +1,41 @@
+[1.836s] Invoking command in '/home/wyatt/ros2_ws/src/frame_pose_test_package': PYTHONPATH=/home/wyatt/ros2_ws/build/frame_pose_test_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/frame_pose_test_package build --build-base /home/wyatt/ros2_ws/build/frame_pose_test_package/build install --record /home/wyatt/ros2_ws/build/frame_pose_test_package/install.log --single-version-externally-managed install_data
+[2.511s] running egg_info
+[2.516s] creating ../../build/frame_pose_test_package/frame_pose_test_package.egg-info
+[2.516s] writing ../../build/frame_pose_test_package/frame_pose_test_package.egg-info/PKG-INFO
+[2.516s] writing dependency_links to ../../build/frame_pose_test_package/frame_pose_test_package.egg-info/dependency_links.txt
+[2.516s] writing entry points to ../../build/frame_pose_test_package/frame_pose_test_package.egg-info/entry_points.txt
+[2.516s] writing requirements to ../../build/frame_pose_test_package/frame_pose_test_package.egg-info/requires.txt
+[2.516s] writing top-level names to ../../build/frame_pose_test_package/frame_pose_test_package.egg-info/top_level.txt
+[2.516s] writing manifest file '../../build/frame_pose_test_package/frame_pose_test_package.egg-info/SOURCES.txt'
+[2.519s] reading manifest file '../../build/frame_pose_test_package/frame_pose_test_package.egg-info/SOURCES.txt'
+[2.522s] writing manifest file '../../build/frame_pose_test_package/frame_pose_test_package.egg-info/SOURCES.txt'
+[2.522s] running build
+[2.523s] running build_py
+[2.523s] creating /home/wyatt/ros2_ws/build/frame_pose_test_package/build
+[2.523s] creating /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib
+[2.523s] creating /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package
+[2.523s] copying frame_pose_test_package/spoof_static_transform_node.py -> /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package
+[2.523s] copying frame_pose_test_package/__init__.py -> /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package
+[2.523s] copying frame_pose_test_package/test_pub_pose_node.py -> /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package
+[2.525s] running install
+[2.526s] running install_lib
+[2.528s] creating /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package
+[2.528s] copying /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package/spoof_static_transform_node.py -> /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package
+[2.530s] copying /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package/__init__.py -> /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package
+[2.531s] copying /home/wyatt/ros2_ws/build/frame_pose_test_package/build/lib/frame_pose_test_package/test_pub_pose_node.py -> /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package
+[2.531s] byte-compiling /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package/spoof_static_transform_node.py to spoof_static_transform_node.cpython-310.pyc
+[2.538s] byte-compiling /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package/__init__.py to __init__.cpython-310.pyc
+[2.542s] byte-compiling /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package/test_pub_pose_node.py to test_pub_pose_node.cpython-310.pyc
+[2.542s] running install_data
+[2.542s] creating /home/wyatt/ros2_ws/install/frame_pose_test_package/share/ament_index
+[2.542s] creating /home/wyatt/ros2_ws/install/frame_pose_test_package/share/ament_index/resource_index
+[2.542s] creating /home/wyatt/ros2_ws/install/frame_pose_test_package/share/ament_index/resource_index/packages
+[2.542s] copying resource/frame_pose_test_package -> /home/wyatt/ros2_ws/install/frame_pose_test_package/share/ament_index/resource_index/packages
+[2.542s] copying package.xml -> /home/wyatt/ros2_ws/install/frame_pose_test_package/share/frame_pose_test_package
+[2.542s] running install_egg_info
+[2.550s] Copying ../../build/frame_pose_test_package/frame_pose_test_package.egg-info to /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages/frame_pose_test_package-0.0.0-py3.10.egg-info
+[2.550s] running install_scripts
+[2.610s] Installing spoof_static_transform_node script to /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/frame_pose_test_package
+[2.625s] Installing test_pub_pose_node script to /home/wyatt/ros2_ws/install/frame_pose_test_package/lib/frame_pose_test_package
+[2.626s] writing list of installed files to '/home/wyatt/ros2_ws/build/frame_pose_test_package/install.log'
+[3.171s] Invoked command in '/home/wyatt/ros2_ws/src/frame_pose_test_package' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/frame_pose_test_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/frame_pose_test_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/frame_pose_test_package build --build-base /home/wyatt/ros2_ws/build/frame_pose_test_package/build install --record /home/wyatt/ros2_ws/build/frame_pose_test_package/install.log --single-version-externally-managed install_data

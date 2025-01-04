@@ -1,0 +1,28 @@
+[0.025s] Invoking command in '/home/wyatt/ros2_ws/build/autonomy_park_viz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wyatt/ros2_ws/build/autonomy_park_viz -- -j4 -l4
+[0.516s] [100%] Built target autonomy_park_viz_node
+[0.766s] Invoked command in '/home/wyatt/ros2_ws/build/autonomy_park_viz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wyatt/ros2_ws/build/autonomy_park_viz -- -j4 -l4
+[0.775s] Invoking command in '/home/wyatt/ros2_ws/build/autonomy_park_viz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wyatt/ros2_ws/build/autonomy_park_viz
+[0.788s] -- Install configuration: ""
+[0.789s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/lib/autonomy_park_viz/autonomy_park_viz_node
+[0.789s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/launch
+[0.789s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/launch/viz.launch.py
+[0.789s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/param
+[0.789s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/param/park_geometry.yaml
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/rviz
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/rviz/autonomy_park.rviz
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/ament_index/resource_index/package_run_dependencies/autonomy_park_viz
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/ament_index/resource_index/parent_prefix_path/autonomy_park_viz
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/environment/ament_prefix_path.sh
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/environment/ament_prefix_path.dsv
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/environment/path.sh
+[0.790s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/environment/path.dsv
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/local_setup.bash
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/local_setup.sh
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/local_setup.zsh
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/local_setup.dsv
+[0.791s] -- Installing: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/package.dsv
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/ament_index/resource_index/packages/autonomy_park_viz
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/cmake/autonomy_park_vizConfig.cmake
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/cmake/autonomy_park_vizConfig-version.cmake
+[0.791s] -- Up-to-date: /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/package.xml
+[0.797s] Invoked command in '/home/wyatt/ros2_ws/build/autonomy_park_viz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wyatt/ros2_ws/build/autonomy_park_viz

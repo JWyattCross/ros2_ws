@@ -1,0 +1,43 @@
+[2.832s] Invoking command in '/home/wyatt/ros2_ws/multi_agent_tracking_pkg': PYTHONPATH=/home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/multi_agent_tracking_pkg build --build-base /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build install --record /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/install.log --single-version-externally-managed install_data
+[3.996s] running egg_info
+[3.998s] creating ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info
+[3.999s] writing ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/PKG-INFO
+[4.000s] writing dependency_links to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/dependency_links.txt
+[4.000s] writing entry points to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/entry_points.txt
+[4.001s] writing requirements to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/requires.txt
+[4.001s] writing top-level names to ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/top_level.txt
+[4.002s] writing manifest file '../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/SOURCES.txt'
+[4.006s] reading manifest file '../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/SOURCES.txt'
+[4.008s] writing manifest file '../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info/SOURCES.txt'
+[4.010s] running build
+[4.010s] running build_py
+[4.010s] creating /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build
+[4.011s] creating /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib
+[4.011s] creating /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg
+[4.011s] copying multi_agent_tracking_pkg/multi_agent_tracking_node.py -> /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg
+[4.012s] copying multi_agent_tracking_pkg/__init__.py -> /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg
+[4.013s] copying multi_agent_tracking_pkg/entity.py -> /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg
+[4.014s] copying multi_agent_tracking_pkg/simulation.py -> /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg
+[4.015s] running install
+[4.016s] running install_lib
+[4.017s] creating /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg
+[4.018s] copying /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg/multi_agent_tracking_node.py -> /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg
+[4.018s] copying /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg/__init__.py -> /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg
+[4.019s] copying /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg/entity.py -> /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg
+[4.019s] copying /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build/lib/multi_agent_tracking_pkg/simulation.py -> /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg
+[4.021s] byte-compiling /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg/multi_agent_tracking_node.py to multi_agent_tracking_node.cpython-310.pyc
+[4.024s] byte-compiling /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg/__init__.py to __init__.cpython-310.pyc
+[4.025s] byte-compiling /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg/entity.py to entity.cpython-310.pyc
+[4.027s] byte-compiling /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg/simulation.py to simulation.cpython-310.pyc
+[4.028s] running install_data
+[4.029s] creating /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/share/ament_index
+[4.030s] creating /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/share/ament_index/resource_index
+[4.030s] creating /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/share/ament_index/resource_index/packages
+[4.031s] copying resource/multi_agent_tracking_pkg -> /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/share/ament_index/resource_index/packages
+[4.031s] copying package.xml -> /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/share/multi_agent_tracking_pkg
+[4.033s] running install_egg_info
+[4.038s] Copying ../build/multi_agent_tracking_pkg/multi_agent_tracking_pkg.egg-info to /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages/multi_agent_tracking_pkg-0.0.0-py3.10.egg-info
+[4.039s] running install_scripts
+[4.112s] Installing multi_agent_tracking_node script to /home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/multi_agent_tracking_pkg
+[4.113s] writing list of installed files to '/home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/install.log'
+[4.497s] Invoked command in '/home/wyatt/ros2_ws/multi_agent_tracking_pkg' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/multi_agent_tracking_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/multi_agent_tracking_pkg build --build-base /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/build install --record /home/wyatt/ros2_ws/build/multi_agent_tracking_pkg/install.log --single-version-externally-managed install_data
