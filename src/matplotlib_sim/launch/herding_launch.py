@@ -1,9 +1,6 @@
-import sys
-import os
 from launch import LaunchDescription
-from launch.substitutions import PathJoinSubstitution
 from launch_ros.actions import Node
-from launch_ros.substitutions import FindPackageShare
+from launch.actions import DeclareLaunchArgument, TimerAction
 
 from ament_index_python.packages import get_package_share_directory
 
@@ -21,8 +18,8 @@ def generate_launch_description():
             executable='single_int_node',
             name='single_integrator_agent_1',
             parameters=[
-                {'x_init': -5.0},
-                {'y_init': 0.0},
+                {'x_init': -3.0},
+                {'y_init': 1.0},
                 {'name': 'sheep1'},
             ],
         ),
@@ -31,12 +28,12 @@ def generate_launch_description():
             namespace='sheep1',
             executable='herding_target_node',
             name='herding_target_node_1',
-            output='screen',
             parameters=[
                 {'dt': 0.1},
                 {'MAX_SPEED_MS': 1.0},
                 {'LEVY_WALK_PARAM': 20.0},
                 {'BIG_BAD_WOLF': 'sheepdog'},
+                {'SIGHT_RANGE_METERS': 20.0},
             ],
         ),
         # # Target 2 and Herding Control
@@ -97,22 +94,33 @@ def generate_launch_description():
             executable='single_int_node',
             name='single_integrator_agent_2',
             parameters=[
-                {'x_init': 0.0},
-                {'y_init': 8.0},
+                {'x_init': 8.0},
+                {'y_init': 7.0},
                 {'name': 'sheepdog'},
             ],
         ),
-        Node(
-            package='herding_control',
-            namespace='sheepdog',
-            executable='herding_agent_node',
-            name='herding_agent_node_1',
-            output='screen',
-            parameters=[
-                {'dt': 0.1},
-                {'MAX_SPEED_MS': 2.0},
-            ],
-        ),
+
+        TimerAction(
+            period=1.0,  # Delay of 1 seconds. This helps prevent errors when topics are starting up.
+            actions=[
+
+                Node(
+                    package='herding_control',
+                    namespace='sheepdog',
+                    executable='herding_agent_node',
+                    name='herding_agent_node_1',
+                    output='screen',
+                    parameters=[
+                        {'dt': 0.1},
+                        {'MAX_SPEED_MS': 2.0},
+                        {'TARGET_NAME': 'sheep1'},
+                        {'GOAL_LOCATION_x': -5.0},
+                        {'GOAL_LOCATION_y': -5.0},
+                        {'GOAL_RADIUS': 2.0},
+                    ],
+                ),
+            ]
+        )
 
 
     ])

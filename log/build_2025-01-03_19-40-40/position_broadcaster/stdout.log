@@ -1,0 +1,19 @@
+running egg_info
+writing ../../../build/position_broadcaster/position_broadcaster.egg-info/PKG-INFO
+writing dependency_links to ../../../build/position_broadcaster/position_broadcaster.egg-info/dependency_links.txt
+writing entry points to ../../../build/position_broadcaster/position_broadcaster.egg-info/entry_points.txt
+writing requirements to ../../../build/position_broadcaster/position_broadcaster.egg-info/requires.txt
+writing top-level names to ../../../build/position_broadcaster/position_broadcaster.egg-info/top_level.txt
+reading manifest file '../../../build/position_broadcaster/position_broadcaster.egg-info/SOURCES.txt'
+writing manifest file '../../../build/position_broadcaster/position_broadcaster.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/wyatt/ros2_ws/install/position_broadcaster/lib/python3.10/site-packages/position_broadcaster-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../../build/position_broadcaster/position_broadcaster.egg-info to /home/wyatt/ros2_ws/install/position_broadcaster/lib/python3.10/site-packages/position_broadcaster-0.0.0-py3.10.egg-info
+running install_scripts
+Installing position_broadcaster_node script to /home/wyatt/ros2_ws/install/position_broadcaster/lib/position_broadcaster
+writing list of installed files to '/home/wyatt/ros2_ws/build/position_broadcaster/install.log'

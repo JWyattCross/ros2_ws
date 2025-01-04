@@ -1,0 +1,37 @@
+[1.619s] Invoking command in '/home/wyatt/ros2_ws/src/common/geodetic_conversion': PYTHONPATH=/home/wyatt/ros2_ws/build/geodetic_conversion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/geodetic_conversion build --build-base /home/wyatt/ros2_ws/build/geodetic_conversion/build install --record /home/wyatt/ros2_ws/build/geodetic_conversion/install.log --single-version-externally-managed install_data
+[2.097s] running egg_info
+[2.098s] creating ../../../build/geodetic_conversion/geodetic_conversion.egg-info
+[2.101s] writing ../../../build/geodetic_conversion/geodetic_conversion.egg-info/PKG-INFO
+[2.101s] writing dependency_links to ../../../build/geodetic_conversion/geodetic_conversion.egg-info/dependency_links.txt
+[2.102s] writing entry points to ../../../build/geodetic_conversion/geodetic_conversion.egg-info/entry_points.txt
+[2.103s] writing requirements to ../../../build/geodetic_conversion/geodetic_conversion.egg-info/requires.txt
+[2.104s] writing top-level names to ../../../build/geodetic_conversion/geodetic_conversion.egg-info/top_level.txt
+[2.106s] writing manifest file '../../../build/geodetic_conversion/geodetic_conversion.egg-info/SOURCES.txt'
+[2.110s] reading manifest file '../../../build/geodetic_conversion/geodetic_conversion.egg-info/SOURCES.txt'
+[2.110s] writing manifest file '../../../build/geodetic_conversion/geodetic_conversion.egg-info/SOURCES.txt'
+[2.111s] running build
+[2.112s] running build_py
+[2.112s] creating /home/wyatt/ros2_ws/build/geodetic_conversion/build
+[2.113s] creating /home/wyatt/ros2_ws/build/geodetic_conversion/build/lib
+[2.113s] creating /home/wyatt/ros2_ws/build/geodetic_conversion/build/lib/geodetic_conversion
+[2.114s] copying geodetic_conversion/geodetic_conversion_node.py -> /home/wyatt/ros2_ws/build/geodetic_conversion/build/lib/geodetic_conversion
+[2.119s] copying geodetic_conversion/__init__.py -> /home/wyatt/ros2_ws/build/geodetic_conversion/build/lib/geodetic_conversion
+[2.120s] running install
+[2.120s] running install_lib
+[2.122s] creating /home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages/geodetic_conversion
+[2.122s] copying /home/wyatt/ros2_ws/build/geodetic_conversion/build/lib/geodetic_conversion/geodetic_conversion_node.py -> /home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages/geodetic_conversion
+[2.124s] copying /home/wyatt/ros2_ws/build/geodetic_conversion/build/lib/geodetic_conversion/__init__.py -> /home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages/geodetic_conversion
+[2.124s] byte-compiling /home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages/geodetic_conversion/geodetic_conversion_node.py to geodetic_conversion_node.cpython-310.pyc
+[2.127s] byte-compiling /home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages/geodetic_conversion/__init__.py to __init__.cpython-310.pyc
+[2.127s] running install_data
+[2.128s] creating /home/wyatt/ros2_ws/install/geodetic_conversion/share/ament_index
+[2.128s] creating /home/wyatt/ros2_ws/install/geodetic_conversion/share/ament_index/resource_index
+[2.128s] creating /home/wyatt/ros2_ws/install/geodetic_conversion/share/ament_index/resource_index/packages
+[2.129s] copying resource/geodetic_conversion -> /home/wyatt/ros2_ws/install/geodetic_conversion/share/ament_index/resource_index/packages
+[2.129s] copying package.xml -> /home/wyatt/ros2_ws/install/geodetic_conversion/share/geodetic_conversion
+[2.130s] running install_egg_info
+[2.133s] Copying ../../../build/geodetic_conversion/geodetic_conversion.egg-info to /home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages/geodetic_conversion-0.0.0-py3.10.egg-info
+[2.136s] running install_scripts
+[2.175s] Installing geodetic_conversion_node script to /home/wyatt/ros2_ws/install/geodetic_conversion/lib/geodetic_conversion
+[2.177s] writing list of installed files to '/home/wyatt/ros2_ws/build/geodetic_conversion/install.log'
+[2.223s] Invoked command in '/home/wyatt/ros2_ws/src/common/geodetic_conversion' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/geodetic_conversion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/geodetic_conversion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/geodetic_conversion build --build-base /home/wyatt/ros2_ws/build/geodetic_conversion/build install --record /home/wyatt/ros2_ws/build/geodetic_conversion/install.log --single-version-externally-managed install_data

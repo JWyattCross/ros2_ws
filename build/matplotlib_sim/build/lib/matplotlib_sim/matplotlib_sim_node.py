@@ -41,8 +41,8 @@ class MatPlotLibSim(Node):
         self.agents = []
 
         plt.ion()
-
-        self.BBox = [-10, 10, -10, 10]
+        w = 10
+        self.BBox = [-w, w, -w, w]
         self.fig, self.ax = plt.subplots(figsize=(10, 10))
         self.agent_plot, = self.ax.plot([],[],'ro', label="agent")
         self.agent_hist_plot, = self.ax.plot([],[],'k,', label="agent path")

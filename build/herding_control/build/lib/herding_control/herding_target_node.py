@@ -61,14 +61,14 @@ class PubNode(Node):
         if self.real_pos_agent is None:
             #self.get_logger().info("Agent position is missing.")
             self.target_vel_hol = self.levy_walk(self.LEVY_WALK_PARAM)
-            self.get_logger().info(f'agent: {self.real_pos_agent}')
+            #self.get_logger().info(f'agent: {self.real_pos_agent}')
 
         else:
             #find displacement between them
-            self.get_logger().info(f'target: {self.real_pos_target}')
-            self.get_logger().info(f'agent: {self.real_pos_agent}')
+            #self.get_logger().info(f'target: {self.real_pos_target}')
+            #self.get_logger().info(f'agent: {self.real_pos_agent}')
             self.dist_from_target = np.linalg.norm(self.real_pos_target - self.real_pos_agent)
-            self.get_logger().info(f'distance from target: {self.dist_from_target}')
+            #self.get_logger().info(f'distance from target: {self.dist_from_target}')
 
             #random walk check
             if self.dist_from_target < self.SIGHT_RANGE:
@@ -98,7 +98,7 @@ class PubNode(Node):
     def fearFunction(self, target, agent, distance):
         opposite_vec = target - agent
         fear_factor = 1.0 #np.exp(distance)
-        t_dot = fear_factor * opposite_vec
+        t_dot = fear_factor * opposite_vec * self.dt
         return t_dot
 
     def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
@@ -134,7 +134,7 @@ class PubNode(Node):
         return v_lin #return velocity so it can be used to keep the robot moving when position has not been updated. not implemented yet.
     
     def pub_lin_vel(self, publisher, velocity): #this is supposed to publish a linear velocity only as a twist message. it will be used to make the robots keep moving when the gps does not send the position and the simulation cannot be run since it depends on n current gps values. not implemnted yet.
-        self.get_logger().info(f'Publishing Last linear vel: {velocity}')
+        #self.get_logger().info(f'Publishing Last linear vel: {velocity}')
         twist_msg = Twist()
         twist_msg.linear.x = velocity
         publisher.publish(twist_msg)
