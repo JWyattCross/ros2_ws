@@ -1,0 +1,47 @@
+[2.317s] Invoking command in '/home/wyatt/ros2_ws/src/matplotlib_sim': PYTHONPATH=/home/wyatt/ros2_ws/build/matplotlib_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/matplotlib_sim build --build-base /home/wyatt/ros2_ws/build/matplotlib_sim/build install --record /home/wyatt/ros2_ws/build/matplotlib_sim/install.log --single-version-externally-managed install_data
+[2.883s] running egg_info
+[2.888s] creating ../../build/matplotlib_sim/matplotlib_sim.egg-info
+[2.889s] writing ../../build/matplotlib_sim/matplotlib_sim.egg-info/PKG-INFO
+[2.889s] writing dependency_links to ../../build/matplotlib_sim/matplotlib_sim.egg-info/dependency_links.txt
+[2.889s] writing entry points to ../../build/matplotlib_sim/matplotlib_sim.egg-info/entry_points.txt
+[2.889s] writing requirements to ../../build/matplotlib_sim/matplotlib_sim.egg-info/requires.txt
+[2.889s] writing top-level names to ../../build/matplotlib_sim/matplotlib_sim.egg-info/top_level.txt
+[2.889s] writing manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'
+[2.889s] reading manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'
+[2.890s] writing manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'
+[2.894s] running build
+[2.894s] running build_py
+[2.894s] creating /home/wyatt/ros2_ws/build/matplotlib_sim/build
+[2.894s] creating /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib
+[2.894s] creating /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim
+[2.894s] copying matplotlib_sim/__init__.py -> /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim
+[2.896s] copying matplotlib_sim/conductor_node.py -> /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim
+[2.897s] copying matplotlib_sim/matplotlib_sim_node.py -> /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim
+[2.897s] running install
+[2.897s] running install_lib
+[2.897s] creating /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim
+[2.897s] copying /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim/__init__.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim
+[2.897s] copying /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim/conductor_node.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim
+[2.897s] copying /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim/matplotlib_sim_node.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim
+[2.897s] byte-compiling /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim/__init__.py to __init__.cpython-310.pyc
+[2.898s] byte-compiling /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim/conductor_node.py to conductor_node.cpython-310.pyc
+[2.900s] byte-compiling /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim/matplotlib_sim_node.py to matplotlib_sim_node.cpython-310.pyc
+[2.901s] running install_data
+[2.901s] creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index
+[2.901s] creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index/resource_index
+[2.901s] creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index/resource_index/packages
+[2.901s] copying resource/matplotlib_sim -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/ament_index/resource_index/packages
+[2.901s] copying package.xml -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim
+[2.902s] creating /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] copying launch/matplotlib_herding_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] copying launch/matplotlib_static_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] copying launch/herding_experiment_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] copying launch/matplotlib_demo_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] copying launch/matplotlib_sim_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] copying launch/herding_launch.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/share/matplotlib_sim/launch
+[2.902s] running install_egg_info
+[2.908s] Copying ../../build/matplotlib_sim/matplotlib_sim.egg-info to /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim-0.0.0-py3.10.egg-info
+[2.908s] running install_scripts
+[2.947s] Installing matplotlib_sim_node script to /home/wyatt/ros2_ws/install/matplotlib_sim/lib/matplotlib_sim
+[2.948s] writing list of installed files to '/home/wyatt/ros2_ws/build/matplotlib_sim/install.log'
+[3.002s] Invoked command in '/home/wyatt/ros2_ws/src/matplotlib_sim' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/matplotlib_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/matplotlib_sim build --build-base /home/wyatt/ros2_ws/build/matplotlib_sim/build install --record /home/wyatt/ros2_ws/build/matplotlib_sim/install.log --single-version-externally-managed install_data

@@ -1,0 +1,24 @@
+[1.661s] Invoking command in '/home/wyatt/ros2_ws/src/matplotlib_sim': PYTHONPATH=/home/wyatt/ros2_ws/build/matplotlib_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/matplotlib_sim build --build-base /home/wyatt/ros2_ws/build/matplotlib_sim/build install --record /home/wyatt/ros2_ws/build/matplotlib_sim/install.log --single-version-externally-managed install_data
+[1.954s] running egg_info
+[1.954s] writing ../../build/matplotlib_sim/matplotlib_sim.egg-info/PKG-INFO
+[1.954s] writing dependency_links to ../../build/matplotlib_sim/matplotlib_sim.egg-info/dependency_links.txt
+[1.954s] writing entry points to ../../build/matplotlib_sim/matplotlib_sim.egg-info/entry_points.txt
+[1.954s] writing requirements to ../../build/matplotlib_sim/matplotlib_sim.egg-info/requires.txt
+[1.954s] writing top-level names to ../../build/matplotlib_sim/matplotlib_sim.egg-info/top_level.txt
+[1.954s] reading manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'
+[1.955s] writing manifest file '../../build/matplotlib_sim/matplotlib_sim.egg-info/SOURCES.txt'
+[1.955s] running build
+[1.955s] running build_py
+[1.955s] copying matplotlib_sim/matplotlib_sim_node.py -> /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim
+[1.955s] running install
+[1.955s] running install_lib
+[1.955s] copying /home/wyatt/ros2_ws/build/matplotlib_sim/build/lib/matplotlib_sim/matplotlib_sim_node.py -> /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim
+[1.955s] byte-compiling /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim/matplotlib_sim_node.py to matplotlib_sim_node.cpython-310.pyc
+[1.955s] running install_data
+[1.956s] running install_egg_info
+[1.956s] removing '/home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim-0.0.0-py3.10.egg-info' (and everything under it)
+[1.956s] Copying ../../build/matplotlib_sim/matplotlib_sim.egg-info to /home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages/matplotlib_sim-0.0.0-py3.10.egg-info
+[1.956s] running install_scripts
+[1.965s] Installing matplotlib_sim_node script to /home/wyatt/ros2_ws/install/matplotlib_sim/lib/matplotlib_sim
+[1.965s] writing list of installed files to '/home/wyatt/ros2_ws/build/matplotlib_sim/install.log'
+[2.003s] Invoked command in '/home/wyatt/ros2_ws/src/matplotlib_sim' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/matplotlib_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/matplotlib_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/matplotlib_sim build --build-base /home/wyatt/ros2_ws/build/matplotlib_sim/build install --record /home/wyatt/ros2_ws/build/matplotlib_sim/install.log --single-version-externally-managed install_data

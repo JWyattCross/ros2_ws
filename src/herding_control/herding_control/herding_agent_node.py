@@ -55,10 +55,12 @@ class PubNode(Node):
         self.agent_heading_list = [msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w]
         #self.get_logger().info(f'Agent position: [{msg.pose.position.x}, {msg.pose.position.y}]')
 
+
     def target_pos_callback(self, msg): #get real positions and update sim. This runs whenever a postion is revieved to update our position array
         self.real_pos_target = np.array([msg.pose.position.x, msg.pose.position.y])
         self.target_heading_list = [msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z, msg.pose.orientation.w]
         #self.get_logger().info(f'Position:  [{msg.pose.position.x}, {msg.pose.position.y}]')
+
 
     def joy_callback(self, msg):
         # Check joystick axes to determine if it is pressed
@@ -68,6 +70,7 @@ class PubNode(Node):
             self.agent_vel_hol[1] = msg.axes[1] * self.MAX_VEL #vertical left stick, controls y_pos
         else:
             self.agent_vel_hol = np.array([0.0, 0.0])
+
 
     def update_motion(self):
         if self.real_pos_agent is None:
@@ -147,6 +150,7 @@ class PubNode(Node):
 
     #--------------------------------
 
+
     def cnvt_and_pub(self, publisher, velocity_hol, v_max, yaw):
         theta = yaw # Extract yaw from pose
         linear_x = np.linalg.norm(velocity_hol)
@@ -165,9 +169,11 @@ class PubNode(Node):
 
         publisher.publish(twist_msg) #publish twist message   
 
+
     def normalize_angle(self, angle):
         """Normalize an angle to the range [-pi, pi]."""
         return (angle + math.pi) % (2 * math.pi) - math.pi
+
 
     def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
@@ -207,11 +213,13 @@ class PubNode(Node):
         publisher.publish(twist_msg) #publish twist message
         return v_lin #return velocity so it can be used to keep the robot moving when position has not been updated. not implemented yet.
     
+
     def pub_lin_vel(self, publisher, velocity): #this is supposed to publish a linear velocity only as a twist message. it will be used to make the robots keep moving when the gps does not send the position and the simulation cannot be run since it depends on n current gps values. not implemnted yet.
         #self.get_logger().info(f'Publishing Last linear vel: {velocity}')
         twist_msg = Twist()
         twist_msg.linear.x = velocity
         publisher.publish(twist_msg)
+
 
     def pub_delta_vel(self, publisher, velocity, max): #this publishes velocity in a format that the matplotlib sim likes
         twist_msg = Twist()

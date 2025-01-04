@@ -9,6 +9,7 @@ import sys
 import os
 import math
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 #Import the interfaces here
 #for example, using the Header msg from the std_msgs package
@@ -53,6 +54,13 @@ class MatPlotLibSim(Node):
         self.ax.axis(xmin=self.BBox[0],xmax=self.BBox[1], ymin=self.BBox[2],ymax=self.BBox[3])
         self.ax.axis('equal')
 
+        # Draw the static circle once at initialization
+        self.circle = patches.Circle((-5.0, -5.0), radius=2.0, edgecolor='green', facecolor='none', linewidth=2)
+        self.ax.add_patch(self.circle)
+        
+        # Add a small dot at coordinates (-5.0, -5.0)
+        dot = patches.Circle((-5.0, -5.0), radius=0.1, color='green')  # Small circle as a dot
+        self.ax.add_patch(dot)
 
         #Set the timer period and define the timer function that loops at the desired rate
         time_period = 1/10
