@@ -1,6 +1,0 @@
-Invoking command in '/home/wyatt/ros2_ws/build/autonomy_park_viz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wyatt/ros2_ws/src/autonomy-park-air-team-autonomy_park_viz -DCMAKE_INSTALL_PREFIX=/home/wyatt/ros2_ws/install/autonomy_park_viz
-Invoked command in '/home/wyatt/ros2_ws/build/autonomy_park_viz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wyatt/ros2_ws/src/autonomy-park-air-team-autonomy_park_viz -DCMAKE_INSTALL_PREFIX=/home/wyatt/ros2_ws/install/autonomy_park_viz
-Invoking command in '/home/wyatt/ros2_ws/build/autonomy_park_viz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wyatt/ros2_ws/build/autonomy_park_viz -- -j4 -l4
-Invoked command in '/home/wyatt/ros2_ws/build/autonomy_park_viz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wyatt/ros2_ws/build/autonomy_park_viz -- -j4 -l4
-Invoking command in '/home/wyatt/ros2_ws/build/autonomy_park_viz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wyatt/ros2_ws/build/autonomy_park_viz
-Invoked command in '/home/wyatt/ros2_ws/build/autonomy_park_viz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wyatt/ros2_ws/build/autonomy_park_viz

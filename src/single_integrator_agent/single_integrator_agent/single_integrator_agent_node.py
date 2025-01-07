@@ -33,6 +33,7 @@ class SingleIntegrator(Node):
         y = self.get_parameter('y_init').value
         self.name = self.get_parameter('name').value
         self.pos = [x,y]
+        self.heading = 0.0
 
         #Define the publishers here
         #self.'publisher_var_name' = self.create_publisher('MessageType', '/topic_name', 'queue length')
@@ -41,7 +42,8 @@ class SingleIntegrator(Node):
 
         #Define the subscribers here
         #self.'subscriber_var_name' = self.create_subscription('MessageType', '/topic_name', self.'callback_function', 'queue length')
-        self.twist_sub_ = self.create_subscription(Twist, 'holonomic_cmd_vel', self.twist_callback, 10)
+        self.twist_sub_ = self.create_subscription(Twist, 'cmd_vel', self.twist_callback, 10)
+        #holonomic_cmd_vel
 
         #Variable to track the current time
         self.current_time = self.get_clock().now()
@@ -60,20 +62,14 @@ class SingleIntegrator(Node):
             self.twist.linear.x = 0.0
             self.twist.linear.y = 0.0
 
-        self.pos[0] = self.pos[0] + self.time_period*self.twist.linear.x
-        self.pos[1] = self.pos[1] + self.time_period*self.twist.linear.y
+        #self.pos[0] = self.pos[0] + self.time_period*self.twist.linear.x
+        #self.pos[1] = self.pos[1] + self.time_period*self.twist.linear.y
         
-        
-        #delta_heading = self.twist.angular.z * self.time_period
-        #self.heading += delta_heading  # Update the heading
-
-        # Calculate the new position based on the current heading
-        #self.pos[0] += self.time_period * self.twist.linear.x * math.cos(self.heading)
-        #self.pos[1] += self.time_period * self.twist.linear.x * math.sin(self.heading)
-        #or
-        #self.pos[0] += self.time_period*self.twist.linear.x*math.cos(self.twist.angular.z)
-        #self.pos[1] += self.time_period*self.twist.linear.x*math.sin(self.twist.angular.z) + self.time_period*self.twist.linear.x
-
+        self.heading += self.twist.angular.z * self.time_period
+        delta_x = self.twist.linear.x * math.cos(self.heading) * self.time_period
+        delta_y = self.twist.linear.x * math.sin(self.heading) * self.time_period
+        self.pos[0] += delta_x
+        self.pos[1] += delta_y
 
         msg = PoseStamped()
         msg.header.stamp = self.get_clock().now().to_msg()
@@ -82,7 +78,7 @@ class SingleIntegrator(Node):
         msg.pose.position.x = self.pos[0]
         msg.pose.position.y = self.pos[1]
         msg.pose.position.z = 0.0
-        q = quaternion_from_euler(0,0,self.twist.angular.z)
+        q = quaternion_from_euler(0, 0, self.heading)
         msg.pose.orientation.x = q[0]
         msg.pose.orientation.y = q[1]
         msg.pose.orientation.z = q[2]

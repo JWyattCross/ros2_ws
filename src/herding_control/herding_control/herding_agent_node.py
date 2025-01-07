@@ -117,15 +117,12 @@ class PubNode(Node):
         #self.get_logger().info(f'current heading: {self.agent_yaw}')
 
         #publish for robots
-        #self.convert_and_publish_velocity(self.agent_vel_pub, self.agent_vel_hol, self.MAX_VEL, self.agent_yaw)
+        self.convert_and_publish_velocity(self.agent_vel_pub, self.agent_vel_hol, self.MAX_VEL, self.agent_yaw)
         #publish for matplotlib sim
         self.pub_delta_vel(self.agent_holonomic_vel_pub, self.agent_vel_hol, self.MAX_VEL)
         
         #reset empty message check. we only want to run the controller with new data.=
         self.real_pos_agent = None
-
-
-
 
 
 
@@ -151,74 +148,34 @@ class PubNode(Node):
     #--------------------------------
 
 
-    def cnvt_and_pub(self, publisher, velocity_hol, v_max, yaw):
-        theta = yaw # Extract yaw from pose
-        linear_x = np.linalg.norm(velocity_hol)
-        angular_z = math.atan2(self.velocity_hol[1], self.velocity_hol[0]) - theta
-        angular_z = self.normalize_angle(angular_z)
-
-        if linear_x > v_max: #cap linear speed so we don't tell the dogs to run too fast
-            linear_x = v_max
-        
-        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
-
-        twist_msg = Twist() #create twist message to pack data into to publish
-        twist_msg.linear.x = linear_x
-        twist_msg.angular.z = angular_z
-
-        publisher.publish(twist_msg) #publish twist message   
-
-
-    def normalize_angle(self, angle):
-        """Normalize an angle to the range [-pi, pi]."""
-        return (angle + math.pi) % (2 * math.pi) - math.pi
-
-
     def convert_and_publish_velocity(self, publisher, velocity_hol, v_max, yaw): #publish the vel commands as a twist message
         #this converts the [dx,dy] vel vector to a linear component and angular component
         v_lin = np.linalg.norm(velocity_hol) #take the norm for the linear component
-
-        if v_lin == 0:
-            atan2_angle = 0
-        else:
-            atan2_angle = np.arctan2(velocity_hol[1], velocity_hol[0])  # Correctly use the y and x
-
-        if math.isnan(v_lin) or math.isnan(atan2_angle):
+        atan2_angle = np.arctan2(velocity_hol[1], velocity_hol[0]) #fix angle calculation
+        
+        if math.isnan(v_lin) or math.isnan(atan2_angle): #check if our values are divide by 0 errors and skip update
             return
 
         v_ang = atan2_angle - yaw #subtract current heading
 
-        #if v_ang > 0: #wrap angle so it stays between -pi to pi
-        #    while v_ang > np.pi:
-        #        v_ang -= 2*np.pi
-        #else:
-        #    while v_ang < -np.pi:
-        #        v_ang += 2*np.pi
-        # Normalize the angle to be within -pi to pi
-        v_ang = (v_ang + np.pi) % (2 * np.pi) - np.pi
-        
-        #v_ang *= -0.8 #coefficient is a gain so we dont do 360deg rotations instantly. negative worked best but i need to investigate further.
+        if v_ang > 0: #wrap angle so it stays between -pi to pi
+            while v_ang > np.pi:
+                v_ang -= 2*np.pi
+        else:
+            while v_ang < -np.pi:
+                v_ang += 2*np.pi
+
+        #v_ang = 0.8*v_ang  # Remove negative sign, test to see if it moves in the correct direction
 
         if v_lin > v_max: #cap linear speed so we don't tell the dogs to run too fast
             v_lin = v_max
         
-        #self.get_logger().info(f'Publishing Vel Hol: {velocity_hol}')
-        #self.get_logger().info(f'Publishing lin,ang: {v_lin}, {v_ang}')
-
         twist_msg = Twist() #create twist message to pack data into to publish
         twist_msg.linear.x = v_lin
         twist_msg.angular.z = v_ang
 
         publisher.publish(twist_msg) #publish twist message
-        return v_lin #return velocity so it can be used to keep the robot moving when position has not been updated. not implemented yet.
-    
-
-    def pub_lin_vel(self, publisher, velocity): #this is supposed to publish a linear velocity only as a twist message. it will be used to make the robots keep moving when the gps does not send the position and the simulation cannot be run since it depends on n current gps values. not implemnted yet.
-        #self.get_logger().info(f'Publishing Last linear vel: {velocity}')
-        twist_msg = Twist()
-        twist_msg.linear.x = velocity
-        publisher.publish(twist_msg)
+        return
 
 
     def pub_delta_vel(self, publisher, velocity, max): #this publishes velocity in a format that the matplotlib sim likes

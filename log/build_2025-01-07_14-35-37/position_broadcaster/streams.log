@@ -1,0 +1,21 @@
+[2.734s] Invoking command in '/home/wyatt/ros2_ws/src/common/position_broadcaster': PYTHONPATH=/home/wyatt/ros2_ws/build/position_broadcaster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/position_broadcaster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/position_broadcaster build --build-base /home/wyatt/ros2_ws/build/position_broadcaster/build install --record /home/wyatt/ros2_ws/build/position_broadcaster/install.log --single-version-externally-managed install_data
+[4.238s] running egg_info
+[4.239s] writing ../../../build/position_broadcaster/position_broadcaster.egg-info/PKG-INFO
+[4.239s] writing dependency_links to ../../../build/position_broadcaster/position_broadcaster.egg-info/dependency_links.txt
+[4.239s] writing entry points to ../../../build/position_broadcaster/position_broadcaster.egg-info/entry_points.txt
+[4.241s] writing requirements to ../../../build/position_broadcaster/position_broadcaster.egg-info/requires.txt
+[4.243s] writing top-level names to ../../../build/position_broadcaster/position_broadcaster.egg-info/top_level.txt
+[4.245s] reading manifest file '../../../build/position_broadcaster/position_broadcaster.egg-info/SOURCES.txt'
+[4.250s] writing manifest file '../../../build/position_broadcaster/position_broadcaster.egg-info/SOURCES.txt'
+[4.250s] running build
+[4.251s] running build_py
+[4.251s] running install
+[4.251s] running install_lib
+[4.258s] running install_data
+[4.261s] running install_egg_info
+[4.265s] removing '/home/wyatt/ros2_ws/install/position_broadcaster/lib/python3.10/site-packages/position_broadcaster-0.0.0-py3.10.egg-info' (and everything under it)
+[4.274s] Copying ../../../build/position_broadcaster/position_broadcaster.egg-info to /home/wyatt/ros2_ws/install/position_broadcaster/lib/python3.10/site-packages/position_broadcaster-0.0.0-py3.10.egg-info
+[4.276s] running install_scripts
+[4.339s] Installing position_broadcaster_node script to /home/wyatt/ros2_ws/install/position_broadcaster/lib/position_broadcaster
+[4.340s] writing list of installed files to '/home/wyatt/ros2_ws/build/position_broadcaster/install.log'
+[4.616s] Invoked command in '/home/wyatt/ros2_ws/src/common/position_broadcaster' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/position_broadcaster/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/position_broadcaster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/position_broadcaster build --build-base /home/wyatt/ros2_ws/build/position_broadcaster/build install --record /home/wyatt/ros2_ws/build/position_broadcaster/install.log --single-version-externally-managed install_data

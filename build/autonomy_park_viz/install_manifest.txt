@@ -1,6 +1,7 @@
 /home/wyatt/ros2_ws/install/autonomy_park_viz/lib/autonomy_park_viz/autonomy_park_viz_node
 /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/launch/viz.launch.py
 /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/param/park_geometry.yaml
+/home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/rviz/apark_herding.rviz
 /home/wyatt/ros2_ws/install/autonomy_park_viz/share/autonomy_park_viz/rviz/autonomy_park.rviz
 /home/wyatt/ros2_ws/install/autonomy_park_viz/share/ament_index/resource_index/package_run_dependencies/autonomy_park_viz
 /home/wyatt/ros2_ws/install/autonomy_park_viz/share/ament_index/resource_index/parent_prefix_path/autonomy_park_viz

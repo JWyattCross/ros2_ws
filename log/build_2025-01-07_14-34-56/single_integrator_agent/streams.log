@@ -1,0 +1,21 @@
+[2.519s] Invoking command in '/home/wyatt/ros2_ws/src/single_integrator_agent': PYTHONPATH=/home/wyatt/ros2_ws/build/single_integrator_agent/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/single_integrator_agent build --build-base /home/wyatt/ros2_ws/build/single_integrator_agent/build install --record /home/wyatt/ros2_ws/build/single_integrator_agent/install.log --single-version-externally-managed install_data
+[3.166s] running egg_info
+[3.167s] writing ../../build/single_integrator_agent/single_integrator_agent.egg-info/PKG-INFO
+[3.168s] writing dependency_links to ../../build/single_integrator_agent/single_integrator_agent.egg-info/dependency_links.txt
+[3.168s] writing entry points to ../../build/single_integrator_agent/single_integrator_agent.egg-info/entry_points.txt
+[3.168s] writing requirements to ../../build/single_integrator_agent/single_integrator_agent.egg-info/requires.txt
+[3.168s] writing top-level names to ../../build/single_integrator_agent/single_integrator_agent.egg-info/top_level.txt
+[3.171s] reading manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'
+[3.173s] writing manifest file '../../build/single_integrator_agent/single_integrator_agent.egg-info/SOURCES.txt'
+[3.173s] running build
+[3.173s] running build_py
+[3.173s] running install
+[3.174s] running install_lib
+[3.176s] running install_data
+[3.176s] running install_egg_info
+[3.179s] removing '/home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent-0.0.0-py3.10.egg-info' (and everything under it)
+[3.180s] Copying ../../build/single_integrator_agent/single_integrator_agent.egg-info to /home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages/single_integrator_agent-0.0.0-py3.10.egg-info
+[3.181s] running install_scripts
+[3.212s] Installing single_int_node script to /home/wyatt/ros2_ws/install/single_integrator_agent/lib/single_integrator_agent
+[3.213s] writing list of installed files to '/home/wyatt/ros2_ws/build/single_integrator_agent/install.log'
+[3.294s] Invoked command in '/home/wyatt/ros2_ws/src/single_integrator_agent' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/single_integrator_agent/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/single_integrator_agent/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/single_integrator_agent build --build-base /home/wyatt/ros2_ws/build/single_integrator_agent/build install --record /home/wyatt/ros2_ws/build/single_integrator_agent/install.log --single-version-externally-managed install_data

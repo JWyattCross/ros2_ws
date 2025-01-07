@@ -11,7 +11,8 @@ setup.py
 herding_control/__init__.py
 herding_control/herding_agent_node.py
 herding_control/herding_target_node.py
-launch/herding_launch.py
+launch/herding_sim_launch.py
+launch/herding_sim_rviz_launch.py
 resource/herding_control
 test/test_copyright.py
 test/test_flake8.py
