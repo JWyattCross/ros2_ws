@@ -1,4 +1,0 @@
-[console_scripts]
-spoof_static_transform_node = frame_pose_test_package.spoof_static_transform_node:main
-test_pub_pose_node = frame_pose_test_package.test_pub_pose_node:main
-
