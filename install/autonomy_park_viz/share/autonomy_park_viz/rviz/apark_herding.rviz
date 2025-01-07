@@ -4,11 +4,6 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /TF1
-        - /Polygon1
-        - /Polygon2
-        - /MarkerArray1
         - /Sheep1 Pose1
         - /Sheepdog Pose1
       Splitter Ratio: 0.5
@@ -44,7 +39,7 @@ Visualization Manager:
         Y: 0
         Z: 0
       Plane: XY
-      Plane Cell Count: 10
+      Plane Cell Count: 75
       Reference Frame: <Fixed Frame>
       Value: true
     - Class: rviz_default_plugins/TF
@@ -109,7 +104,7 @@ Visualization Manager:
       Axes Length: 1
       Axes Radius: 0.10000000149011612
       Class: rviz_default_plugins/Pose
-      Color: 205; 171; 143
+      Color: 255; 255; 255
       Enabled: true
       Head Length: 0.30000001192092896
       Head Radius: 0.10000000149011612
@@ -191,7 +186,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 113.23410034179688
+      Distance: 33.940452575683594
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -206,10 +201,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.10539936274290085
+      Pitch: 0.8703996539115906
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.8603993654251099
+      Yaw: 2.3585867881774902
     Saved: ~
 Window Geometry:
   Displays:
