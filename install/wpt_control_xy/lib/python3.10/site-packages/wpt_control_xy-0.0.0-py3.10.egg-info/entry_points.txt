@@ -1,0 +1,3 @@
+[console_scripts]
+wpt_control_xy_node = wpt_control_xy.wpt_control_xy_node:main
+

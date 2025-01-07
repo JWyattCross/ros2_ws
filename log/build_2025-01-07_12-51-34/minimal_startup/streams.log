@@ -1,0 +1,40 @@
+[2.971s] Invoking command in '/home/wyatt/ros2_ws/src/common/minimal_startup': PYTHONPATH=/home/wyatt/ros2_ws/build/minimal_startup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/minimal_startup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/minimal_startup build --build-base /home/wyatt/ros2_ws/build/minimal_startup/build install --record /home/wyatt/ros2_ws/build/minimal_startup/install.log --single-version-externally-managed install_data
+[3.764s] running egg_info
+[3.764s] creating ../../../build/minimal_startup/minimal_startup.egg-info
+[3.765s] writing ../../../build/minimal_startup/minimal_startup.egg-info/PKG-INFO
+[3.765s] writing dependency_links to ../../../build/minimal_startup/minimal_startup.egg-info/dependency_links.txt
+[3.765s] writing entry points to ../../../build/minimal_startup/minimal_startup.egg-info/entry_points.txt
+[3.767s] writing requirements to ../../../build/minimal_startup/minimal_startup.egg-info/requires.txt
+[3.767s] writing top-level names to ../../../build/minimal_startup/minimal_startup.egg-info/top_level.txt
+[3.767s] writing manifest file '../../../build/minimal_startup/minimal_startup.egg-info/SOURCES.txt'
+[3.773s] reading manifest file '../../../build/minimal_startup/minimal_startup.egg-info/SOURCES.txt'
+[3.773s] writing manifest file '../../../build/minimal_startup/minimal_startup.egg-info/SOURCES.txt'
+[3.774s] running build
+[3.775s] running build_py
+[3.776s] creating /home/wyatt/ros2_ws/build/minimal_startup/build
+[3.776s] creating /home/wyatt/ros2_ws/build/minimal_startup/build/lib
+[3.776s] creating /home/wyatt/ros2_ws/build/minimal_startup/build/lib/minimal_startup
+[3.776s] copying minimal_startup/__init__.py -> /home/wyatt/ros2_ws/build/minimal_startup/build/lib/minimal_startup
+[3.776s] running install
+[3.776s] running install_lib
+[3.779s] creating /home/wyatt/ros2_ws/install/minimal_startup/lib/python3.10/site-packages/minimal_startup
+[3.780s] copying /home/wyatt/ros2_ws/build/minimal_startup/build/lib/minimal_startup/__init__.py -> /home/wyatt/ros2_ws/install/minimal_startup/lib/python3.10/site-packages/minimal_startup
+[3.781s] byte-compiling /home/wyatt/ros2_ws/install/minimal_startup/lib/python3.10/site-packages/minimal_startup/__init__.py to __init__.cpython-310.pyc
+[3.783s] running install_data
+[3.783s] creating /home/wyatt/ros2_ws/install/minimal_startup/share/ament_index
+[3.783s] creating /home/wyatt/ros2_ws/install/minimal_startup/share/ament_index/resource_index
+[3.783s] creating /home/wyatt/ros2_ws/install/minimal_startup/share/ament_index/resource_index/packages
+[3.784s] copying resource/minimal_startup -> /home/wyatt/ros2_ws/install/minimal_startup/share/ament_index/resource_index/packages
+[3.784s] copying package.xml -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.784s] copying launch/unitree_minimal_startup_launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.784s] copying launch/clearpath_minimal_startup_launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.784s] copying launch/unitree_b1_minimal_startup_launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.784s] copying launch/mag_launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.784s] copying launch/include/imu_0.launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.784s] copying launch/include/sensors_service.launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.785s] copying launch/include/microstrain_imu.launch.py -> /home/wyatt/ros2_ws/install/minimal_startup/share/minimal_startup
+[3.786s] running install_egg_info
+[3.787s] Copying ../../../build/minimal_startup/minimal_startup.egg-info to /home/wyatt/ros2_ws/install/minimal_startup/lib/python3.10/site-packages/minimal_startup-0.0.0-py3.10.egg-info
+[3.787s] running install_scripts
+[3.830s] writing list of installed files to '/home/wyatt/ros2_ws/build/minimal_startup/install.log'
+[4.588s] Invoked command in '/home/wyatt/ros2_ws/src/common/minimal_startup' returned '0': PYTHONPATH=/home/wyatt/ros2_ws/build/minimal_startup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wyatt/ros2_ws/install/minimal_startup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/minimal_startup build --build-base /home/wyatt/ros2_ws/build/minimal_startup/build install --record /home/wyatt/ros2_ws/build/minimal_startup/install.log --single-version-externally-managed install_data
