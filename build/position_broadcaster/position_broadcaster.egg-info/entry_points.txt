@@ -1,3 +1,0 @@
-[console_scripts]
-position_broadcaster_node = position_broadcaster.position_broadcaster_node:main
-

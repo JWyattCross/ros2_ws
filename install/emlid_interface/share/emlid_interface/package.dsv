@@ -1,6 +1,0 @@
-source;share/emlid_interface/hook/pythonpath.ps1
-source;share/emlid_interface/hook/pythonpath.dsv
-source;share/emlid_interface/hook/pythonpath.sh
-source;share/emlid_interface/hook/ament_prefix_path.ps1
-source;share/emlid_interface/hook/ament_prefix_path.dsv
-source;share/emlid_interface/hook/ament_prefix_path.sh

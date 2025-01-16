@@ -10,11 +10,11 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     return LaunchDescription([
-        Node(
-            package='matplotlib_sim',
-            executable='matplotlib_sim_node',
-            name='matplotlib_sim',
-        ),
+        #Node(
+        #    package='matplotlib_sim',
+        #    executable='matplotlib_sim_node',
+        #    name='matplotlib_sim',
+        #),
         # Target 1 and Herding Control
         Node(
             package='single_integrator_agent',
