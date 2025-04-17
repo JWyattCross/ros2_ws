@@ -1,6 +1,9 @@
 import socket
 
-TCP_IP = "192.168.1.31"
+# Anemometer "192.168.1.31"
+# Barometer "192.168.1.34"
+
+TCP_IP = "192.168.1.34"
 TCP_PORT = 4001
 
 def main():
